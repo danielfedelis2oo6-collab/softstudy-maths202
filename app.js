@@ -88,6 +88,10 @@
     btnNextQ: document.getElementById('btn-next-q'),
     currentQNum: document.getElementById('current-q-num'),
     totalQCount: document.getElementById('total-q-count'),
+    btnJumpPalette: document.getElementById('btn-jump-palette'),
+    btnBackToQ: document.getElementById('btn-back-to-q'),
+    paletteAnsweredCount: document.getElementById('palette-answered-count'),
+    paletteColumn: document.getElementById('palette-column'),
     paletteGrid: document.getElementById('palette-grid'),
     paletteSubmitBtn: document.getElementById('palette-submit-btn'),
 
@@ -260,6 +264,22 @@
     dom.btnCloseExplainer.addEventListener('click', () => {
       dom.explainerDrawer.style.display = 'none';
     });
+
+    if (dom.btnJumpPalette) {
+      dom.btnJumpPalette.addEventListener('click', () => {
+        if (dom.paletteColumn) {
+          dom.paletteColumn.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    }
+
+    if (dom.btnBackToQ) {
+      dom.btnBackToQ.addEventListener('click', () => {
+        if (dom.questionCard) {
+          dom.questionCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    }
 
     // Exam Submission
     dom.btnSubmitExam.addEventListener('click', promptSubmitExam);
@@ -602,6 +622,7 @@
     if (chip) {
       chip.classList.add('answered');
     }
+    updatePaletteCounter();
 
     renderQuestion(state.currentIndex);
   }
@@ -662,10 +683,23 @@
 
       chip.addEventListener('click', () => {
         renderQuestion(idx);
+        if (window.innerWidth <= 992 && dom.questionCard) {
+          dom.questionCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       });
 
       dom.paletteGrid.appendChild(chip);
     });
+
+    updatePaletteCounter();
+  }
+
+  function updatePaletteCounter() {
+    if (dom.paletteAnsweredCount && state.filteredQuestions) {
+      const total = state.filteredQuestions.length;
+      const answered = Object.keys(state.userAnswers).length;
+      dom.paletteAnsweredCount.textContent = `${answered}/${total}`;
+    }
   }
 
   function updatePaletteActiveChip(activeIndex) {
