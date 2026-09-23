@@ -171,22 +171,30 @@
       
       <!-- Quiz Header / Controls Bar -->
       <div class="quiz-controls-bar">
-        <div class="quiz-status-left">
+        <!-- Top row: Mode indicator badge & Study/Exam toggle switcher -->
+        <div class="quiz-controls-mode-row">
           <div class="mode-indicator" id="quiz-mode-badge">Study Mode</div>
-          <div class="module-filter-wrapper">
-            <label for="module-select" class="visually-hidden">Filter Module:</label>
-            <select id="module-select" class="filter-select">
-              <option value="all">All Modules (100 Questions)</option>
-              <option value="1">Module 1: Formulation & Classification (21 Qs)</option>
-              <option value="2">Module 2: First-Order ODEs (9 Qs)</option>
-              <option value="3">Module 3: Higher-Order Homogeneous (13 Qs)</option>
-              <option value="4">Module 4: Non-Homogeneous Linear ODEs (33 Qs)</option>
-              <option value="5">Module 5: Laplace Transforms & Systems (12 Qs)</option>
-              <option value="6">Module 6: Applications to Geometry & Physics (12 Qs)</option>
-            </select>
+          <div class="mode-switch-group">
+            <button class="mode-pill active" id="pill-study" data-mode="study">Study</button>
+            <button class="mode-pill" id="pill-exam" data-mode="exam">Exam</button>
           </div>
         </div>
 
+        <!-- Middle row: Module Filter Dropdown -->
+        <div class="module-filter-wrapper">
+          <label for="module-select" class="visually-hidden">Filter Module:</label>
+          <select id="module-select" class="filter-select">
+            <option value="all">All Modules (100 Questions)</option>
+            <option value="1">Module 1: Formulation & Classification (21 Qs)</option>
+            <option value="2">Module 2: First-Order ODEs (9 Qs)</option>
+            <option value="3">Module 3: Higher-Order Homogeneous (13 Qs)</option>
+            <option value="4">Module 4: Non-Homogeneous Linear ODEs (33 Qs)</option>
+            <option value="5">Module 5: Laplace Transforms & Systems (12 Qs)</option>
+            <option value="6">Module 6: Applications to Geometry & Physics (12 Qs)</option>
+          </select>
+        </div>
+
+        <!-- Center: Question Progress Bar & Counter -->
         <div class="quiz-status-center">
           <span class="q-progress-counter" id="q-counter">Question 1 of 100</span>
           <div class="progress-bar-container">
@@ -194,20 +202,13 @@
           </div>
         </div>
 
-        <div class="quiz-status-right">
-          <!-- Live Timer (Exam Mode) -->
+        <!-- Exam Mode Controls (Live Timer + Submit Button) -->
+        <div class="quiz-exam-bar" id="quiz-exam-bar">
           <div class="timer-display" id="exam-timer" style="display: none;">
             <span class="timer-icon">⏱️</span>
             <span class="timer-digits" id="timer-digits">50:00</span>
           </div>
 
-          <!-- Mode Toggle Switcher -->
-          <div class="mode-switch-group">
-            <button class="mode-pill active" id="pill-study" data-mode="study">Study</button>
-            <button class="mode-pill" id="pill-exam" data-mode="exam">Exam</button>
-          </div>
-
-          <!-- Submit Button (Exam Mode) -->
           <button class="btn btn-danger btn-sm" id="btn-submit-exam" style="display: none;">
             Finish Exam
           </button>
@@ -232,6 +233,9 @@
                 </button>
                 <button class="btn-explainer-toggle" id="btn-toggle-explainer" title="Always view full teacher-grade derivation">
                   <span class="explainer-icon">💡</span> Explainer
+                </button>
+                <button class="btn-palette-jump" id="btn-jump-palette" title="Jump to Question Palette">
+                  <span class="palette-icon">🔢</span> Palette
                 </button>
               </div>
             </div>
@@ -284,7 +288,10 @@
         <aside class="palette-column" id="palette-column">
           <div class="palette-card">
             <div class="palette-header">
-              <h3>Question Palette</h3>
+              <div class="palette-title-wrap">
+                <h3>Question Palette</h3>
+                <span class="palette-badge" id="palette-answered-count">0/100</span>
+              </div>
               <div class="palette-legend">
                 <span class="legend-item"><span class="dot dot-answered"></span> Answered</span>
                 <span class="legend-item"><span class="dot dot-flagged"></span> Flagged</span>
@@ -297,6 +304,9 @@
             </div>
 
             <div class="palette-actions">
+              <button class="btn btn-outline btn-block btn-back-to-q" id="btn-back-to-q">
+                &uarr; Back to Question
+              </button>
               <button class="btn btn-primary btn-block" id="palette-submit-btn">
                 Submit & Score Exam
               </button>
