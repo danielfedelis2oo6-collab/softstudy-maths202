@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MATH 202: Elementary Differential Equations — Masterclass & CBT Portal</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header / Navigation Bar -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand-group" id="nav-brand" role="button" tabindex="0">
+        <div class="brand-icon">∫∂</div>
+        <div class="brand-text">
+          <span class="brand-title">MATH 202</span>
+          <span class="brand-subtitle">Differential Equations Portal</span>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="main-nav" id="main-nav">
+        <button class="nav-btn active" data-view="home-view">Home</button>
+        <button class="nav-btn" data-view="modules-view">Course Modules</button>
+        <button class="nav-btn" data-view="quiz-view" data-mode="study">Study Mode</button>
+        <button class="nav-btn" data-view="quiz-view" data-mode="exam">CBT Exam</button>
+        <button class="nav-btn" data-view="ai-teacher-view">AI Teacher</button>
+      </nav>
+
+      <!-- Theme Switcher & Mobile Menu Toggle -->
+      <div class="header-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" title="Toggle Light / Dark Mode" aria-label="Toggle Theme">
+          <span class="theme-icon light-icon">☀️</span>
+          <span class="theme-icon dark-icon">🌙</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Application Container -->
+  <main class="app-main">
+    
+    <!-- ==================== VIEW 1: HOME DASHBOARD ==================== -->
+    <section class="app-view active" id="home-view">
+      <div class="hero-section">
+        <div class="hero-badge">FUTO & STEM Curriculum Standard 2025/2026</div>
+        <h1 class="hero-title">Elementary Differential Equations<br><span class="hero-highlight">Masterclass & CBT Platform</span></h1>
+        <p class="hero-description">
+          The ultimate preparation portal for MATH 202. Experience comprehensive text-based masterclass tutorials across all 6 curriculum modules, an authentic 100-question CBT exam engine with instant teacher-grade explanations, and an interactive AI professor prompt.
+        </p>
+
+        <!-- Curriculum Statistics -->
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-num">6</span>
+            <span class="stat-label">Course Modules</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">100</span>
+            <span class="stat-label">Masterclass Questions</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Teacher-Grade Explainers</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">0–45s</span>
+            <span class="stat-label">CBT Speed Hacks</span>
+          </div>
+        </div>
+
+        <!-- Quick Launch CTAs -->
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-lg" id="home-start-study">
+            <span class="btn-icon">📖</span> Start Study Mode
+          </button>
+          <button class="btn btn-secondary btn-lg" id="home-start-exam">
+            <span class="btn-icon">⏱️</span> Launch CBT Exam
+          </button>
+          <button class="btn btn-outline btn-lg" id="home-browse-modules">
+            <span class="btn-icon">📚</span> Course Tutorials
+          </button>
+        </div>
+      </div>
+
+      <!-- Feature Highlight Grid -->
+      <div class="features-grid">
+        <div class="feature-card" id="card-study-mode">
+          <div class="feature-icon">💡</div>
+          <h3>Interactive Study Mode</h3>
+          <p>Instant option validation, correct answer reveals, and comprehensive mathematical derivations on every click. The full teacher-grade explainer is always at your fingertips.</p>
+          <span class="feature-link">Launch Study Mode &rarr;</span>
+        </div>
+
+        <div class="feature-card" id="card-exam-mode">
+          <div class="feature-icon">🎯</div>
+          <h3>Authentic CBT Simulator</h3>
+          <p>Configurable timed exam simulation (25, 50, or 100 questions). Features live countdown timer, interactive question palette grid, flagging for review, and detailed performance breakdown.</p>
+          <span class="feature-link">Configure Exam &rarr;</span>
+        </div>
+
+        <div class="feature-card" id="card-course-modules">
+          <div class="feature-icon">📑</div>
+          <h3>6 Comprehensive Tutorials</h3>
+          <p>Textbook-depth tutorials for every module: Formulation, First-Order ODEs, Higher-Order Homogeneous, Non-Homogeneous, Laplace Transforms, and Physics/Geometry applications.</p>
+          <span class="feature-link">Read Tutorials &rarr;</span>
+        </div>
+
+        <div class="feature-card" id="card-ai-teacher">
+          <div class="feature-icon">🤖</div>
+          <h3>External AI Teacher</h3>
+          <p>Copy our specialized, syllabus-aligned master prompt into ChatGPT, Claude, Gemini, or DeepSeek to unlock a dedicated 24/7 Differential Equations AI tutor.</p>
+          <span class="feature-link">View AI Prompt &rarr;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 2: COURSE MODULES HUB ==================== -->
+    <section class="app-view" id="modules-view">
+      <div class="section-header">
+        <div class="badge-tag">Curriculum Architecture</div>
+        <h2>Official MATH 202 Course Modules</h2>
+        <p>Explore the full syllabus. Read the in-depth text tutorial for any module, or jump straight into a targeted topic quiz containing only questions from that unit.</p>
+      </div>
+
+      <div class="modules-grid" id="modules-container">
+        <!-- Injected dynamically by app.js -->
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 3: TUTORIAL READER VIEW ==================== -->
+    <section class="app-view" id="tutorial-view">
+      <div class="tutorial-reader-header">
+        <div class="tutorial-nav-bar">
+          <button class="btn btn-outline btn-sm" id="tutorial-back-btn">&larr; Back to Modules</button>
+          <div class="tutorial-meta-tags">
+            <span class="badge-tag" id="tut-module-tag">Module 1</span>
+            <span class="meta-time" id="tut-reading-time">15 min read</span>
+          </div>
+          <button class="btn btn-primary btn-sm" id="tut-take-quiz-btn">
+            Take Topic Quiz (<span id="tut-q-count">21</span> Qs) &rarr;
+          </button>
+        </div>
+        <h1 class="tutorial-title" id="tut-title">Module Title</h1>
+        <p class="tutorial-subtitle" id="tut-subtitle">Module Subtitle</p>
+      </div>
+
+      <div class="tutorial-content-card" id="tut-body">
+        <!-- Tutorial HTML injected dynamically -->
+      </div>
+
+      <div class="tutorial-footer-action">
+        <div class="tutorial-footer-text">
+          <h3>Ready to test your mastery of this topic?</h3>
+          <p>Put your theoretical knowledge into practice with genuine CBT past questions and exam-grade problems.</p>
+        </div>
+        <button class="btn btn-primary btn-lg" id="tut-bottom-quiz-btn">
+          Launch Quiz for This Module &rarr;
+        </button>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 4: QUIZ & CBT ENGINE ==================== -->
+    <section class="app-view" id="quiz-view">
+      
+      <!-- Quiz Header / Controls Bar -->
+      <div class="quiz-controls-bar">
+        <div class="quiz-status-left">
+          <div class="mode-indicator" id="quiz-mode-badge">Study Mode</div>
+          <div class="module-filter-wrapper">
+            <label for="module-select" class="visually-hidden">Filter Module:</label>
+            <select id="module-select" class="filter-select">
+              <option value="all">All Modules (100 Questions)</option>
+              <option value="1">Module 1: Formulation & Classification (21 Qs)</option>
+              <option value="2">Module 2: First-Order ODEs (9 Qs)</option>
+              <option value="3">Module 3: Higher-Order Homogeneous (13 Qs)</option>
+              <option value="4">Module 4: Non-Homogeneous Linear ODEs (33 Qs)</option>
+              <option value="5">Module 5: Laplace Transforms & Systems (12 Qs)</option>
+              <option value="6">Module 6: Applications to Geometry & Physics (12 Qs)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="quiz-status-center">
+          <span class="q-progress-counter" id="q-counter">Question 1 of 100</span>
+          <div class="progress-bar-container">
+            <div class="progress-bar-fill" id="progress-bar-fill" style="width: 1%;"></div>
+          </div>
+        </div>
+
+        <div class="quiz-status-right">
+          <!-- Live Timer (Exam Mode) -->
+          <div class="timer-display" id="exam-timer" style="display: none;">
+            <span class="timer-icon">⏱️</span>
+            <span class="timer-digits" id="timer-digits">50:00</span>
+          </div>
+
+          <!-- Mode Toggle Switcher -->
+          <div class="mode-switch-group">
+            <button class="mode-pill active" id="pill-study" data-mode="study">Study</button>
+            <button class="mode-pill" id="pill-exam" data-mode="exam">Exam</button>
+          </div>
+
+          <!-- Submit Button (Exam Mode) -->
+          <button class="btn btn-danger btn-sm" id="btn-submit-exam" style="display: none;">
+            Finish Exam
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Quiz Stage Layout (Question Area + Question Palette) -->
+      <div class="quiz-stage-layout">
+        
+        <!-- Left: Question Container -->
+        <div class="question-column">
+          <div class="question-card" id="question-card">
+            
+            <div class="question-header">
+              <div class="q-tags">
+                <span class="badge-tag" id="q-module-badge">Module 1</span>
+                <span class="badge-source" id="q-source-badge">FUTO Exam Revision</span>
+              </div>
+              <div class="q-actions-top">
+                <button class="btn-flag" id="btn-flag-question" title="Flag for Review">
+                  <span class="flag-icon">⚑</span> Flag
+                </button>
+                <button class="btn-explainer-toggle" id="btn-toggle-explainer" title="Always view full teacher-grade derivation">
+                  <span class="explainer-icon">💡</span> Explainer
+                </button>
+              </div>
+            </div>
+
+            <!-- Question Text -->
+            <div class="question-text" id="question-text">
+              Loading question...
+            </div>
+
+            <!-- Options Container -->
+            <div class="options-container" id="options-container">
+              <!-- Injected by app.js -->
+            </div>
+
+            <!-- Feedback Alert (Study Mode) -->
+            <div class="feedback-banner" id="feedback-banner" style="display: none;">
+              <div class="feedback-icon" id="feedback-icon">✓</div>
+              <div class="feedback-content">
+                <h4 id="feedback-title">Correct!</h4>
+                <p id="feedback-message">Well done. Review the teacher-grade mathematical derivation below.</p>
+              </div>
+            </div>
+
+            <!-- Always-Accessible Teacher-Grade Explainer Box -->
+            <div class="explainer-drawer" id="explainer-drawer" style="display: none;">
+              <div class="explainer-drawer-header">
+                <div class="explainer-drawer-title">
+                  <span class="icon">📘</span> Teacher-Grade Masterclass Derivation
+                </div>
+                <button class="btn-close-explainer" id="btn-close-explainer" aria-label="Close Explainer">&times;</button>
+              </div>
+              <div class="explainer-body" id="explainer-body">
+                <!-- Explainer markdown parsed HTML -->
+              </div>
+            </div>
+
+            <!-- Navigation Controls -->
+            <div class="question-footer-nav">
+              <button class="btn btn-outline" id="btn-prev-q">&larr; Previous</button>
+              <div class="nav-middle-info" id="nav-middle-info">
+                Question <span id="current-q-num">1</span> of <span id="total-q-count">100</span>
+              </div>
+              <button class="btn btn-primary" id="btn-next-q">Next &rarr;</button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Exam Palette / Question Grid -->
+        <aside class="palette-column" id="palette-column">
+          <div class="palette-card">
+            <div class="palette-header">
+              <h3>Question Palette</h3>
+              <div class="palette-legend">
+                <span class="legend-item"><span class="dot dot-answered"></span> Answered</span>
+                <span class="legend-item"><span class="dot dot-flagged"></span> Flagged</span>
+                <span class="legend-item"><span class="dot dot-unanswered"></span> Unanswered</span>
+              </div>
+            </div>
+            
+            <div class="palette-grid" id="palette-grid">
+              <!-- 100 question chips generated by app.js -->
+            </div>
+
+            <div class="palette-actions">
+              <button class="btn btn-primary btn-block" id="palette-submit-btn">
+                Submit & Score Exam
+              </button>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+
+      <!-- ==================== EXAM CONFIGURATION MODAL ==================== -->
+      <div class="modal-overlay" id="exam-config-modal" style="display: none;">
+        <div class="modal-card">
+          <div class="modal-header">
+            <h3>Configure CBT Exam Session</h3>
+            <button class="modal-close" id="exam-config-close">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>Customize your computer-based test simulation according to your study target.</p>
+            
+            <div class="form-group">
+              <label for="exam-q-count-select">Select Question Count:</label>
+              <select id="exam-q-count-select" class="form-control">
+                <option value="25">25 Questions (Quick Diagnostic Test)</option>
+                <option value="50" selected>50 Questions (Standard FUTO CBT Simulation)</option>
+                <option value="100">100 Questions (Full Curriculum Marathon)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="exam-time-select">Select Timer Duration:</label>
+              <select id="exam-time-select" class="form-control">
+                <option value="25">25 Minutes (1 min / question)</option>
+                <option value="50" selected>50 Minutes (Standard CBT Time)</option>
+                <option value="60">60 Minutes (Generous Practice)</option>
+                <option value="100">100 Minutes (Full Marathon)</option>
+                <option value="0">Untimed (Practice Mode)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="exam-module-select">Curriculum Scope:</label>
+              <select id="exam-module-select" class="form-control">
+                <option value="all" selected>All 6 Course Modules (Comprehensive)</option>
+                <option value="1">Module 1 Only (Formulation & Classification)</option>
+                <option value="2">Module 2 Only (First-Order ODEs)</option>
+                <option value="3">Module 3 Only (Higher-Order Homogeneous)</option>
+                <option value="4">Module 4 Only (Non-Homogeneous Linear ODEs)</option>
+                <option value="5">Module 5 Only (Laplace Transforms & Systems)</option>
+                <option value="6">Module 6 Only (Applications to Geometry & Physics)</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline" id="exam-cancel-btn">Cancel</button>
+            <button class="btn btn-primary" id="exam-start-confirmed-btn">Start CBT Exam &rarr;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== EXAM RESULTS MODAL / SCREEN ==================== -->
+      <div class="modal-overlay" id="exam-results-modal" style="display: none;">
+        <div class="modal-card modal-lg">
+          <div class="modal-header">
+            <h3>CBT Examination Performance Report</h3>
+            <button class="modal-close" id="exam-results-close">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="results-summary-banner">
+              <div class="score-circle" id="score-circle">
+                <span class="score-val" id="res-score-percent">86%</span>
+                <span class="score-text">Final Score</span>
+              </div>
+              <div class="score-meta">
+                <h4 id="res-grade-title">Grade: A (Excellent Distinction)</h4>
+                <p>You answered <strong id="res-correct-count">43</strong> correctly out of <strong id="res-total-count">50</strong> questions.</p>
+                <p>Time elapsed: <strong id="res-time-taken">38 min 14 sec</strong>.</p>
+              </div>
+            </div>
+
+            <div class="module-breakdown-card">
+              <h4>Performance by Course Module</h4>
+              <div id="module-performance-bars">
+                <!-- Injected dynamically -->
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline" id="res-retake-btn">Retake Exam</button>
+            <button class="btn btn-primary" id="res-review-all-btn">Review All Questions with Explainers &rarr;</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==================== VIEW 5: EXTERNAL AI TEACHER ==================== -->
+    <section class="app-view" id="ai-teacher-view">
+      <div class="section-header">
+        <div class="badge-tag">AI Pedagogical Integration</div>
+        <h2>External AI Teacher & CBT Coach</h2>
+        <p>Unlock a 24/7 personal Differential Equations Professor. Copy our syllabus-calibrated prompt and paste it into Claude, ChatGPT, Gemini, or DeepSeek for interactive, step-by-step masterclasses.</p>
+      </div>
+
+      <div class="ai-prompt-container">
+        <div class="ai-prompt-card">
+          <div class="prompt-header">
+            <div class="prompt-title-group">
+              <h3>MATH 202 Masterclass AI Professor Prompt</h3>
+              <p>Grounded strictly in the 6 FUTO MATH 202 modules with step-by-step derivations and CBT speed hacks.</p>
+            </div>
+            <button class="btn btn-primary btn-copy" id="btn-copy-prompt">
+              <span class="copy-icon">📋</span> Copy Master Prompt
+            </button>
+          </div>
+
+          <div class="prompt-instructions-box">
+            <h4>How to Use with Your Favorite AI:</h4>
+            <ol>
+              <li>Click the <strong>Copy Master Prompt</strong> button above.</li>
+              <li>Open <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>, <a href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT</a>, <a href="https://gemini.google.com" target="_blank" rel="noopener">Google Gemini</a>, or <a href="https://chat.deepseek.com" target="_blank" rel="noopener">DeepSeek</a>.</li>
+              <li>Paste the prompt into the chat and press send.</li>
+              <li>The AI will introduce itself as your personal MATH 202 Professor, lay out the curriculum, and guide you topic by topic with interactive testing!</li>
+            </ol>
+          </div>
+
+          <div class="prompt-code-viewer">
+            <div class="code-viewer-header">
+              <span>System Prompt Preview</span>
+              <span class="badge-tag">Ready for Copying</span>
+            </div>
+            <pre class="prompt-code-body" id="prompt-preview-text">
+Loading master prompt...
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Professional Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">MATH 202 Portal</div>
+        <p class="footer-tagline">Comprehensive Elementary Differential Equations Study & CBT Simulation Platform</p>
+      </div>
+
+      <div class="footer-contact-box">
+        <p class="footer-credits">
+          Developed with passion for FUTO & STEM Undergraduates by <strong>softexh</strong>.
+        </p>
+        <p class="footer-inquiries">
+          For enquiries, custom website design, or donations: 
+          <a href="https://wa.me/2349114165606" class="footer-wa-link" target="_blank" rel="noopener">
+            text <strong>09114165606</strong> on WhatsApp
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      &copy; 2026 softexh. All rights reserved. Built for academic excellence.
+    </div>
+  </footer>
+
+  <!-- Notification Toast Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- JavaScript Dependencies (Zero CORS, 100% Local / Static Compatible) -->
+  <script src="math202_questions.js"></script>
+  <script src="math202_tutorials.js"></script>
+  <script src="math202_study_prompt.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

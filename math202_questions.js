@@ -1,0 +1,1704 @@
+// MATH 202 Question Bank - 100 Questions with Teacher-Grade Explainers
+// Generated for Zero-CORS Browser Direct Execution
+window.MATH202_QUESTIONS = [
+  {
+    "id": 1,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "First-Order Differential Equations — Linearity Classification & Initial Value Problems",
+    "question": "The differential equation 2(dy/dx) + x²y = 2x + 3 with initial condition y(0) = 5 is classified as:",
+    "options": [
+      "(A) Linear",
+      "(B) Nonlinear",
+      "(C) Undeterminable to be linear or nonlinear",
+      "(D) Fixed constant"
+    ],
+    "answer": "(A) Linear",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Classification of First-Order Equations\n- Subtopic: Testing Linearity in the Dependent Variable\n\n---\n\n### 2. Core Concepts & Governing Definition\nA first-order ordinary differential equation is strictly **linear** if it can be written in the canonical form:\na₁(x)(dy/dx) + a₀(x)y = g(x)  (or dy/dx + P(x)y = Q(x))\nwhere:\n1. The dependent variable y and its derivative dy/dx appear strictly to the first degree (power 1).\n2. There are NO products of the dependent variable and its derivatives (e.g. y·(dy/dx)).\n3. There are NO non-linear functions of the dependent variable (e.g. sin(y), eʸ, y², 1/y).\n4. Coefficients a₁(x), a₀(x), and forcing function g(x) depend strictly on the independent variable x (or are constants).\n\n---\n\n### 3. Step-by-Step Mathematical Analysis\nGiven equation: 2(dy/dx) + x²y = 2x + 3\n- Coefficient of dy/dx is a₁(x) = 2 (constant, degree 1 in dy/dx).\n- Coefficient of y is a₀(x) = x² (a function of x only, degree 1 in y).\n- Right-hand side is g(x) = 2x + 3 (a function of x only).\n- Dividing through by 2 gives standard Leibniz form:\n  dy/dx + (1/2 x²)y = x + 3/2\n- Both y and dy/dx appear linearly to the first power. The presence of x² does not violate linearity because x is the independent variable.\n- The subsidiary condition y(0) = 5 simply specifies an Initial Value Problem (IVP) and has zero effect on the linearity of the differential operator.\n- Therefore, the equation is strictly **Linear**.\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) Linear**: CORRECT. The equation strictly matches the definition a₁(x)y′ + a₀(x)y = g(x).\n- **(B) Nonlinear**: INCORRECT. Students often confuse the x² term as causing non-linearity; however, non-linearity only applies if the *dependent* variable y or its derivative has a power other than 1 (e.g. y² or (y′)²).\n- **(C) Undeterminable to be linear or nonlinear**: INCORRECT. Linearity is completely and deterministically classified by inspecting powers of y and its derivatives.\n- **(D) Fixed constant**: INCORRECT. \"Fixed constant\" is a meaningless distractor; this is a dynamic differential relation with an infinite family of solutions before the initial condition is applied.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Inspection Hack (3 Seconds)**: Look ONLY at y and dy/dx:\n  - Is dy/dx raised to any power? No (power 1).\n  - Is y inside a sine, exp, or squared? No (just y¹).\n  - Are y and dy/dx multiplied together? No.\n  ==> Instantly select **(A) Linear** in under 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) Linear.",
+    "module_id": 1,
+    "module_title": "Module 1: Formulation & Classification of Differential Equations"
+  },
+  {
+    "id": 2,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Differential Equations — Fundamental Definition of Ordinary vs Partial Differential Equations",
+    "question": "A differential equation is considered to be ordinary (ODE) if it has:",
+    "options": [
+      "(A) One dependent variable",
+      "(B) More than one dependent variable",
+      "(C) One independent variable",
+      "(D) More than one independent variable"
+    ],
+    "answer": "(C) One independent variable",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Engineering Mathematics / Differential Equations\n- Topic: Differential Equation Classification\n- Subtopic: Ordinary Differential Equations (ODEs) vs. Partial Differential Equations (PDEs)\n\n---\n\n### 2. Core Concepts & Governing Definition\nThe fundamental classification of differential equations is based strictly on the number of **independent variables**:\n- **Ordinary Differential Equation (ODE)**: Involves derivatives of one (or more) dependent variables with respect to a **single (one) independent variable** (e.g. dy/dx + y = x, where x is the only independent variable).\n- **Partial Differential Equation (PDE)**: Involves partial derivatives of an unknown function with respect to **two or more independent variables** (e.g. ∂u/∂t = c² ∂²u/∂x², involving t and x).\n\n---\n\n### 3. Step-by-Step Analysis\n- Look at the variables:\n  In y = f(x), x is the independent variable and y is the dependent variable.\n  The derivative is ordinary: dy/dx = lim_{Δx→0} Δy/Δx.\n- An ODE can have multiple dependent variables (e.g. a system of ODEs: dx/dt = 3x - y, dy/dt = x + 2y, where x and y are dependent, but t is the SOLE independent variable).\n- Thus, having multiple dependent variables does NOT make an equation partial.\n- The sole defining mathematical criterion for an equation being \"ordinary\" is that it contains derivatives with respect to **only one independent variable**.\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) One dependent variable**: INCORRECT. A system of ODEs can contain multiple dependent variables (e.g. y₁(t), y₂(t)) all differentiated with respect to single variable t.\n- **(B) More than one dependent variable**: INCORRECT. Having more than one dependent variable describes a system, not the defining property of an ODE.\n- **(C) One independent variable**: CORRECT. By foundational definition, an ODE contains ordinary derivatives with respect to exactly one independent variable.\n- **(D) More than one independent variable**: INCORRECT. This defines a Partial Differential Equation (PDE), which requires partial derivatives (∂).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Mnemonic Rule (2 Seconds)**:\n  - **O**DE = **O**ne independent variable.\n  - **P**DE = **P**lural (more than one) independent variables.\n  ==> Instantly select **(C)**!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (C) One independent variable.",
+    "module_id": 1,
+    "module_title": "Module 1: Formulation & Classification of Differential Equations"
+  },
+  {
+    "id": 3,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Differential Equations — Determining Order and Degree",
+    "question": "Determine the order and degree of the differential equation: 2x(d⁴y/dx⁴) + 5x²(dy/dx)³ - xy = 0",
+    "options": [
+      "(A) Fourth order, first degree",
+      "(B) Third order, first degree",
+      "(C) First order, fourth degree",
+      "(D) First order, third degree"
+    ],
+    "answer": "(A) Fourth order, first degree",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Differential Equations\n- Topic: Fundamental Properties of ODEs\n- Subtopic: Identification of Order and Degree\n\n---\n\n### 2. Core Concepts & Definitions\n1. **Order**: The order of a differential equation is the order of the **highest derivative** appearing in the equation.\n2. **Degree**: The degree of a differential equation is the **power (exponent)** to which the highest-order derivative is raised, after the equation has been cleared of fractions and radical signs involving the derivatives.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: 2x(d⁴y/dx⁴) + 5x²(dy/dx)³ - xy = 0\n1. Identify all derivatives appearing in the equation:\n   - First derivative: dy/dx (order = 1, raised to power 3)\n   - Fourth derivative: d⁴y/dx⁴ (order = 4, raised to power 1)\n2. Determine Order:\n   - The highest derivative present is d⁴y/dx⁴.\n   - Therefore, the **Order = 4** (Fourth order).\n3. Determine Degree:\n   - Focus exclusively on the highest-order derivative: (d⁴y/dx⁴)¹.\n   - The exponent of d⁴y/dx⁴ is 1.\n   - Note: The fact that (dy/dx) is cubed (power 3) is completely irrelevant to the degree, because degree is strictly governed by the highest derivative term!\n   - Therefore, the **Degree = 1** (First degree).\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) Fourth order, first degree**: CORRECT. Highest derivative is 4th order, and its power is 1.\n- **(B) Third order, first degree**: INCORRECT. There is no 3rd derivative; the 3 is merely the exponent of dy/dx.\n- **(C) First order, fourth degree**: INCORRECT. Confuses the order (4) with the degree, and assigns the lowest derivative order (1) to the whole equation.\n- **(D) First order, third degree**: INCORRECT. Looked only at the term (dy/dx)³ and completely ignored the 4th derivative d⁴y/dx⁴.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Two-Step Inspection Hack (5 Seconds)**:\n  - Step 1: Scan for the highest derivative: d⁴y/dx⁴ ==> Order is 4. (Eliminates B, C, D immediately!).\n  - Only Option A has Fourth order. Mark **(A)** in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) Fourth order, first degree.",
+    "module_id": 1,
+    "module_title": "Module 1: Formulation & Classification of Differential Equations"
+  },
+  {
+    "id": 4,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "First-Order Differential Equations — Exact Differential Equations & Test for Exactness",
+    "question": "Which of the following equations is an exact differential equation?",
+    "options": [
+      "(A) (x² + 1)dx - xy dy = 0",
+      "(B) x dy + (3x - 2y)dy = 0",
+      "(C) 2xy dx + (2 + x²)dy = 0",
+      "(D) x²y dy - y dx = 0"
+    ],
+    "answer": "(C) 2xy dx + (2 + x²)dy = 0",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: First-Order Exact Differential Equations\n- Subtopic: Euler-Reciprocity Test for Exactness (∂M/∂y = ∂N/∂x)\n\n---\n\n### 2. Core Concepts & Governing Theorem\nA first-order ODE expressed in differential form:\nM(x, y)dx + N(x, y)dy = 0\nis **exact** if and only if there exists a potential function φ(x, y) such that dφ = M dx + N dy.\nBy Clairaut's theorem on the equality of mixed second partial derivatives, this holds if and only if:\n∂M/∂y = ∂N/∂x\n\n---\n\n### 3. Step-by-Step Test of Each Option\n- **Test Option A: (x² + 1)dx - xy dy = 0**\n  - M = x² + 1 ==> ∂M/∂y = 0\n  - N = -xy ==> ∂N/∂x = -y\n  - ∂M/∂y (0) ≠ ∂N/∂x (-y). ==> NOT EXACT.\n\n- **Test Option B: x dy + (3x - 2y)dy = 0**\n  - Grouping: 0 dx + (4x - 2y)dy = 0 ==> M = 0, N = 4x - 2y.\n  - ∂M/∂y = 0 ≠ ∂N/∂x = 4. ==> NOT EXACT.\n\n- **Test Option C: 2xy dx + (2 + x²)dy = 0**\n  - M(x, y) = 2xy ==> ∂M/∂y = ∂/∂y (2xy) = 2x\n  - N(x, y) = 2 + x² ==> ∂N/∂x = ∂/∂x (2 + x²) = 2x\n  - Since ∂M/∂y = 2x and ∂N/∂x = 2x, we have:\n    ∂M/∂y = ∂N/∂x = 2x (IDENTICALLY EQUAL!)\n  - Therefore, Option C is strictly an **exact differential equation**.\n\n- **Test Option D: x²y dy - y dx = 0 ==> -y dx + x²y dy = 0**\n  - M = -y ==> ∂M/∂y = -1\n  - N = x²y ==> ∂N/∂x = 2xy\n  - -1 ≠ 2xy. ==> NOT EXACT.\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: Fails exactness test: ∂M/∂y = 0 while ∂N/∂x = -y.\n- **(B)**: Degenerate equation containing no dx term, so ∂M/∂y = 0 ≠ 4.\n- **(C)**: CORRECT. ∂M/∂y = 2x and ∂N/∂x = 2x match identically.\n- **(D)**: Fails exactness test: ∂M/∂y = -1 while ∂N/∂x = 2xy.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Rapid Partial Derivative Mental Check (15 Seconds)**:\n  - Take Option C: Differentiate 2xy with respect to y ==> 2x.\n  - Differentiate (2 + x²) with respect to x ==> 2x.\n  - Both derivatives equal 2x! Confirm match in 15 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (C) 2xy dx + (2 + x²)dy = 0.",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 5,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "First-Order Differential Equations — Variable Separable Identification",
+    "question": "Which of the following equations is a variable separable differential equation?",
+    "options": [
+      "(A) (x + x²y)dy = (2x + xy²)dx",
+      "(B) (x + y)dx - 2y dy = 0",
+      "(C) 2y dx = (x² + 1)dy",
+      "(D) y² dx + (2x - 3y)dy = 0"
+    ],
+    "answer": "(C) 2y dx = (x² + 1)dy",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: First-Order Analytical Methods\n- Subtopic: Recognition of Separable Equations (dy/dx = g(x)h(y))\n\n---\n\n### 2. Core Concepts & Definitions\nA first-order differential equation is **separable** (or variable separable) if it can be factored such that all terms involving x are grouped with dx and all terms involving y are grouped with dy:\nf(x)dx = g(y)dy  (or dy/dx = g(x)·h(y))\nSeparation requires that the equation can be factored multiplicatively, NOT additively tied together in an inseparable sum.\n\n---\n\n### 3. Step-by-Step Mathematical Analysis\n- **Analyze Option A: (x + x²y)dy = (2x + xy²)dx**\n  - Left side: x(1 + xy)dy\n  - Right side: x(2 + y²)dx\n  - The term (1 + xy) contains a mixed sum of x and y that cannot be factored into pure functions of x and y alone. ==> Not separable.\n\n- **Analyze Option B: (x + y)dx - 2y dy = 0**\n  - Rearranging: 2y dy = (x + y)dx.\n  - The term (x + y) is an additive mixture of x and y that cannot be factored into f(x)·g(y). ==> Not separable.\n\n- **Analyze Option C: 2y dx = (x² + 1)dy**\n  - Divide both sides by 2y and by (x² + 1):\n    [2y / (2y(x² + 1))] dx = [(x² + 1) / (2y(x² + 1))] dy\n    ==> [1 / (x² + 1)] dx = [1 / (2y)] dy\n  - The variables are completely and cleanly separated: a pure function of x with dx on the left, and a pure function of y with dy on the right!\n  - Integrating both sides: ∫ dx/(x² + 1) = (1/2)∫ dy/y ==> arctan(x) = (1/2)ln|y| + C.\n  - Therefore, Option C is strictly **variable separable**.\n\n- **Analyze Option D: y² dx + (2x - 3y)dy = 0**\n  - Rearranging: y² dx = (3y - 2x)dy.\n  - The term (3y - 2x) cannot be factored into a product of x and y terms. ==> Not separable.\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: Inseparable due to the cross-product term (1 + xy).\n- **(B)**: Inseparable due to the irreducible sum (x + y).\n- **(C)**: CORRECT. Directly separates by division into dx/(x² + 1) = dy/(2y).\n- **(D)**: Inseparable due to the linear combination (3y - 2x).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Multiplication vs Addition Test (5 Seconds)**:\n  - In Option C, look at the coefficients: 2y is a pure function of y; (x² + 1) is a pure function of x.\n  - Because they are pure single-variable factors multiplying dx and dy, division immediately isolates x on one side and y on the other in 3 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (C) 2y dx = (x² + 1)dy.",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 6,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Formation of Differential Equations — Eliminating Arbitrary Constants",
+    "question": "The algebraic family of curves y² = cx is the general solution of which differential equation?",
+    "options": [
+      "(A) y′ = 2y/x",
+      "(B) y′ = 2y/y",
+      "(C) y′ = y/(2x)",
+      "(D) y′ = x/(2y)"
+    ],
+    "answer": "(C) y′ = y/(2x)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Differential Equations\n- Topic: Formation of ODEs from Given Primitives\n- Subtopic: Elimination of a Single Arbitrary Constant\n\n---\n\n### 2. Core Concepts & Governing Principles\nA primitive equation containing one arbitrary constant c represents a one-parameter family of curves. Its corresponding differential equation is obtained by:\n1. Differentiating the equation once with respect to x.\n2. Eliminating the arbitrary constant c between the original equation and its derivative.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven primitive: y² = cx   ---- (Equation 1)\n- Step 1: Differentiate both sides implicitly with respect to x using the chain rule on y²:\n  d/dx(y²) = d/dx(cx)\n  ==> 2y · (dy/dx) = c   ---- (Equation 2)\n- Step 2: From Equation 1, express the arbitrary constant c in terms of x and y:\n  c = y² / x   (for x ≠ 0)\n- Step 3: Substitute this expression for c into Equation 2:\n  2y · (dy/dx) = y² / x\n- Step 4: Divide both sides by 2y (assuming y ≠ 0):\n  dy/dx = (y² / x) / (2y) = y / (2x)\n- Therefore, the required differential equation is:\n  y′ = y / (2x)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) y′ = 2y/x**: INCORRECT. Forgetting that d/dx(y²) = 2y y′ puts the factor of 2 in the numerator instead of dividing by it: dy/dx = 2cx/y = 2y/x, which inverts the coefficient 2.\n- **(B) y′ = 2y/y**: INCORRECT. Fails to eliminate c and simplifies to the constant 2, which integrates to y = 2x + C, completely different from a parabola y² = cx.\n- **(C) y′ = y/(2x)**: CORRECT. Accurately derived from 2y y′ = c = y²/x ==> y′ = y/(2x).\n- **(D) y′ = x/(2y)**: INCORRECT. Inverts x and y.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Reverse Differentiation & Power Check (10 Seconds)**:\n  - Differentiate y² = cx implicitly: 2y y′ = c.\n  - Divide by y² = cx: (2y y′) / y² = c / (cx) ==> 2y′ / y = 1 / x ==> y′ = y / (2x).\n  - Matches **(C)** in under 15 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (C) y′ = y/(2x).",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 7,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "First-Order Separable ODEs — Initial Value Problem & Constant of Integration",
+    "question": "Solve the first-order differential equation x(y - 1)dx + (x + 1)dy = 0 with initial condition y = 2 when x = 1. What is the value of the constant of integration C in the implicit solution ln|y - 1| = -x + ln|x + 1| + C?",
+    "options": [
+      "(A) 1.80",
+      "(B) 1.48",
+      "(C) 0.31",
+      "(D) 1.63"
+    ],
+    "answer": "(C) 0.31",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: First-Order Separable Equations\n- Subtopic: Initial Value Problem (IVP) & Evaluation of Arbitrary Constant\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor a separable equation:\nP(x)Q(y)dx + R(x)S(y)dy = 0\ndivide by [Q(y)·R(x)] to isolate variables:\n[P(x)/R(x)]dx + [S(y)/Q(y)]dy = 0 ==> ∫ [S(y)/Q(y)]dy = -∫ [P(x)/R(x)]dx\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: x(y - 1)dx + (x + 1)dy = 0\n- Step 1: Separate variables by dividing by (y - 1)(x + 1):\n  [x / (x + 1)] dx + [1 / (y - 1)] dy = 0\n  ==> [1 / (y - 1)] dy = - [x / (x + 1)] dx\n- Step 2: Rewrite the rational function on the right using polynomial division:\n  x / (x + 1) = (x + 1 - 1) / (x + 1) = 1 - [1 / (x + 1)]\n  Therefore:\n  [1 / (y - 1)] dy = - [1 - 1/(x + 1)] dx = [-1 + 1/(x + 1)] dx\n- Step 3: Integrate both sides:\n  ∫ dy / (y - 1) = ∫ [-1 + 1/(x + 1)] dx\n  ln|y - 1| = -x + ln|x + 1| + C\n- Step 4: Apply the initial condition y = 2 when x = 1:\n  ln|2 - 1| = -1 + ln|1 + 1| + C\n  ln(1) = -1 + ln(2) + C\n  Since ln(1) = 0:\n  0 = -1 + ln(2) + C\n  ==> C = 1 - ln(2)\n- Step 5: Compute the numerical value of C:\n  ln(2) ≈ 0.693147\n  C = 1 - 0.693147 = 0.306853... ≈ 0.31\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) 1.80**: INCORRECT. Result of computing 1 + ln(2) ≈ 1 + 0.693 = 1.69 or miscalculating boundary signs.\n- **(B) 1.48**: INCORRECT. Distractor from evaluating partial fractions incorrectly.\n- **(C) 0.31**: CORRECT. Exactly matches C = 1 - ln(2) = 1 - 0.69315 = 0.30685 ≈ 0.31.\n- **(D) 1.63**: INCORRECT. Numerical error adding 1 and ln(2) with decimal offset.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Casio fx-991EX ClassWiz Hack (15 Seconds)**:\n  - Separate: dy/(y-1) = -x/(x+1)dx.\n  - At x = 1, y = 2, LHS = ln(2 - 1) = 0.\n  - RHS integral evaluated at x=1 gives -1 + ln(2) + C = 0.\n  - Type in Casio: `1 - ln(2)` = `0.30685`.\n  - Instantly select **(C) 0.31**!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (C) 0.31.",
+    "module_id": 1,
+    "module_title": "Module 1: Formulation & Classification of Differential Equations"
+  },
+  {
+    "id": 8,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "First-Order Linear ODEs — Calculating Integrating Factors",
+    "question": "What is the integrating factor for the first-order differential equation x(dy/dx) - y = x²?",
+    "options": [
+      "(A) e^(-x)",
+      "(B) x^(-1)",
+      "(C) x^(-2)",
+      "(D) x³/3"
+    ],
+    "answer": "(B) x^(-1)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: First-Order Linear Equations\n- Subtopic: Integrating Factor Calculation (Leibniz Canonical Form)\n\n---\n\n### 2. Core Concepts & Governing Formula\nFor a first-order linear differential equation, it MUST first be written in canonical standard form with leading coefficient 1:\ndy/dx + P(x)y = Q(x)\nThe Integrating Factor μ(x) is given by:\nμ(x) = e^(∫ P(x) dx)\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: x(dy/dx) - y = x²\n- Step 1: Normalize the equation by dividing through by x (for x ≠ 0) to ensure the coefficient of dy/dx is 1:\n  dy/dx - (1/x)y = x\n- Step 2: Identify P(x) and Q(x) by comparing with dy/dx + P(x)y = Q(x):\n  P(x) = -1/x\n  Q(x) = x\n  CRITICAL: The negative sign belongs to P(x)!\n- Step 3: Compute the integral of P(x):\n  ∫ P(x) dx = ∫ (-1/x) dx = -ln|x| = ln|x^(-1)|\n- Step 4: Calculate the integrating factor μ(x):\n  μ(x) = e^(ln|x^(-1)|) = x^(-1) = 1/x\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) e^(-x)**: INCORRECT. Fails to normalize by dividing through by x, mistakenly taking P(x) = -1.\n- **(B) x^(-1)**: CORRECT. Normalized equation gives P(x) = -1/x ==> μ(x) = e^(-ln x) = x^(-1) = 1/x.\n- **(C) x^(-2)**: INCORRECT. Arises from mistakenly multiplying the exponent by 2.\n- **(D) x³/3**: INCORRECT. Result of integrating the right-hand side Q(x) = x² instead of computing the integrating factor.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Inspection Rule (5 Seconds)**:\n  - Standard form has P(x) = -1/x.\n  - e^(-∫ 1/x dx) = e^(-ln x) = 1/x = x^(-1).\n  - Look for x^(-1) ==> Select **(B)** in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (B) x^(-1).",
+    "module_id": 1,
+    "module_title": "Module 1: Formulation & Classification of Differential Equations"
+  },
+  {
+    "id": 9,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "First-Order Linear ODEs — Integrating Factor of Non-Standard Form",
+    "question": "The integrating factor of the differential equation dy/dx = -[(3x + 1)/x]y + e^(-x) is:",
+    "options": [
+      "(A) x eˣ",
+      "(B) x e^(3x)",
+      "(C) 3x e^(3x)",
+      "(D) x^x eˣ"
+    ],
+    "answer": "(B) x e^(3x)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: First-Order Linear Equations\n- Subtopic: Algebraic Rearrangement to Leibniz Form and Integrating Factor\n\n---\n\n### 2. Core Concepts & Governing Formula\nTo find the integrating factor of any first-order linear ODE, rearrange into standard form:\ndy/dx + P(x)y = Q(x)\nThen:\nμ(x) = e^(∫ P(x) dx)\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: dy/dx = -[(3x + 1)/x]y + e^(-x)\n- Step 1: Move the y term to the left-hand side:\n  dy/dx + [(3x + 1)/x]y = e^(-x)\n- Step 2: Identify P(x):\n  P(x) = (3x + 1)/x = 3x/x + 1/x = 3 + 1/x\n- Step 3: Integrate P(x) with respect to x:\n  ∫ P(x) dx = ∫ (3 + 1/x) dx = 3x + ln|x|\n- Step 4: Apply the exponential function to find μ(x):\n  μ(x) = e^(3x + ln|x|) = e^(3x) · e^(ln|x|) = e^(3x) · x = x e^(3x)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) x eˣ**: INCORRECT. Misses the coefficient 3 in 3x/x.\n- **(B) x e^(3x)**: CORRECT. Fully decomposed: ∫(3 + 1/x)dx = 3x + ln(x) ==> e^(3x + ln x) = x e^(3x).\n- **(C) 3x e^(3x)**: INCORRECT. Erroneously multiplies the x factor by 3.\n- **(D) x^x eˣ**: INCORRECT. Fabricated power term.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Exponent Decomposition (10 Seconds)**:\n  - (3x + 1)/x = 3 + 1/x.\n  - Integral is 3x + ln(x).\n  - e^(3x + ln x) = x e^(3x).\n  - Spot Option **(B)** immediately!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (B) x e^(3x).",
+    "module_id": 1,
+    "module_title": "Module 1: Formulation & Classification of Differential Equations"
+  },
+  {
+    "id": 10,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Differential Equations — Product of Order and Degree Cleared of Radicals",
+    "question": "The product of the order and degree of the differential equation √(1 + d²y/dx²) = x(dy/dx) is:",
+    "options": [
+      "(A) 3",
+      "(B) 2",
+      "(C) 4",
+      "(D) 1"
+    ],
+    "answer": "(B) 2",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Differential Equations\n- Topic: Order and Degree of Non-Linear ODEs\n- Subtopic: Clearing Radical Signs and Product Calculation\n\n---\n\n### 2. Core Concepts & Definitions\n- **Order**: Highest derivative order appearing in the equation.\n- **Degree**: The power to which the highest derivative is raised **after the equation is cleared of radicals and fractional powers** involving derivatives.\n- **Product**: (Order) × (Degree).\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: √(1 + d²y/dx²) = x(dy/dx)\n- Step 1: Identify the radical: The square root √(·) encloses the second derivative d²y/dx².\n- Step 2: Clear the radical by squaring both sides:\n  [√(1 + d²y/dx²)]² = [x(dy/dx)]²\n  ==> 1 + d²y/dx² = x²(dy/dx)²\n  ==> d²y/dx² - x²(dy/dx)² + 1 = 0\n- Step 3: Determine the Order:\n  The derivatives present are:\n  - dy/dx (order 1)\n  - d²y/dx² (order 2)\n  The highest derivative is d²y/dx², so **Order = 2**.\n- Step 4: Determine the Degree:\n  Examine the highest derivative term in the polynomial form: (d²y/dx²)¹.\n  Its exponent is 1. (The fact that dy/dx is squared is irrelevant because it is of lower order).\n  So **Degree = 1**.\n- Step 5: Calculate the product:\n  Product = Order × Degree = 2 × 1 = 2.\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) 3**: INCORRECT. Result of adding order + degree (2 + 1 = 3) instead of multiplying, or confusing the squared term on dy/dx.\n- **(B) 2**: CORRECT. Order = 2, Degree = 1, Product = 2 × 1 = 2.\n- **(C) 4**: INCORRECT. Arises from mistakenly thinking the degree of d²y/dx² is 2 (2 × 2 = 4).\n- **(D) 1**: INCORRECT. Result of considering both order and degree as 1.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Mental Clearance (10 Seconds)**:\n  - Highest derivative is d²y/dx² ==> Order = 2.\n  - Squaring clears the root, leaving (d²y/dx²)¹ ==> Degree = 1.\n  - Product = 2 × 1 = 2 ==> Select **(B)** in 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (B) 2.",
+    "module_id": 1,
+    "module_title": "Module 1: Formulation & Classification of Differential Equations"
+  },
+  {
+    "id": 11,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "First-Order Separable ODEs — Inverse Trigonometric Solutions",
+    "question": "The solution of the differential equation dy = (1 + y²)dx is:",
+    "options": [
+      "(A) y - tan(x) + c = 0",
+      "(B) y = tan(x + c)",
+      "(C) arctan(y + c) = x",
+      "(D) arctan(y + c) = 2x"
+    ],
+    "answer": "(B) y = tan(x + c)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: First-Order Separable Equations\n- Subtopic: Integration to Inverse Trigonometric Functions\n\n---\n\n### 2. Core Concepts & Governing Integration Rule\nA separable equation of the form dy/dx = 1 + y² separates directly by dividing by (1 + y²):\ndy / (1 + y²) = dx\nRecall the standard calculus integral:\n∫ dy / (1 + y²) = arctan(y) + C\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: dy = (1 + y²)dx\n- Step 1: Divide both sides by (1 + y²):\n  [1 / (1 + y²)] dy = dx\n- Step 2: Integrate both sides:\n  ∫ [1 / (1 + y²)] dy = ∫ dx\n  arctan(y) = x + c\n- Step 3: Take the tangent of both sides to obtain the explicit solution for y:\n  tan[arctan(y)] = tan(x + c)\n  ==> y = tan(x + c)  (or y - tan(x + c) = 0)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) y - tan(x) + c = 0**: INCORRECT. Fails to incorporate the constant c inside the tangent argument; tan(x + c) ≠ tan(x) + c.\n- **(B) y = tan(x + c)**: CORRECT. Directly follows from arctan(y) = x + c ==> y = tan(x + c).\n- **(C) arctan(y + c) = x**: INCORRECT. Placed the constant c inside the arctan argument prior to inversion.\n- **(D) arctan(y + c) = 2x**: INCORRECT. Arbitrarily introduces a factor of 2.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Reverse Derivative Check (10 Seconds)**:\n  - If y = tan(x + c), then dy/dx = sec²(x + c) = 1 + tan²(x + c) = 1 + y².\n  - Matches the differential equation dy/dx = 1 + y² immediately!\n  - Select **(B)** in 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (B) y = tan(x + c).",
+    "module_id": 1,
+    "module_title": "Module 1: Formulation & Classification of Differential Equations"
+  },
+  {
+    "id": 12,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Differential Equations — Degree and Order After Radical Elimination",
+    "question": "The degree and order of the differential equation d²y/dx² = √[1 + (dy/dx)³] are respectively:",
+    "options": [
+      "(A) 2 and 3",
+      "(B) 3 and 2",
+      "(C) 2 and 2",
+      "(D) 3 and 3"
+    ],
+    "answer": "(C) 2 and 2",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Differential Equations\n- Topic: Properties of Ordinary Differential Equations\n- Subtopic: Degree and Order with Fractional Powers\n\n---\n\n### 2. Core Concepts & Definitions\n- **Order**: Order of the highest derivative present in the equation.\n- **Degree**: Power to which the highest derivative is raised after the equation is rationalized (freed from radical signs and fractional exponents involving derivatives).\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: d²y/dx² = √[1 + (dy/dx)³]\n- Step 1: Identify the order:\n  - First derivative: dy/dx (order 1)\n  - Second derivative: d²y/dx² (order 2)\n  - Highest derivative is d²y/dx², so **Order = 2**.\n- Step 2: Rationalize the equation to determine the degree:\n  - The equation has a square root (power 1/2) on the right side.\n  - Square both sides to eliminate the radical:\n    [d²y/dx²]² = [√[1 + (dy/dx)³]]²\n    ==> (d²y/dx²)² = 1 + (dy/dx)³\n    ==> (d²y/dx²)² - (dy/dx)³ - 1 = 0\n- Step 3: Determine the degree:\n  - Look at the exponent of the highest derivative (d²y/dx²):\n    (d²y/dx²)² has exponent **2**.\n  - The exponent of dy/dx is 3, but degree is strictly determined by the HIGHEST derivative.\n  - Therefore, **Degree = 2**.\n- Conclusion: Degree = 2, Order = 2.\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) 2 and 3**: INCORRECT. Replaces order with 3 by looking at (dy/dx)³.\n- **(B) 3 and 2**: INCORRECT. Inverts degree (calls it 3 from (dy/dx)³) and order (2).\n- **(C) 2 and 2**: CORRECT. Degree is 2 and Order is 2.\n- **(D) 3 and 3**: INCORRECT. Fails to identify the second derivative as highest order.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Order-First Elimination (5 Seconds)**:\n  - Highest derivative is d²y/dx² ==> Order is 2.\n  - Squaring both sides gives (d²y/dx²)² ==> Degree is 2.\n  - Both values are 2 ==> Select **(C)**!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (C) 2 and 2.",
+    "module_id": 3,
+    "module_title": "Module 3: Second & Higher-Order Homogeneous Linear ODEs"
+  },
+  {
+    "id": 13,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "First-Order Exact ODEs — Analytical Solution of Trigonometric/Exponential Form",
+    "question": "The general solution of the exact differential equation (eʸ + 1)cos(x)dx + eʸ sin(x)dy = 0 is:",
+    "options": [
+      "(A) (eʸ + 1)cos(x) = c",
+      "(B) (eˣ + 1)cos(x) = c",
+      "(C) (eˣ + 1)sin(x) = c",
+      "(D) (eʸ + 1)sin(x) = c"
+    ],
+    "answer": "(D) (eʸ + 1)sin(x) = c",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Exact Differential Equations\n- Subtopic: Construction of the Potential Function φ(x, y) = c\n\n---\n\n### 2. Core Concepts & Governing Equations\nFor an exact differential equation M(x, y)dx + N(x, y)dy = 0:\n1. Verify exactness: ∂M/∂y = ∂N/∂x.\n2. Find potential function φ(x, y) such that ∂φ/∂x = M and ∂φ/∂y = N.\n3. The general solution is φ(x, y) = c.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: (eʸ + 1)cos(x)dx + eʸ sin(x)dy = 0\n- Step 1: Identify M and N:\n  M(x, y) = (eʸ + 1)cos(x)\n  N(x, y) = eʸ sin(x)\n- Step 2: Verify exactness:\n  ∂M/∂y = ∂/∂y [(eʸ + 1)cos(x)] = eʸ cos(x)\n  ∂N/∂x = ∂/∂x [eʸ sin(x)] = eʸ cos(x)\n  ∂M/∂y = ∂N/∂x ==> Exact!\n- Step 3: Integrate M with respect to x (treating y as constant):\n  φ(x, y) = ∫ M dx = ∫ (eʸ + 1)cos(x) dx = (eʸ + 1)sin(x) + h(y)\n- Step 4: Differentiate with respect to y and equate to N:\n  ∂φ/∂y = d/dy [(eʸ + 1)sin(x) + h(y)] = eʸ sin(x) + h′(y)\n  Setting ∂φ/∂y = N = eʸ sin(x):\n  eʸ sin(x) + h′(y) = eʸ sin(x) ==> h′(y) = 0 ==> h(y) = C₀ (constant)\n- Step 5: Form the general solution:\n  φ(x, y) = (eʸ + 1)sin(x) = c\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) (eʸ + 1)cos(x) = c**: INCORRECT. Kept cos(x) without integrating with respect to x.\n- **(B) (eˣ + 1)cos(x) = c**: INCORRECT. Swapped variables and missed integration of cos(x).\n- **(C) (eˣ + 1)sin(x) = c**: INCORRECT. Swapped y with x in the exponential.\n- **(D) (eʸ + 1)sin(x) = c**: CORRECT. Perfectly matches the potential function φ(x, y) = c.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Inspection Hack (10 Seconds)**:\n  - ∫ (eʸ + 1)cos(x) dx = (eʸ + 1)sin(x).\n  - Check y-derivative: d/dy [(eʸ + 1)sin(x)] = eʸ sin(x) = N.\n  - Immediately pick **(D)** in 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (D) (eʸ + 1)sin(x) = c.",
+    "module_id": 3,
+    "module_title": "Module 3: Second & Higher-Order Homogeneous Linear ODEs"
+  },
+  {
+    "id": 14,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "First-Order Exact ODEs — Grouping Method & Product Differential",
+    "question": "The general solution of the exact differential equation (y + y cos(xy))dx + (x + x cos(xy))dy = 0 is:",
+    "options": [
+      "(A) xy - cos(xy) = 0",
+      "(B) y cos(xy) = c",
+      "(C) x²y - cos(xy) = c",
+      "(D) xy + sin(xy) = c"
+    ],
+    "answer": "(D) xy + sin(xy) = c",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Exact Differential Equations\n- Subtopic: Method of Grouping by Total Differentials\n\n---\n\n### 2. Core Concepts & Method of Grouping\nAny differential equation that can be rewritten into recognizable exact differential forms:\nd(xy) = y dx + x dy\nd(sin(xy)) = cos(xy)·d(xy) = cos(xy)(y dx + x dy)\ncan be solved instantly by integrating the grouped total differential!\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: (y + y cos(xy))dx + (x + x cos(xy))dy = 0\n- Step 1: Expand and collect terms:\n  y dx + y cos(xy)dx + x dy + x cos(xy)dy = 0\n- Step 2: Regroup into two parts:\n  (y dx + x dy) + cos(xy)(y dx + x dy) = 0\n- Step 3: Factor out the common total differential d(xy) = y dx + x dy:\n  (1 + cos(xy)) (y dx + x dy) = 0\n  ==> (1 + cos(xy)) d(xy) = 0\n- Step 4: Let u = xy, then the equation becomes:\n  (1 + cos(u)) du = 0\n- Step 5: Integrate directly with respect to u:\n  ∫ (1 + cos(u)) du = c\n  u + sin(u) = c\n- Step 6: Substitute back u = xy:\n  xy + sin(xy) = c\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) xy - cos(xy) = 0**: INCORRECT. The integral of cos(u) is +sin(u), not -cos(u).\n- **(B) y cos(xy) = c**: INCORRECT. Misses the linear term and the integration.\n- **(C) x²y - cos(xy) = c**: INCORRECT. Spurious x² term.\n- **(D) xy + sin(xy) = c**: CORRECT. Cleanly derived from d[xy + sin(xy)] = 0.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Total Differential Recognition (5 Seconds)**:\n  - Recognize that y dx + x dy = d(xy).\n  - The equation is d(xy) + cos(xy)d(xy) = d[xy + sin(xy)] = 0.\n  - Integrating gives xy + sin(xy) = c.\n  - Mark Option **(D)** in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (D) xy + sin(xy) = c.",
+    "module_id": 3,
+    "module_title": "Module 3: Second & Higher-Order Homogeneous Linear ODEs"
+  },
+  {
+    "id": 15,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "First-Order Non-Exact ODEs — Integrating Factor as a Function of a Single Variable",
+    "question": "In the differential equation M(x, y)dx + N(x, y)dy = 0, if [∂M/∂y - ∂N/∂x] / N = g(x) is a function of x alone, then the integrating factor μ(x) is given by:",
+    "options": [
+      "(A) ∫ eʸ g(y) dy",
+      "(B) e^(∫ g(x) dx)",
+      "(C) e^(∫ g(y) dy)",
+      "(D) None of the options"
+    ],
+    "answer": "(B) e^(∫ g(x) dx)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Non-Exact Differential Equations\n- Subtopic: Integrating Factor Formula for Function of x alone\n\n---\n\n### 2. Core Concepts & Mathematical Derivation\nWhen an equation M dx + N dy = 0 is not exact (∂M/∂y ≠ ∂N/∂x), we seek a multiplying factor μ(x) such that:\n(μM)dx + (μN)dy = 0 is exact.\nFor exactness:\n∂(μM)/∂y = ∂(μN)/∂x\nSince μ is a function of x alone, ∂μ/∂y = 0 and ∂μ/∂x = dμ/dx.\nApplying the product rule:\nμ (∂M/∂y) = μ (∂N/∂x) + N (dμ/dx)\nRearranging:\nμ [∂M/∂y - ∂N/∂x] = N (dμ/dx)\nDivide by μN:\n(1/μ) (dμ/dx) = [∂M/∂y - ∂N/∂x] / N\n\n---\n\n### 3. Integration to Find μ(x)\n- If the right-hand side depends ONLY on x, let:\n  g(x) = [∂M/∂y - ∂N/∂x] / N\n- Then:\n  (1/μ) dμ = g(x) dx\n- Integrating both sides:\n  ln|μ| = ∫ g(x) dx\n  ==> μ(x) = e^(∫ g(x) dx)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) ∫ eʸ g(y) dy**: INCORRECT. Fictitious integral with exponential inside.\n- **(B) e^(∫ g(x) dx)**: CORRECT. The universally proven integrating factor for equations where [M_y - N_x]/N = g(x).\n- **(C) e^(∫ g(y) dy)**: INCORRECT. This formula applies when [N_x - M_y]/M = g(y), which is a function of y alone, not x.\n- **(D) None of the options**: INCORRECT. (B) is mathematically exact.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Division by N Rule (5 Seconds)**:\n  - If divided by N ==> variable is x ==> μ(x) = e^(∫ g(x) dx).\n  - If divided by M ==> variable is y ==> μ(y) = e^(∫ -h(y) dy).\n  - Divided by N means g(x) ==> Select **(B)** in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (B) e^(∫ g(x) dx).",
+    "module_id": 1,
+    "module_title": "Module 1: Formulation & Classification of Differential Equations"
+  },
+  {
+    "id": 16,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Second-Order Homogeneous ODEs — Repeated Characteristic Roots",
+    "question": "Which of the following equations represents the general solution of a second-order linear homogeneous differential equation with a repeated real characteristic root r = m?",
+    "options": [
+      "(A) y = A e^(mx) + B e^(mx)",
+      "(B) y = e^(mx)(A + Bx)",
+      "(C) y = A cos(x) + B e^(sin x)",
+      "(D) y = A ln(x)"
+    ],
+    "answer": "(B) y = e^(mx)(A + Bx)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Advanced Engineering Mathematics\n- Topic: Second-Order Linear Homogeneous ODEs with Constant Coefficients\n- Subtopic: Auxiliary Equation with Repeated Real Roots (Discriminant Δ = 0)\n\n---\n\n### 2. Core Concepts & Governing Principles\nConsider the second-order ODE:\na y″ + b y′ + c y = 0\nThe auxiliary equation is a r² + b r + c = 0.\nWhen the discriminant b² - 4ac = 0, the equation yields a single repeated root r₁ = r₂ = m = -b/(2a).\nThe first solution is y₁(x) = e^(mx).\nTo find a second linearly independent solution y₂(x), we use the reduction of order method (d'Alembert substitution):\ny₂(x) = u(x)y₁(x) = x e^(mx)\nBy the Principle of Superposition, the general solution is:\ny(x) = c₁ y₁ + c₂ y₂ = c₁ e^(mx) + c₂ x e^(mx) = e^(mx)(A + Bx)\n\n---\n\n### 3. Step-by-Step Verification\n- If we try y = A e^(mx) + B e^(mx), since e^(mx) is identical in both terms, it collapses to (A + B)e^(mx) = C e^(mx), which contains only ONE arbitrary constant and CANNOT be the general solution of a second-order equation (which strictly requires TWO linearly independent constants).\n- The factor of x in Bx e^(mx) guarantees linear independence, confirmed by the non-zero Wronskian:\n  W(e^(mx), x e^(mx)) = e^(mx)[e^(mx) + mx e^(mx)] - m e^(mx)[x e^(mx)] = e^(2mx) ≠ 0.\n- Hence, the general solution is strictly y = e^(mx)(A + Bx).\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) y = A e^(mx) + B e^(mx)**: INCORRECT. Fails linear independence; the two terms are linearly dependent and combine into a single constant (A+B)e^(mx).\n- **(B) y = e^(mx)(A + Bx)**: CORRECT. The textbook form for repeated roots, providing two linearly independent basis functions {e^(mx), x e^(mx)}.\n- **(C) y = A cos(x) + B e^(sin x)**: INCORRECT. Non-linear transcendental function.\n- **(D) y = A ln(x)**: INCORRECT. Solution characteristic of Euler-Cauchy equations, not constant coefficient ODEs.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Linear Independence Check (3 Seconds)**:\n  - For repeated roots, the second term MUST have an extra factor of x to prevent collapsing.\n  - Scan for (A + Bx)e^(mx) ==> Instantly pick **(B)**!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (B) y = e^(mx)(A + Bx).",
+    "module_id": 3,
+    "module_title": "Module 3: Second & Higher-Order Homogeneous Linear ODEs"
+  },
+  {
+    "id": 17,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Second-Order Homogeneous ODEs — Pure Imaginary Roots & Harmonic Motion",
+    "question": "Find the general solution of the second-order differential equation y″ + 4y = 0:",
+    "options": [
+      "(A) y = c₁ cos(2x) + c₂ sin(2x)",
+      "(B) y = A eˣ + B e^(2x)",
+      "(C) y = e^(2x)(A cos(2x) + B sin(2x))",
+      "(D) y = A eˣ ln(x)"
+    ],
+    "answer": "(A) y = c₁ cos(2x) + c₂ sin(2x)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Second-Order Linear Homogeneous Equations\n- Subtopic: Characteristic Equations with Pure Imaginary Roots\n\n---\n\n### 2. Core Concepts & Formulas\nFor an equation of the form y″ + ω² y = 0:\nThe auxiliary equation is r² + ω² = 0 ==> r = ±iω.\nUsing Euler's formula e^(±iωx) = cos(ωx) ± i sin(ωx), the real-valued basis of solutions is {cos(ωx), sin(ωx)}.\nThe general solution is:\ny(x) = c₁ cos(ωx) + c₂ sin(ωx)\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: y″ + 4y = 0\n- Step 1: Set up the auxiliary (characteristic) equation:\n  r² + 4 = 0\n- Step 2: Solve for the roots r:\n  r² = -4 ==> r = ±√(-4) = ±2i\n  Here, the real part is α = 0 and the imaginary part is β = 2.\n- Step 3: Write the general solution:\n  y(x) = e^(0·x) [c₁ cos(2x) + c₂ sin(2x)]\n  ==> y(x) = c₁ cos(2x) + c₂ sin(2x)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) y = c₁ cos(2x) + c₂ sin(2x)**: CORRECT. The harmonic oscillatory solution corresponding to roots r = ±2i.\n- **(B) y = A eˣ + B e^(2x)**: INCORRECT. Corresponds to distinct positive real roots r = 1, 2 from auxiliary equation r² - 3r + 2 = 0.\n- **(C) y = e^(2x)(A cos(2x) + B sin(2x))**: INCORRECT. Contains a spurious growing exponential factor e^(2x) (which requires a real part α = 2, i.e. r = 2 ± 2i from y″ - 4y′ + 8y = 0).\n- **(D) y = A eˣ ln(x)**: INCORRECT. Nonsensical combination.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Inspection of Frequency (5 Seconds)**:\n  - y″ + 4y = 0 ==> ω² = 4 ==> ω = 2.\n  - Pure sines and cosines with frequency 2: cos(2x) and sin(2x).\n  - Select **(A)** in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = c₁ cos(2x) + c₂ sin(2x).",
+    "module_id": 3,
+    "module_title": "Module 3: Second & Higher-Order Homogeneous Linear ODEs"
+  },
+  {
+    "id": 18,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Second-Order Homogeneous ODEs — Distinct Real Roots & Hyperbolic Forms",
+    "question": "Find the general solution of the second-order differential equation y″ - y = 0:",
+    "options": [
+      "(A) y = A eˣ + B e^(-x)",
+      "(B) y = A cosh(x) + B sinh(x)",
+      "(C) y = A cosh(x) + B eˣ",
+      "(D) y = A cos(x) + B sinh(x)"
+    ],
+    "answer": "(A) y = A eˣ + B e^(-x)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Differential Equations\n- Topic: Second-Order Linear Homogeneous ODEs\n- Subtopic: Distinct Real Roots and Equivalent Basis Representations\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor y″ - k² y = 0:\nThe auxiliary equation is r² - k² = 0 ==> r = ±k.\nThe general solution can be written in two equivalent standard bases:\n1. Exponential basis: y(x) = c₁ e^(kx) + c₂ e^(-kx)\n2. Hyperbolic basis: y(x) = C₁ cosh(kx) + C₂ sinh(kx)\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: y″ - y = 0\n- Step 1: Auxiliary equation:\n  r² - 1 = 0\n- Step 2: Factor:\n  (r - 1)(r + 1) = 0 ==> r₁ = 1, r₂ = -1\n- Step 3: Write the general solution in exponential form:\n  y = c₁ e^(1·x) + c₂ e^(-1·x) = A eˣ + B e^(-x)\n- Note on Option B: Both Option A and Option B are mathematically valid representations since cosh(x) = (eˣ + e⁻ˣ)/2 and sinh(x) = (eˣ - e⁻ˣ)/2. In standard exam answer keys for MATH 202, the exponential form A eˣ + B e⁻ˣ is the primary credited canonical answer.\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) y = A eˣ + B e^(-x)**: CORRECT. The direct exponential basis for characteristic roots r = ±1.\n- **(B) y = A cosh(x) + B sinh(x)**: Mathematically equivalent hyperbolic form; in multiple-choice exams, Option A is the standard primary formulation.\n- **(C) y = A cosh(x) + B eˣ**: INCORRECT. Asymmetric hybrid mixing hyperbolic and exponential basis without proper independent constants.\n- **(D) y = A cos(x) + B sinh(x)**: INCORRECT. Erroneously mixes circular trigonometric cos(x) with hyperbolic sinh(x).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Direct Roots Check (5 Seconds)**:\n  - r² = 1 ==> r = ±1.\n  - Roots +1 and -1 produce exponents eˣ and e⁻ˣ.\n  - Spot **(A)** immediately!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = A eˣ + B e^(-x).",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 19,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Non-Linear First-Order ODEs — Canonical Bernoulli Equation",
+    "question": "A first-order differential equation of the form dy/dx + P(x)y = Q(x)yⁿ (where n ≠ 0 and n ≠ 1) is classified as a:",
+    "options": [
+      "(A) Homogeneous equation",
+      "(B) Linear equation",
+      "(C) Order equation",
+      "(D) Bernoulli equation"
+    ],
+    "answer": "(D) Bernoulli equation",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: First-Order Non-Linear Differential Equations\n- Subtopic: Bernoulli's Equation & Reduction to Linear Form\n\n---\n\n### 2. Core Concepts & Definitions\nAn equation of the form:\ndy/dx + P(x)y = Q(x)yⁿ\nis named after Jacob Bernoulli (1695).\n- If n = 0: dy/dx + P(x)y = Q(x) (standard first-order linear ODE).\n- If n = 1: dy/dx + [P(x) - Q(x)]y = 0 (linear homogeneous separable ODE).\n- For all other real numbers n (n ≠ 0, 1): the term yⁿ renders the equation strictly **non-linear**.\n- It is famously solved by the change of variable:\n  u = y^(1-n) ==> du/dx = (1 - n) y^(-n) (dy/dx)\n  which transforms the non-linear equation into a linear ODE in u:\n  du/dx + (1 - n)P(x)u = (1 - n)Q(x)\n\n---\n\n### 3. Detailed Option Analysis\n- **(A) Homogeneous equation**: INCORRECT. A homogeneous first-order equation has the form dy/dx = F(y/x), where multiplying both x and y by λ leaves the ratio unchanged.\n- **(B) Linear equation**: INCORRECT. The factor yⁿ (for n ≠ 0, 1) violates linearity.\n- **(C) Order equation**: INCORRECT. \"Order\" is a descriptive property of derivatives, not a family classification.\n- **(D) Bernoulli equation**: CORRECT. This is the exact textbook definition of Bernoulli's differential equation.\n\n---\n\n### 4. 0–45s CBT Speed Shortcut\n- **Pattern Match (2 Seconds)**:\n  - Look at the right-hand side: Q(x) multiplied by yⁿ.\n  - y′ + P y = Q yⁿ is the iconic signature of **Bernoulli**!\n  - Select **(D)** in 2 seconds!\n\n---\n\n### 5. Final Conclusion\nThe correct option is (D) Bernoulli equation.",
+    "module_id": 2,
+    "module_title": "Module 2: First-Order Ordinary Differential Equations"
+  },
+  {
+    "id": 20,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "First-Order ODEs — Direct Integration Initial Value Problem",
+    "question": "Find the particular solution of the differential equation y′ = x² + x with the initial condition y(0) = 1:",
+    "options": [
+      "(A) y = (1/3)x³ + (1/2)x² + 1",
+      "(B) y = 3x² + 2x + 3",
+      "(C) y = (1/3)x² + (1/2)x + 3",
+      "(D) y = 4x + c"
+    ],
+    "answer": "(A) y = (1/3)x³ + (1/2)x² + 1",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: First-Order Direct Integration\n- Subtopic: Initial Value Problem (IVP)\n\n---\n\n### 2. Core Concepts & Formulas\nWhen the derivative dy/dx is an explicit function of x alone:\ndy/dx = f(x)\nThe general solution is obtained by direct anti-differentiation:\ny(x) = ∫ f(x) dx + C\nThe initial condition y(x₀) = y₀ fixes the unique numerical value of C.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: dy/dx = x² + x\n- Step 1: Integrate with respect to x using the power rule ∫ xⁿ dx = xⁿ⁺¹ / (n + 1):\n  y(x) = ∫ (x² + x) dx\n  y(x) = x³/3 + x²/2 + C = (1/3)x³ + (1/2)x² + C\n- Step 2: Apply the initial condition y(0) = 1:\n  y(0) = (1/3)(0)³ + (1/2)(0)² + C = 1\n  0 + 0 + C = 1 ==> C = 1\n- Step 3: Substitute C = 1 back into the general solution:\n  y(x) = (1/3)x³ + (1/2)x² + 1\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) y = (1/3)x³ + (1/2)x² + 1**: CORRECT. Exact antiderivative with C = 1 verified.\n- **(B) y = 3x² + 2x + 3**: INCORRECT. Multiplied by powers instead of integrating (confused differentiation with integration).\n- **(C) y = (1/3)x² + (1/2)x + 3**: INCORRECT. Wrong powers on x and wrong constant.\n- **(D) y = 4x + c**: INCORRECT. Linear function; completely unrelated.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Initial Condition Test (3 Seconds)**:\n  - Plug x = 0 into the options:\n    - (A) gives y(0) = 1 (Matches!).\n    - (B) gives y(0) = 3 (Fails!).\n    - (C) gives y(0) = 3 (Fails!).\n  - Option A is the ONLY option that satisfies y(0) = 1!\n  - Mark **(A)** in 3 seconds without even integrating!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = (1/3)x³ + (1/2)x² + 1.",
+    "module_id": 2,
+    "module_title": "Module 2: First-Order Ordinary Differential Equations"
+  },
+  {
+    "id": 21,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "First-Order Separable ODEs — Linear Factor Separation",
+    "question": "Solve the first-order differential equation dy/dx = (1 + y) / (x + 2):",
+    "options": [
+      "(A) y = K(x + 2)",
+      "(B) y = K(x + 2) - 1",
+      "(C) y = K(x - 2) - 3",
+      "(D) y = K(x + 3)"
+    ],
+    "answer": "(B) y = K(x + 2) - 1",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: First-Order Separable Equations\n- Subtopic: Logarithmic Integration and General Solution\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor a separable equation of the form:\ndy/dx = g(y) / f(x)\nSeparate by cross-multiplying:\ndy / g(y) = dx / f(x)\nIntegrate both sides using standard logarithmic forms:\n∫ dy / (y + a) = ln|y + a| + C\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: dy/dx = (1 + y) / (x + 2)\n- Step 1: Separate variables by dividing by (1 + y) and multiplying by dx:\n  [1 / (1 + y)] dy = [1 / (x + 2)] dx\n- Step 2: Integrate both sides:\n  ∫ [1 / (1 + y)] dy = ∫ [1 / (x + 2)] dx\n  ln|1 + y| = ln|x + 2| + C₁\n- Step 3: Write the constant of integration as C₁ = ln|K| (where K is an arbitrary non-zero constant):\n  ln|1 + y| = ln|x + 2| + ln|K|\n  ln|1 + y| = ln|K(x + 2)|\n- Step 4: Exponentiate both sides:\n  1 + y = K(x + 2)\n- Step 5: Solve for y:\n  y = K(x + 2) - 1\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) y = K(x + 2)**: INCORRECT. Forgets to subtract 1 when isolating y from 1 + y = K(x + 2).\n- **(B) y = K(x + 2) - 1**: CORRECT. Exact analytical solution derived from 1 + y = K(x + 2).\n- **(C) y = K(x - 2) - 3**: INCORRECT. Sign error on x and wrong constant offset.\n- **(D) y = K(x + 3)**: INCORRECT. Fabricated linear shift.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Reverse Differentiation Hack (10 Seconds)**:\n  - Take Option B: y = K(x + 2) - 1.\n  - Differentiate with respect to x: dy/dx = K.\n  - Express K from the formula: K = (y + 1) / (x + 2).\n  - Substitute into derivative: dy/dx = (y + 1) / (x + 2).\n  - Matches the given differential equation identically!\n  - Select **(B)** in 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (B) y = K(x + 2) - 1.",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 22,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "First-Order Differential Equations — Non-Linearity from Transcendental Functions",
+    "question": "The differential equation y′ + sin(x + y) = sin(y) is classified as what type of differential equation?",
+    "options": [
+      "(A) Linear",
+      "(B) Bernoulli",
+      "(C) Initial Value Problem",
+      "(D) Non-linear"
+    ],
+    "answer": "(D) Non-linear",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Classification of First-Order Equations\n- Subtopic: Testing Linearity with Transcendental Functions\n\n---\n\n### 2. Core Concepts & Definitions\nA differential equation is **linear** if the dependent variable y and all its derivatives:\n1. Appear only to the first power.\n2. Are not multiplied together.\n3. Are NOT composed inside non-linear or transcendental functions (e.g. sin(y), cos(x + y), eʸ, ln(y), √y).\nIf ANY term violates these conditions, the equation is strictly **non-linear**.\n\n---\n\n### 3. Step-by-Step Mathematical Analysis\nGiven equation: y′ + sin(x + y) = sin(y)\n- Examine the term sin(x + y):\n  Expanding using the angle addition formula:\n  sin(x + y) = sin(x)cos(y) + cos(x)sin(y)\n- Notice that both cos(y) and sin(y) are non-linear transcendental functions of the dependent variable y.\n  Their Taylor series expansions:\n  sin(y) = y - y³/3! + y⁵/5! - ...\n  contain higher powers (y³, y⁵, ...) of y.\n- Furthermore, the right-hand side has sin(y), another non-linear function of y.\n- Therefore, the equation cannot be represented in the linear form y′ + P(x)y = Q(x).\n- Thus, it is unambiguously **non-linear**.\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) Linear**: INCORRECT. Fails linearity because sin(x + y) and sin(y) depend non-linearly on y.\n- **(B) Bernoulli**: INCORRECT. A Bernoulli equation requires the specific power form y′ + P(x)y = Q(x)yⁿ, not trigonometric compositions.\n- **(C) Initial Value Problem**: INCORRECT. An IVP requires subsidiary boundary conditions (e.g. y(x₀) = y₀), which are not provided here.\n- **(D) Non-linear**: CORRECT. The presence of sin(x + y) and sin(y) renders the equation strictly non-linear.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Transcendental Trap Rule (2 Seconds)**:\n  - Is the dependent variable y inside a sine function? Yes: sin(x + y) and sin(y).\n  - Any transcendental function of y (sin, cos, exp, ln) immediately makes the ODE non-linear!\n  - Mark **(D) Non-linear** in 2 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (D) Non-linear.",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 23,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Differential Equations — Power (Degree) Cleared of Fractional Exponents",
+    "question": "What is the power (degree) of the first-order differential equation given by (dy/dx)^(1.5) = [(x sin x) / (x²(cos x)^(0.5))]³?",
+    "options": [
+      "(A) 1",
+      "(B) 3",
+      "(C) 0.5",
+      "(D) 6"
+    ],
+    "answer": "(B) 3",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Differential Equations\n- Topic: Degree / Power of Differential Equations\n- Subtopic: Clearing Fractional Exponents on Derivatives\n\n---\n\n### 2. Core Concepts & Definitions\nThe **degree (or power)** of a differential equation is the greatest power (positive integer exponent) of the highest-order derivative appearing in the equation, AFTER the equation is cleared of fractional powers and radicals **specifically on the derivatives**.\n- Fractional exponents on the independent variable x (e.g. (cos x)^(0.5)) do NOT affect the degree of the differential equation, because degree is defined exclusively relative to the derivatives of the dependent variable y!\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: (dy/dx)^(1.5) = [(x sin x) / (x²(cos x)^(0.5))]³\n- Step 1: Express the fractional exponent 1.5 as a rational fraction:\n  1.5 = 3/2\n  So the equation is:\n  (dy/dx)^(3/2) = R(x)³\n  where R(x) = (x sin x) / (x²(cos x)^(0.5)) is a pure function of the independent variable x.\n- Step 2: To make the derivative an integer power, square both sides to eliminate the denominator 2 of the rational exponent 3/2:\n  [(dy/dx)^(3/2)]² = [R(x)³]²\n  ==> (dy/dx)³ = [R(x)]⁶\n- Step 3: Inspect the highest derivative:\n  - The highest (and only) derivative is dy/dx (order = 1).\n  - Its power in this rationalized polynomial form is **3**.\n- Therefore, the power (degree) of the equation is strictly **3**.\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) 1**: INCORRECT. Confuses the order (first-order) with the degree.\n- **(B) 3**: CORRECT. Squaring clears the square root, leaving (dy/dx)³ with degree 3.\n- **(C) 0.5**: INCORRECT. Distractor taken from the square root exponent on cos(x).\n- **(D) 6**: INCORRECT. Result of taking the power on the right-hand side function R(x)⁶ instead of the derivative.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Fractional Exponent Rule (10 Seconds)**:\n  - (dy/dx)^(3/2) ==> Square both sides: [(dy/dx)^(3/2)]² = (dy/dx)³.\n  - The power on dy/dx is 3.\n  - Select **(B)** in 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (B) 3.",
+    "module_id": 1,
+    "module_title": "Module 1: Formulation & Classification of Differential Equations"
+  },
+  {
+    "id": 24,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "First-Order Linear ODEs — Standard Form & Integrating Factor",
+    "question": "Find the integrating factor for the differential equation x y′ + 2y = 10x²:",
+    "options": [
+      "(A) x³",
+      "(B) x^(-2)",
+      "(C) ln(x)",
+      "(D) x²"
+    ],
+    "answer": "(D) x²",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: First-Order Linear Equations\n- Subtopic: Standard Normal Form and Integrating Factor\n\n---\n\n### 2. Core Concepts & Governing Formula\nFor a first-order linear ODE:\na₁(x)y′ + a₀(x)y = g(x)\n1. Normalize by dividing by a₁(x):\n   y′ + P(x)y = Q(x), where P(x) = a₀(x)/a₁(x).\n2. The integrating factor is:\n   μ(x) = e^(∫ P(x) dx)\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: x y′ + 2y = 10x²\n- Step 1: Divide through by x (for x ≠ 0) to normalize:\n  y′ + (2/x)y = 10x\n- Step 2: Identify P(x):\n  P(x) = 2/x\n- Step 3: Integrate P(x) with respect to x:\n  ∫ P(x) dx = ∫ (2/x) dx = 2 ln|x| = ln|x²|\n- Step 4: Compute the integrating factor:\n  μ(x) = e^(ln|x²|) = x²\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) x³**: INCORRECT. Result of integrating x² from the right-hand side.\n- **(B) x^(-2)**: INCORRECT. Sign error in P(x), treating +2/x as -2/x.\n- **(C) ln(x)**: INCORRECT. Stopped at the antiderivative without applying the exponential function e^(·).\n- **(D) x²**: CORRECT. Accurately derived from e^(2 ln x) = x².\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Inspection Hack (5 Seconds)**:\n  - Coefficient of y after dividing by x is 2/x.\n  - e^(∫ 2/x dx) = e^(ln x²) = x².\n  - Select **(D)** in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (D) x².",
+    "module_id": 1,
+    "module_title": "Module 1: Formulation & Classification of Differential Equations"
+  },
+  {
+    "id": 25,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "First-Order Exact ODEs — Complete Analytical General Solution",
+    "question": "Solve the exact differential equation (x + sin y)dx + (x cos y - 2y)dy = 0:",
+    "options": [
+      "(A) x² + 2x sin(y) - 2y² = c",
+      "(B) x² - 2x sin(y) + 10y = c",
+      "(C) cos(y) + 3 sin(x) + x² = c",
+      "(D) x + 2 sin(y) = c"
+    ],
+    "answer": "(A) x² + 2x sin(y) - 2y² = c",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Exact Differential Equations\n- Subtopic: Finding the Potential Function and General Solution\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor M(x, y)dx + N(x, y)dy = 0:\n1. Test exactness: ∂M/∂y = ∂N/∂x.\n2. Find potential function φ(x, y):\n   φ(x, y) = ∫ M dx + h(y)\n   where h′(y) = N - ∂/∂y[∫ M dx].\n3. Solution: φ(x, y) = C (or 2φ(x, y) = c).\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: (x + sin y)dx + (x cos y - 2y)dy = 0\n- Step 1: Identify M and N:\n  M = x + sin(y)\n  N = x cos(y) - 2y\n- Step 2: Test for exactness:\n  ∂M/∂y = cos(y)\n  ∂N/∂x = cos(y)\n  ∂M/∂y = ∂N/∂x ==> Exact!\n- Step 3: Integrate M with respect to x (treating y as constant):\n  φ(x, y) = ∫ (x + sin y) dx = x²/2 + x sin(y) + h(y)\n- Step 4: Differentiate with respect to y and equate to N:\n  ∂φ/∂y = x cos(y) + h′(y)\n  Equating to N = x cos(y) - 2y:\n  x cos(y) + h′(y) = x cos(y) - 2y\n  ==> h′(y) = -2y\n- Step 5: Integrate h′(y) with respect to y:\n  h(y) = ∫ (-2y) dy = -y²\n- Step 6: Assemble the potential function:\n  φ(x, y) = (1/2)x² + x sin(y) - y² = C₀\n- Step 7: Clear fractions by multiplying through by 2:\n  x² + 2x sin(y) - 2y² = 2C₀ = c\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) x² + 2x sin(y) - 2y² = c**: CORRECT. Exactly matches 2φ(x, y) = c.\n- **(B) x² - 2x sin(y) + 10y = c**: INCORRECT. Sign error on sin(y) and wrong linear term 10y.\n- **(C) cos(y) + 3 sin(x) + x² = c**: INCORRECT. Spurious trigonometric terms.\n- **(D) x + 2 sin(y) = c**: INCORRECT. First-degree linear approximation without integration.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Inspection of Pure Terms (10 Seconds)**:\n  - ∫ x dx = x²/2. Multiplying by 2 gives x².\n  - ∫ -2y dy = -y². Multiplying by 2 gives -2y².\n  - Mixed term: x sin(y), multiplied by 2 gives +2x sin(y).\n  - Look for x² + 2x sin(y) - 2y² = c ==> Option **(A)**!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) x² + 2x sin(y) - 2y² = c.",
+    "module_id": 1,
+    "module_title": "Module 1: Formulation & Classification of Differential Equations"
+  },
+  {
+    "id": 26,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "First-Order Linear ODEs — Integrating Factor of Shifted Variable",
+    "question": "Find the integrating factor for the first-order linear differential equation dy/dx + [1/(x + 1)]y = x + 1:",
+    "options": [
+      "(A) ln(x + 1)",
+      "(B) x + 1",
+      "(C) x² + 1",
+      "(D) x"
+    ],
+    "answer": "(B) x + 1",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: First-Order Linear Equations\n- Subtopic: Calculating Integrating Factors (Leibniz Form)\n\n---\n\n### 2. Core Concepts & Governing Formula\nFor a first-order linear ODE in standard Leibniz form:\ndy/dx + P(x)y = Q(x)\nThe Integrating Factor μ(x) is defined as:\nμ(x) = e^(∫ P(x) dx)\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: dy/dx + [1/(x + 1)]y = x + 1\n- Step 1: Identify P(x) and Q(x):\n  P(x) = 1 / (x + 1)\n  Q(x) = x + 1\n- Step 2: Compute the integral of P(x):\n  ∫ P(x) dx = ∫ [1 / (x + 1)] dx = ln|x + 1|\n- Step 3: Compute the integrating factor:\n  μ(x) = e^(ln|x + 1|) = x + 1 (for x + 1 > 0)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) ln(x + 1)**: INCORRECT. Stopped at the antiderivative ∫ P(x)dx without exponentiating.\n- **(B) x + 1**: CORRECT. Accurately derived from e^(ln(x + 1)) = x + 1.\n- **(C) x² + 1**: INCORRECT. Fictitious quadratic form.\n- **(D) x**: INCORRECT. Dropped the constant shift +1.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Direct Log-Exponential Cancellation (5 Seconds)**:\n  - Integral of 1/(x + 1) is ln(x + 1).\n  - e^(ln(x + 1)) = x + 1.\n  - Pick **(B)** in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (B) x + 1.",
+    "module_id": 3,
+    "module_title": "Module 3: Second & Higher-Order Homogeneous Linear ODEs"
+  },
+  {
+    "id": 27,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Differential Equations — Degree of Higher-Order Linear Differential Equations",
+    "question": "Find the degree of the fourth-order differential equation y⁽⁴⁾ + 4y‴ + 3y = x:",
+    "options": [
+      "(A) 1",
+      "(B) 4",
+      "(C) 3",
+      "(D) 0"
+    ],
+    "answer": "(A) 1",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Differential Equations\n- Topic: Classification of ODEs\n- Subtopic: Distinguishing Order from Degree in Higher-Order Equations\n\n---\n\n### 2. Core Concepts & Definitions\n- **Order**: The order of the highest derivative present in the differential equation.\n- **Degree**: The power (exponent) of that highest-order derivative, provided the equation is expressible as a polynomial in derivatives.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: y⁽⁴⁾ + 4y‴ + 3y = x\n- Step 1: Identify all derivatives:\n  - y⁽⁴⁾ = d⁴y/dx⁴ (Order 4)\n  - y‴ = d³y/dx³ (Order 3)\n- Step 2: The highest-order derivative is y⁽⁴⁾, meaning Order = 4.\n- Step 3: Inspect the exponent of y⁽⁴⁾:\n  (y⁽⁴⁾)¹\n  The power is 1.\n- Therefore, the **Degree = 1**.\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) 1**: CORRECT. The highest derivative y⁽⁴⁾ is raised to power 1.\n- **(B) 4**: INCORRECT. 4 is the ORDER of the equation, not the degree!\n- **(C) 3**: INCORRECT. 3 is the order of the lower derivative y‴ and the coefficient of y.\n- **(D) 0**: INCORRECT. Any derivative physically appearing has degree at least 1.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Inspection Rule (3 Seconds)**:\n  - All linear ODEs always have **Degree = 1**!\n  - Since this equation is linear, its degree is automatically 1.\n  - Mark **(A)** in 3 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) 1.",
+    "module_id": 1,
+    "module_title": "Module 1: Formulation & Classification of Differential Equations"
+  },
+  {
+    "id": 28,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Linear Differential Equations — Linear Dependence of Function Sets",
+    "question": "Determine which of the following sets of functions is LINEARLY DEPENDENT on the real line:\nSet (1): {x - 2, 1 + x, 1 - 3x}\nSet (2): {eˣ, e^(-x)}\nSet (3): {x, x², x³}",
+    "options": [
+      "(A) All are linearly dependent",
+      "(B) 1 and 2 only",
+      "(C) 1 only",
+      "(D) 2 and 3 only"
+    ],
+    "answer": "(C) 1 only",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Linear Differential Equations & Linear Algebra\n- Topic: Linear Independence and Dependence of Functions\n- Subtopic: Vector Spaces of Polynomials and Exponentials\n\n---\n\n### 2. Core Concepts & Governing Definition\nA set of functions {f₁(x), f₂(x), ..., fₙ(x)} is **linearly dependent** if there exist constants c₁, c₂, ..., cₙ, **not all zero**, such that:\nc₁f₁(x) + c₂f₂(x) + ... + cₙfₙ(x) = 0 for all x in the interval.\nOtherwise, the set is **linearly independent**.\n\n---\n\n### 3. Step-by-Step Mathematical Analysis\n- **Analyze Set (1): {x - 2, 1 + x, 1 - 3x}**\n  - All three functions are polynomials of degree at most 1 (affine linear functions).\n  - The vector space P₁ of all polynomials of degree ≤ 1 has dimension = 2 (with standard basis {1, x}).\n  - By linear algebra, **any set of 3 or more vectors in a 2-dimensional space MUST be linearly dependent**!\n  - Explicit non-trivial linear combination:\n    Let c₁(x - 2) + c₂(1 + x) + c₃(1 - 3x) = 0.\n    Collecting terms in x: (c₁ + c₂ - 3c₃)x = 0 ==> c₁ + c₂ - 3c₃ = 0.\n    Collecting constant terms: -2c₁ + c₂ + c₃ = 0.\n    Subtracting equations: 3c₁ - 4c₃ = 0 ==> choose c₁ = 4, c₃ = 3.\n    Then c₂ = 3c₃ - c₁ = 9 - 4 = 5.\n    Verify: 4(x - 2) + 5(1 + x) - 3(1 - 3x) = (4x + 5x + 9x) + (-8 + 5 - 3) = (18x) ...\n    Let's solve exactly:\n    c₁ + c₂ - 3c₃ = 0 ==> c₂ = 3c₃ - c₁\n    -2c₁ + (3c₃ - c₁) + c₃ = 0 ==> -3c₁ + 4c₃ = 0 ==> c₁ = 4/3 c₃.\n    For c₃ = 3: c₁ = 4, c₂ = 9 - 4 = 5.\n    Check: 4(x - 2) - [wait, check signs: 2(x - 2) ...]:\n    Let f₁ = x - 2, f₂ = x + 1, f₃ = 1 - 3x.\n    Notice: 2f₁ + 5f₂ + 3f₃ = 2(x - 2) + 5(x + 1) + 3(1 - 3x) = (2x + 5x - 9x) + (-4 + 5 + 3) ≠ 0.\n    Let's find non-zero constants:\n    c₁(x - 2) + c₂(x + 1) + c₃(-3x + 1) = 0\n    c₁ + c₂ - 3c₃ = 0\n    -2c₁ + c₂ + c₃ = 0\n    Subtract: 3c₁ - 4c₃ = 0 ==> c₁ = 4, c₃ = 3.\n    From eq 2: c₂ = 2c₁ - c₃ = 8 - 3 = 5.\n    Then c₁ + c₂ - 3c₃ = 4 + 5 - 3(3) = 9 - 9 = 0! (Exact!).\n    And -2(4) + 5 + 3 = -8 + 8 = 0! (Exact!).\n    Thus: **4(x - 2) + 5(x + 1) + 3(1 - 3x) ≡ 0** identically!\n    Since c₁ = 4, c₂ = 5, c₃ = 3 are all non-zero, **Set (1) is Linearly Dependent**!\n\n- **Analyze Set (2): {eˣ, e^(-x)}**\n  - Wronskian W(eˣ, e^(-x)) = eˣ(-e^(-x)) - eˣ(e^(-x)) = -1 - 1 = -2 ≠ 0.\n  - Since W ≠ 0, Set (2) is **Linearly Independent**.\n\n- **Analyze Set (3): {x, x², x³}**\n  - Distinct powers of x (monomials) are always linearly independent.\n  - Wronskian at x = 1: W = 2x³ ≠ 0.\n  - Hence, Set (3) is **Linearly Independent**.\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) All are linearly dependent**: INCORRECT. Sets 2 and 3 are linearly independent.\n- **(B) 1 and 2 only**: INCORRECT. Set 2 is linearly independent because W = -2 ≠ 0.\n- **(C) 1 only**: CORRECT. Only Set (1) is linearly dependent (3 vectors in 2D polynomial space).\n- **(D) 2 and 3 only**: INCORRECT. Both are independent sets.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Dimension Theorem Hack (5 Seconds)**:\n  - Set 1 has THREE linear functions: a₁x + b₁, a₂x + b₂, a₃x + b₃.\n  - Linear polynomials form a 2-dimensional space {1, x}.\n  - ANY 3 linear polynomials in 2D space are AUTOMATICALLY linearly dependent!\n  - Spot **(C) 1 only** in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (C) 1 only.",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 29,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "First-Order Differential Equations — Product Separation Classification",
+    "question": "If a differential equation is of the form y′ = f(x) · g(y), then the equation is classified as:",
+    "options": [
+      "(A) Initial Value Problem",
+      "(B) Boundary Condition",
+      "(C) Variable Separable",
+      "(D) Linear"
+    ],
+    "answer": "(C) Variable Separable",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: First-Order Differential Equations\n- Subtopic: Classification by Solution Method (Separation of Variables)\n\n---\n\n### 2. Core Concepts & Definitions\nA first-order differential equation dy/dx = F(x, y) is called **separable** (or variable separable) if and only if the function F(x, y) can be factored into a product of a function of x alone and a function of y alone:\ndy/dx = f(x) · g(y)\n\n---\n\n### 3. Step-by-Step Mathematical Analysis\nGiven equation: y′ = f(x) · g(y)\n- Step 1: Write y′ as dy/dx:\n  dy/dx = f(x) · g(y)\n- Step 2: Divide both sides by g(y) (where g(y) ≠ 0) and multiply by dx:\n  [1 / g(y)] dy = f(x) dx\n- Step 3: Integrate both sides directly:\n  ∫ [1 / g(y)] dy = ∫ f(x) dx + C\n- The variables are completely isolated on opposing sides of the equality.\n- Therefore, by definition, the differential equation is **Variable Separable**.\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) Initial Value Problem**: INCORRECT. An IVP is a differential equation coupled with initial conditions (e.g. y(x₀) = y₀), not an algebraic structural classification.\n- **(B) Boundary Condition**: INCORRECT. Boundary conditions are constraints at two boundary points, not an equation type.\n- **(C) Variable Separable**: CORRECT. The definition of a separable equation is dy/dx = f(x)g(y).\n- **(D) Linear**: INCORRECT. Unless g(y) = ay + b is linear, the equation is generally non-linear (e.g. g(y) = y² or sin(y)).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Definition Match (2 Seconds)**:\n  - Product of f(x) and g(y) ==> Variables separate instantly as dy/g(y) = f(x)dx.\n  - Select **(C) Variable Separable** in 2 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (C) Variable Separable.",
+    "module_id": 1,
+    "module_title": "Module 1: Formulation & Classification of Differential Equations"
+  },
+  {
+    "id": 30,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Second-Order Homogeneous ODEs — Nature of General Solution",
+    "question": "Given a second-order linear homogeneous differential equation a t″ + b t′ + c t = 0 with constant coefficients, the algebraic type and qualitative behavior of the general solution depend fundamentally on the:",
+    "options": [
+      "(A) Roots of the characteristic equation",
+      "(B) Particular integral",
+      "(C) Homogeneous part",
+      "(D) Undetermined coefficients set"
+    ],
+    "answer": "(A) Roots of the characteristic equation",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Second-Order Linear Constant-Coefficient ODEs\n- Subtopic: Characteristic (Auxiliary) Equation & Solution Structure\n\n---\n\n### 2. Core Concepts & Governing Principles\nFor any linear constant-coefficient ODE:\na t″ + b t′ + c t = 0\nAssuming trial solutions of exponential form t(s) = e^(rs), substituting yields:\n(a r² + b r + c) e^(rs) = 0\nSince e^(rs) ≠ 0, the equation reduces to the algebraic **characteristic (auxiliary) equation**:\na r² + b r + c = 0\nThe discriminant Δ = b² - 4ac strictly dictates the behavior of the solution:\n1. Δ > 0 (Distinct real roots r₁, r₂): Pure exponential growth/decay t(s) = c₁e^(r₁s) + c₂e^(r₂s).\n2. Δ = 0 (Repeated real root r): Critically damped motion t(s) = (c₁ + c₂s)e^(rs).\n3. Δ < 0 (Complex conjugate roots α ± iβ): Damped sinusoidal oscillations t(s) = e^(αs)[c₁ cos(βs) + c₂ sin(βs)].\n\n---\n\n### 3. Detailed Option Analysis\n- **(A) Roots of the characteristic equation**: CORRECT. The real or complex nature of the roots r strictly defines whether the solution oscillates, decays, or grows exponentially.\n- **(B) Particular integral**: INCORRECT. The equation is homogeneous (RHS = 0), so the particular integral is identically zero (t_p = 0)!\n- **(C) Homogeneous part**: INCORRECT. The question asks what determines the solution of the homogeneous equation itself.\n- **(D) Undetermined coefficients set**: INCORRECT. UC sets are only used to guess particular solutions of non-homogeneous equations.\n\n---\n\n### 4. 0–45s CBT Speed Shortcut\n- **Elimination Hack (5 Seconds)**:\n  - The equation equals 0 (homogeneous).\n  - Hence, there is NO particular integral or UC set (eliminate B and D).\n  - The solution structure is governed by the roots of a r² + b r + c = 0.\n  - Select **(A)**!\n\n---\n\n### 5. Final Conclusion\nThe correct option is (A) Roots of the characteristic equation.",
+    "module_id": 1,
+    "module_title": "Module 1: Formulation & Classification of Differential Equations"
+  },
+  {
+    "id": 31,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "First-Order Exact ODEs — Necessary and Sufficient Condition for Exactness",
+    "question": "The first-order differential form M(x, y)dx + N(x, y)dy = 0 is exact in a simply connected domain if and only if:",
+    "options": [
+      "(A) M = N",
+      "(B) ∂M/∂x = ∂N/∂y",
+      "(C) ∂M/∂y = ∂N/∂x",
+      "(D) ∂²M/∂x² = ∂²N/∂y²"
+    ],
+    "answer": "(C) ∂M/∂y = ∂N/∂x",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Exact Differential Equations\n- Subtopic: Euler-Clairaut Exactness Criterion\n\n---\n\n### 2. Core Concepts & Theorem\nA differential form M(x, y)dx + N(x, y)dy is **exact** if there exists a scalar potential function φ(x, y) such that:\ndφ = (∂φ/∂x)dx + (∂φ/∂y)dy = M dx + N dy\nTherefore:\n∂φ/∂x = M  and  ∂φ/∂y = N\nTaking the cross partial derivatives:\n∂²φ / (∂y ∂x) = ∂M/∂y\n∂²φ / (∂x ∂y) = ∂N/∂x\nBy Clairaut's Theorem (Schwarz's theorem), if M, N and their first partial derivatives are continuous, the mixed second partial derivatives are equal:\n∂²φ / (∂y ∂x) = ∂²φ / (∂x ∂y)\n==> ∂M/∂y = ∂N/∂x\n\n---\n\n### 3. Detailed Option Analysis\n- **(A) M = N**: INCORRECT. M and N do not need to be equal functions.\n- **(B) ∂M/∂x = ∂N/∂y**: INCORRECT. This takes derivatives with respect to the SAME variable as the differential (differentiating M by x instead of y).\n- **(C) ∂M/∂y = ∂N/∂x**: CORRECT. The foundational necessary and sufficient condition for exactness: M_y = N_x.\n- **(D) ∂²M/∂x² = ∂²N/∂y²**: INCORRECT. Relates to Laplacian second derivatives, not first-order exactness.\n\n---\n\n### 4. 0–45s CBT Speed Shortcut\n- **Cross-Derivative Rule (2 Seconds)**:\n  - dx is paired with M ==> differentiate M with respect to the OPPOSITE variable y: M_y.\n  - dy is paired with N ==> differentiate N with respect to the OPPOSITE variable x: N_x.\n  - Exactness condition is M_y = N_x.\n  - Select **(C)** in 2 seconds!\n\n---\n\n### 5. Final Conclusion\nThe correct option is (C) ∂M/∂y = ∂N/∂x.",
+    "module_id": 3,
+    "module_title": "Module 3: Second & Higher-Order Homogeneous Linear ODEs"
+  },
+  {
+    "id": 32,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "First-Order Differential Equations — Testing for Homogeneity",
+    "question": "Which of the following is true about the differential equation y′ = (x² + y) / x³?",
+    "options": [
+      "(A) It is homogeneous",
+      "(B) It is non-homogeneous",
+      "(C) It is an exact differential equation",
+      "(D) It is a Poisson differential equation"
+    ],
+    "answer": "(B) It is non-homogeneous",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: First-Order Equations\n- Subtopic: Homogeneity Property Testing (Euler's Homogeneous Function Test)\n\n---\n\n### 2. Core Concepts & Definitions\nA function f(x, y) is **homogeneous of degree k** if:\nf(tx, ty) = t^k f(x, y)\nA first-order differential equation dy/dx = f(x, y) is **homogeneous** if and only if f(x, y) is homogeneous of degree 0, which means:\nf(tx, ty) = f(x, y) = F(y/x)\n\n---\n\n### 3. Step-by-Step Mathematical Analysis\nGiven equation: dy/dx = (x² + y) / x³\n- Step 1: Let f(x, y) = (x² + y) / x³.\n- Step 2: Replace x with tx and y with ty:\n  f(tx, ty) = [(tx)² + (ty)] / (tx)³\n  f(tx, ty) = (t² x² + t y) / (t³ x³)\n- Step 3: Factor out powers of t from numerator and denominator:\n  f(tx, ty) = [t (t x² + y)] / [t³ x³] = (t x² + y) / [t² x³]\n- Step 4: Inspect whether t cancels out:\n  The factor t remains trapped inside the numerator (t x² + y) because x² has power 2 while y has power 1!\n  Therefore:\n  f(tx, ty) ≠ f(x, y)\n- Because the powers in the numerator are inconsistent (degree 2 for x² vs degree 1 for y), f(x, y) CANNOT be expressed as a function of (y/x).\n- Hence, the differential equation is strictly **non-homogeneous**.\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) It is homogeneous**: INCORRECT. Fails Euler's scaling test; numerator degrees are 2 and 1, which do not match.\n- **(B) It is non-homogeneous**: CORRECT. The terms x² and y have different polynomial degrees, preventing homogeneity.\n- **(C) It is an exact differential equation**: INCORRECT. Writing as (x² + y)dx - x³ dy = 0 gives M_y = 1 ≠ N_x = -3x², so it is not exact.\n- **(D) It is a Poisson differential equation**: INCORRECT. Poisson's equation is a second-order PDE (∇²u = f), not a first-order ODE.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Exponent Degree Inspection (3 Seconds)**:\n  - In the numerator: x has power 2, y has power 1.\n  - Can 2 and 1 be equal? Never!\n  - Unequal powers in numerator ==> Instantly **(B) non-homogeneous**!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (B) It is non-homogeneous.",
+    "module_id": 3,
+    "module_title": "Module 3: Second & Higher-Order Homogeneous Linear ODEs"
+  },
+  {
+    "id": 33,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Second-Order Non-Homogeneous ODEs — Methods for Particular Integrals",
+    "question": "Given the second-order linear non-homogeneous differential equation a y″ + b y′ + c y = f(x), the particular integral y_p is obtained using which standard method?",
+    "options": [
+      "(A) Undetermined Coefficients (U.C. Sets)",
+      "(B) Variation of Parameters",
+      "(C) Reduction of Order",
+      "(D) Quadratic Method"
+    ],
+    "answer": "(A) Undetermined Coefficients (U.C. Sets)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Second-Order Linear Non-Homogeneous Equations\n- Subtopic: Methods for Obtaining the Particular Integral (y_p)\n\n---\n\n### 2. Core Concepts & Mathematical Principles\nFor the non-homogeneous equation L(y) = a y″ + b y′ + c y = f(x):\nThe general solution is y(x) = y_c(x) + y_p(x).\nThere are two primary classical techniques for finding the **particular integral (y_p)**:\n1. **Method of Undetermined Coefficients (U.C. Sets)**: Used when the forcing function f(x) is composed of polynomials, exponentials, sines, or cosines, whose derivatives form a finite linear set (a U.C. set).\n2. **Method of Variation of Parameters**: A general method applicable to any continuous forcing function f(x), using the Wronskian.\nIn standard university curricula and syllabus question keys for this revision paper, **Undetermined Coefficients (U.C. Sets)** is the primary designated method.\n\n---\n\n### 3. Detailed Option Analysis\n- **(A) Undetermined Coefficients (U.C. Sets)**: CORRECT. The classic algebraic technique taught specifically for standard second-order non-homogeneous equations with elementary forcing functions.\n- **(B) Variation of Parameters**: Also a valid theoretical method; where U.C. Sets is designated in the syllabus curriculum, it represents the primary choice.\n- **(C) Reduction of Order**: INCORRECT. Used to find a SECOND homogeneous solution y₂ when one homogeneous solution y₁ is already known, not the primary method for non-homogeneous terms.\n- **(D) Quadratic Method**: INCORRECT. Quadratic formula solves the algebraic characteristic equation, not the particular integral of a function f(x).\n\n---\n\n### 4. 0–45s CBT Speed Shortcut\n- **Terminology Association (5 Seconds)**:\n  - U.C. = Undetermined Coefficients.\n  - Specifically designed to find y_p by constructing a trial family of derivatives.\n  - Select **(A)**!\n\n---\n\n### 5. Final Conclusion\nThe correct option is (A) Undetermined Coefficients (U.C. Sets).",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 34,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "First-Order ODEs — Solving by Substitution of Variable",
+    "question": "Which of the following classes of differential equations is fundamentally solved by the substitution of a new dependent variable (specifically y = vx)?",
+    "options": [
+      "(A) Linear differential equation",
+      "(B) Bernoulli differential equation",
+      "(C) Homogeneous differential equation",
+      "(D) Exact differential equation"
+    ],
+    "answer": "(C) Homogeneous differential equation",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Methods of Solution by Variable Substitution\n- Subtopic: Homogeneous Equations and the y = vx Transformation\n\n---\n\n### 2. Core Concepts & Transformation Rules\nA first-order homogeneous equation dy/dx = F(y/x) is solved by introducing a new variable v(x):\nv = y / x  ==> y = v · x\nDifferentiating with respect to x using the product rule:\ndy/dx = v + x (dv/dx)\nSubstituting y and dy/dx into the ODE converts it into a **separable** differential equation in v and x:\nv + x (dv/dx) = F(v) ==> dv / [F(v) - v] = dx / x\n\n---\n\n### 3. Detailed Option Analysis\n- **(A) Linear differential equation**: INCORRECT. Solved directly using an Integrating Factor μ(x) = e^(∫ P dx), without variable substitution.\n- **(B) Bernoulli differential equation**: Solved by power substitution u = y^(1-n), but does NOT use the ratio substitution y = vx.\n- **(C) Homogeneous differential equation**: CORRECT. The foundational definition of homogeneous ODEs is that they are reduced to separable form by substituting y = vx.\n- **(D) Exact differential equation**: INCORRECT. Solved by direct partial integration to obtain a scalar potential function φ(x, y) = c, without variable substitution.\n\n---\n\n### 4. 0–45s CBT Speed Shortcut\n- **Canonical Pairing (3 Seconds)**:\n  - \"Substitution of variable y = vx\" <===> **Homogeneous ODE**.\n  - Immediate match: Select **(C)** in 3 seconds!\n\n---\n\n### 5. Final Conclusion\nThe correct option is (C) Homogeneous differential equation.",
+    "module_id": 3,
+    "module_title": "Module 3: Second & Higher-Order Homogeneous Linear ODEs"
+  },
+  {
+    "id": 35,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Linear Differential Equations — Wronskian Calculation of Exponential Functions",
+    "question": "If y₁ = eˣ and y₂ = e^(-x), calculate the Wronskian determinant W(y₁, y₂):",
+    "options": [
+      "(A) 1",
+      "(B) 0",
+      "(C) -2",
+      "(D) eˣ"
+    ],
+    "answer": "(C) -2",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Linear Differential Equations\n- Topic: The Wronskian Determinant\n- Subtopic: Testing Linear Independence of Solutions\n\n---\n\n### 2. Core Concepts & Governing Formula\nThe Wronskian of two differentiable functions y₁(x) and y₂(x) is the determinant:\nW(y₁, y₂)(x) = | y₁    y₂  |\n               | y₁′   y₂′ | = y₁ y₂′ - y₁′ y₂\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven functions:\ny₁ = eˣ\ny₂ = e^(-x)\n- Step 1: Compute their first derivatives with respect to x:\n  y₁′ = d/dx(eˣ) = eˣ\n  y₂′ = d/dx(e^(-x)) = -e^(-x)\n- Step 2: Set up the 2 × 2 Wronskian determinant:\n  W(x) = |  eˣ       e^(-x)  |\n         |  eˣ      -e^(-x)  |\n- Step 3: Evaluate the determinant:\n  W(x) = (eˣ) · (-e^(-x)) - (eˣ) · (e^(-x))\n  Recall that eˣ · e^(-x) = e^(x - x) = e⁰ = 1.\n  Therefore:\n  W(x) = -1 - 1 = -2\n- Since W(x) = -2 ≠ 0 for all x, the functions eˣ and e^(-x) are strictly linearly independent on the entire real line!\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) 1**: INCORRECT. Sign error in evaluation: -1 - (-1) or confusing with product eˣ·e⁻ˣ = 1.\n- **(B) 0**: INCORRECT. If W = 0, the functions would be linearly dependent, but eˣ and e⁻ˣ are clearly independent.\n- **(C) -2**: CORRECT. Exact analytical calculation: (-1) - (1) = -2.\n- **(D) eˣ**: INCORRECT. Wronskian here is a constant, not an exponential function.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Mental Determinant (5 Seconds)**:\n  - W = eˣ(-e⁻ˣ) - (eˣ)(e⁻ˣ) = -1 - 1 = -2.\n  - Select **(C) -2** in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (C) -2.",
+    "module_id": 3,
+    "module_title": "Module 3: Second & Higher-Order Homogeneous Linear ODEs"
+  },
+  {
+    "id": 36,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Second-Order Homogeneous ODEs — Complex Conjugate Roots Solution",
+    "question": "Solve the second-order linear homogeneous differential equation y″ + 4y′ + 9y = 0:",
+    "options": [
+      "(A) y = e^(-2x)[A cos(√5 x) + B sin(√5 x)]",
+      "(B) y = A e^(-2x) + B √5 x",
+      "(C) y = A √(9x) + ln(x)",
+      "(D) y = A cos(5x) + B sin(5x)"
+    ],
+    "answer": "(A) y = e^(-2x)[A cos(√5 x) + B sin(√5 x)]",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Second-Order Linear Homogeneous ODEs with Constant Coefficients\n- Subtopic: Auxiliary Equation with Complex Conjugate Roots (Discriminant Δ < 0)\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor a y″ + b y′ + c y = 0:\n1. Auxiliary equation: a r² + b r + c = 0.\n2. If roots are complex conjugate: r = α ± iβ, where α = -b/(2a) and β = √(4ac - b²)/(2a).\n3. The real-valued general solution is:\n   y(x) = e^(αx) [A cos(βx) + B sin(βx)]\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: y″ + 4y′ + 9y = 0\n- Step 1: Write down the auxiliary equation:\n  r² + 4r + 9 = 0\n- Step 2: Apply the quadratic formula r = [-b ± √(b² - 4ac)] / (2a):\n  a = 1, b = 4, c = 9\n  r = [-4 ± √(4² - 4(1)(9))] / (2 · 1)\n  r = [-4 ± √(16 - 36)] / 2\n  r = [-4 ± √(-20)] / 2\n- Step 3: Simplify the radical √(-20):\n  √(-20) = √(20) · i = √(4 · 5) · i = 2√5 i\n  r = (-4 ± 2√5 i) / 2 = -2 ± √5 i\n- Step 4: Identify real and imaginary components:\n  Real part α = -2\n  Imaginary part β = √5\n- Step 5: Substitute into the standard general solution formula:\n  y(x) = e^(-2x) [A cos(√5 x) + B sin(√5 x)]\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) y = e^(-2x)[A cos(√5 x) + B sin(√5 x)]**: CORRECT. Accurately reflects real part α = -2 and imaginary frequency β = √5.\n- **(B) y = A e^(-2x) + B √5 x**: INCORRECT. Fails to form harmonic oscillatory terms for complex roots.\n- **(C) y = A √(9x) + ln(x)**: INCORRECT. Nonsensical combination.\n- **(D) y = A cos(5x) + B sin(5x)**: INCORRECT. Dropped the damping factor e^(-2x) and squared √5 to 5.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Casio fx-991EX ClassWiz Hack (15 Seconds)**:\n  - Press `MENU` -> `A` (Equation/Func) -> `2` (Polynomial) -> `2` (Degree 2).\n  - Enter coefficients: `1` `=`, `4` `=`, `9` `=`.\n  - Press `=`: Display shows `x₁ = -2 + √5i` and `x₂ = -2 - √5i`.\n  - Immediately identify α = -2 and β = √5!\n  - Select **(A)**!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = e^(-2x)[A cos(√5 x) + B sin(√5 x)].",
+    "module_id": 3,
+    "module_title": "Module 3: Second & Higher-Order Homogeneous Linear ODEs"
+  },
+  {
+    "id": 37,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Formation of Differential Equations — Relationship Between Constants and Order",
+    "question": "The number of essential arbitrary constants present in a general solution (primitive) defines the ________ of the corresponding differential equation:",
+    "options": [
+      "(A) Degree",
+      "(B) Nature",
+      "(C) Order",
+      "(D) Initial Value Problem"
+    ],
+    "answer": "(C) Order",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Differential Equations\n- Topic: Foundational Theorems of Differential Equations\n- Subtopic: Number of Arbitrary Constants vs. Order of the ODE\n\n---\n\n### 2. Core Concepts & Fundamental Theorem\nBy the Fundamental Theorem of Ordinary Differential Equations:\nAn n-th order ordinary differential equation has a general solution (primitive) containing **exactly n essential, independent arbitrary constants**:\ny = φ(x, c₁, c₂, ..., cₙ)\nConversely, to eliminate n arbitrary constants from a primitive, one must differentiate the equation n times, producing an ODE of order n.\n\n---\n\n### 3. Step-by-Step Analysis\n- Example:\n  - y = cx (1 constant) ==> requires 1 differentiation (y′ = c) ==> 1st order ODE (x y′ - y = 0).\n  - y = c₁ cos(x) + c₂ sin(x) (2 constants) ==> requires 2 differentiations ==> 2nd order ODE (y″ + y = 0).\n  - y = c₁ + c₂x + c₃x² (3 constants) ==> requires 3 differentiations ==> 3rd order ODE (y‴ = 0).\n- In every case, the count of independent arbitrary constants strictly defines the **Order** of the differential equation.\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) Degree**: INCORRECT. The degree is the power of the highest derivative, which has no direct correspondence with the number of constants.\n- **(B) Nature**: INCORRECT. Vague qualitative term.\n- **(C) Order**: CORRECT. Exact mathematical correspondence: n constants <===> n-th order ODE.\n- **(D) Initial Value Problem**: INCORRECT. An IVP is a boundary problem, not a structural parameter of the primitive.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Theorem Match (2 Seconds)**:\n  - Number of constants = Order of the differential equation.\n  - Mark **(C) Order** in 2 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (C) Order.",
+    "module_id": 3,
+    "module_title": "Module 3: Second & Higher-Order Homogeneous Linear ODEs"
+  },
+  {
+    "id": 38,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Formation of Differential Equations — Reconstructing ODE from General Solution",
+    "question": "Find the second-order linear differential equation whose general solution is given by y = c₁ e^(2x) + c₂ e^(-5x):",
+    "options": [
+      "(A) y″ + 3y′ - 10y = 0",
+      "(B) y″ - 7y′ + 10y = 0",
+      "(C) 3y″ + 5y′ - 7y = 0",
+      "(D) y″ - 15y′ - 10y = 0"
+    ],
+    "answer": "(A) y″ + 3y′ - 10y = 0",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Second-Order Linear Homogeneous Equations\n- Subtopic: Inverse Problem — Constructing the ODE from Solution Basis\n\n---\n\n### 2. Core Concepts & Governing Formulas\nIf y(x) = c₁ e^(r₁x) + c₂ e^(r₂x) is the general solution of a constant-coefficient ODE, then r₁ and r₂ are the roots of its auxiliary equation:\n(r - r₁)(r - r₂) = 0\nExpanding:\nr² - (r₁ + r₂)r + (r₁ · r₂) = 0\nThe corresponding differential equation is:\ny″ - (r₁ + r₂)y′ + (r₁ · r₂)y = 0\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven solution: y = c₁ e^(2x) + c₂ e^(-5x)\n- Step 1: Identify the characteristic roots from the exponents of e:\n  r₁ = 2\n  r₂ = -5\n- Step 2: Calculate the sum and product of the roots:\n  Sum: r₁ + r₂ = 2 + (-5) = -3\n  Product: r₁ · r₂ = (2)(-5) = -10\n- Step 3: Form the auxiliary polynomial:\n  (r - 2)(r + 5) = r² + 5r - 2r - 10 = r² + 3r - 10 = 0\n- Step 4: Convert the polynomial in r into the linear differential operator:\n  r² <===> y″\n  r  <===> y′\n  1  <===> y\n  ==> y″ + 3y′ - 10y = 0\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) y″ + 3y′ - 10y = 0**: CORRECT. Perfectly matches r² + 3r - 10 = 0.\n- **(B) y″ - 7y′ + 10y = 0**: INCORRECT. Corresponds to roots r = 2 and r = 5 (from (r - 2)(r - 5) = 0).\n- **(C) 3y″ + 5y′ - 7y = 0**: INCORRECT. Arbitrary coefficients that do not match the roots.\n- **(D) y″ - 15y′ - 10y = 0**: INCORRECT. Arithmetic error on the linear coefficient.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Sum & Product Root Inspection (5 Seconds)**:\n  - Roots: 2 and -5.\n  - Sum = -3 ==> Middle term is -(sum)y′ = -(-3)y′ = +3y′.\n  - Product = -10 ==> Constant term is -10y.\n  - Scan for y″ + 3y′ - 10y = 0 ==> Pick **(A)** in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y″ + 3y′ - 10y = 0.",
+    "module_id": 2,
+    "module_title": "Module 2: First-Order Ordinary Differential Equations"
+  },
+  {
+    "id": 39,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "First-Order Exact ODEs — Determining Unknown Coefficients for Exactness",
+    "question": "For what values of the constants a and b is the differential equation (x² - axy + 3y²)dx + (sin y + bxy - 2x²)dy = 0 exact?",
+    "options": [
+      "(A) a = 4, b = 6",
+      "(B) a = 2, b = 3",
+      "(C) a = 6, b = 4",
+      "(D) a = 3, b = 2"
+    ],
+    "answer": "(A) a = 4, b = 6",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Exact Differential Equations\n- Subtopic: Condition for Exactness & Parameter Determination\n\n---\n\n### 2. Core Concepts & Governing Criterion\nThe equation M(x, y)dx + N(x, y)dy = 0 is exact if and only if:\n∂M/∂y = ∂N/∂x\nBy computing both partial derivatives and equating corresponding coefficients of like algebraic terms, we determine the unknown parameters a and b.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: (x² - axy + 3y²)dx + (sin y + bxy - 2x²)dy = 0\n- Step 1: Identify M and N:\n  M(x, y) = x² - axy + 3y²\n  N(x, y) = sin(y) + bxy - 2x²\n- Step 2: Differentiate M with respect to y (treating x as constant):\n  ∂M/∂y = ∂/∂y (x²) - ∂/∂y (axy) + ∂/∂y (3y²)\n  ∂M/∂y = 0 - ax + 6y = -ax + 6y\n- Step 3: Differentiate N with respect to x (treating y as constant):\n  ∂N/∂x = ∂/∂x (sin y) + ∂/∂x (bxy) - ∂/∂x (2x²)\n  ∂N/∂x = 0 + by - 4x = -4x + by\n- Step 4: Equate ∂M/∂y = ∂N/∂x for exactness:\n  -ax + 6y = -4x + by\n- Step 5: Equate coefficients of x and y respectively:\n  - Coefficient of x: -a = -4 ==> a = 4\n  - Coefficient of y: 6 = b   ==> b = 6\n- Therefore, the required values are:\n  a = 4, b = 6\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) a = 4, b = 6**: CORRECT. Accurately derived from -a = -4 and b = 6.\n- **(B) a = 2, b = 3**: INCORRECT. Halves the required values.\n- **(C) a = 6, b = 4**: INCORRECT. Swaps the values of a and b.\n- **(D) a = 3, b = 2**: INCORRECT. Fails coefficient comparison.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Direct Matching (10 Seconds)**:\n  - ∂/∂y(-axy) = -ax. In N, ∂/∂x(-2x²) = -4x. ==> -ax = -4x ==> a = 4.\n  - ∂/∂y(3y²) = 6y. In N, ∂/∂x(bxy) = by. ==> 6y = by ==> b = 6.\n  - Look for (4, 6) ==> Select **(A)** in 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) a = 4, b = 6.",
+    "module_id": 2,
+    "module_title": "Module 2: First-Order Ordinary Differential Equations"
+  },
+  {
+    "id": 40,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Differential Equations — Identifying Dependent vs Independent Variables",
+    "question": "In the differential equation y″ + y′ + 6y = sin(t), what is the unknown function (dependent variable)?",
+    "options": [
+      "(A) t",
+      "(B) y",
+      "(C) sin(t)",
+      "(D) 6"
+    ],
+    "answer": "(B) y",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Differential Equations\n- Topic: Nomenclature & Terminology of Differential Equations\n- Subtopic: Identification of Dependent vs. Independent Variables\n\n---\n\n### 2. Core Concepts & Definitions\nIn any differential equation:\n- The **independent variable** is the variable with respect to which differentiation takes place (here, t).\n- The **dependent variable (or unknown function)** is the function that is being differentiated and whose functional form y = y(t) solves the equation.\n- The **forcing function** (or non-homogeneous input) is the right-hand side function of the independent variable, g(t) = sin(t).\n\n---\n\n### 3. Step-by-Step Analysis\nGiven equation: y″ + y′ + 6y = sin(t)\n- Primes denote differentiation with respect to t: y′ = dy/dt, y″ = d²y/dt².\n- The function whose derivatives appear is y(t).\n- The goal of solving the differential equation is to determine the explicit function y = y(t) that satisfies the equality.\n- Therefore, the **unknown function** is y.\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) t**: INCORRECT. t is the known independent variable (typically representing time).\n- **(B) y**: CORRECT. y is the unknown function y(t) being solved for.\n- **(C) sin(t)**: INCORRECT. sin(t) is the external forcing function, not the unknown response.\n- **(D) 6**: INCORRECT. 6 is a constant coefficient.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Variable Identification (2 Seconds)**:\n  - Differentiation is d/dt of y.\n  - The unknown to be solved is y.\n  - Mark **(B)** in 2 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (B) y.",
+    "module_id": 2,
+    "module_title": "Module 2: First-Order Ordinary Differential Equations"
+  },
+  {
+    "id": 41,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Laplace Transforms — Transform of Elementary Sine Function",
+    "question": "The Laplace Transform of the trigonometric function f(t) = sin(at) is given by:",
+    "options": [
+      "(A) a / (s² - a²)",
+      "(B) s / (s² - a²)",
+      "(C) 1 / (s² - a²)",
+      "(D) a / (s² + a²)"
+    ],
+    "answer": "(D) a / (s² + a²)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Advanced Engineering Mathematics\n- Topic: Laplace Transforms\n- Subtopic: Transform of Circular Trigonometric Functions\n\n---\n\n### 2. Core Concepts & Governing Definition\nThe unilateral Laplace transform of a function f(t) defined for t ≥ 0 is:\nL{f(t)} = F(s) = ∫₀^∞ e^(-st) f(t) dt\n\nFor circular trigonometric functions:\nL{sin(at)} = a / (s² + a²)   (for s > 0)\nL{cos(at)} = s / (s² + a²)   (for s > 0)\n\nContrast with hyperbolic functions:\nL{sinh(at)} = a / (s² - a²)  (for s > |a|)\nL{cosh(at)} = s / (s² - a²)  (for s > |a|)\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nUsing Euler's identity: sin(at) = (e^(iat) - e^(-iat)) / (2i)\n- Apply the linearity property of the Laplace transform:\n  L{sin(at)} = (1 / 2i) [ L{e^(iat)} - L{e^(-iat)} ]\n- Using L{e^(kt)} = 1 / (s - k):\n  L{sin(at)} = (1 / 2i) [ 1/(s - ia) - 1/(s + ia) ]\n- Combine fractions over a common denominator:\n  1/(s - ia) - 1/(s + ia) = [(s + ia) - (s - ia)] / [(s - ia)(s + ia)] = 2ia / (s² + a²)\n- Multiply by (1 / 2i):\n  L{sin(at)} = (1 / 2i) · [ 2ia / (s² + a²) ] = a / (s² + a²)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) a / (s² - a²)**: INCORRECT. This is the Laplace transform of the HYPERBOLIC sine function, sinh(at).\n- **(B) s / (s² - a²)**: INCORRECT. This is the Laplace transform of cosh(at).\n- **(C) 1 / (s² - a²)**: INCORRECT. Missing numerator coefficient.\n- **(D) a / (s² + a²)**: CORRECT. The exact transform for circular sin(at).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Circular vs Hyperbolic Sign Rule (3 Seconds)**:\n  - Circular functions (sin, cos) always have a PLUS sign in the denominator: (s² + a²).\n  - Hyperbolic functions (sinh, cosh) have a MINUS sign: (s² - a²).\n  - sin has constant 'a' on top, cos has 's' on top.\n  - Therefore, sin(at) ==> a / (s² + a²). Select **(D)** in 3 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (D) a / (s² + a²).",
+    "module_id": 5,
+    "module_title": "Module 5: Laplace Transforms & Systems of Linear ODEs"
+  },
+  {
+    "id": 42,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "First-Order Linear ODEs — Integrating Factor Calculation",
+    "question": "The integrating factor of the differential equation x(dy/dx) - y = 2x² is:",
+    "options": [
+      "(A) x²",
+      "(B) ln(x)",
+      "(C) 1/x",
+      "(D) 3x"
+    ],
+    "answer": "(C) 1/x",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: First-Order Linear Equations\n- Subtopic: Canonical Leibniz Form & Integrating Factor\n\n---\n\n### 2. Core Concepts & Governing Formula\nFor dy/dx + P(x)y = Q(x):\nThe integrating factor is μ(x) = e^(∫ P(x) dx).\nCrucially, the equation must be normalized so that the leading coefficient of dy/dx is 1.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: x(dy/dx) - y = 2x²\n- Step 1: Divide the entire equation by x (x ≠ 0):\n  dy/dx - (1/x)y = 2x\n- Step 2: Identify P(x):\n  P(x) = -1/x\n- Step 3: Integrate P(x) with respect to x:\n  ∫ P(x) dx = ∫ (-1/x) dx = -ln|x| = ln|x^(-1)| = ln|1/x|\n- Step 4: Exponentiate to obtain μ(x):\n  μ(x) = e^(ln|1/x|) = 1/x\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) x²**: INCORRECT. Sign error in integration, treating P(x) as +1/x and squaring.\n- **(B) ln(x)**: INCORRECT. Stopped before exponentiating.\n- **(C) 1/x**: CORRECT. Accurately derived: e^(-ln x) = 1/x.\n- **(D) 3x**: INCORRECT. Completely unrelated polynomial.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Inspection Rule (5 Seconds)**:\n  - x y′ - y ==> normalized is y′ - (1/x)y.\n  - e^(-∫ dx/x) = e^(-ln x) = 1/x.\n  - Pick **(C) 1/x** in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (C) 1/x.",
+    "module_id": 2,
+    "module_title": "Module 2: First-Order Ordinary Differential Equations"
+  },
+  {
+    "id": 43,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Partial Differential Equations — Number of Independent Variables",
+    "question": "The number of independent variables in a partial differential equation (PDE) is:",
+    "options": [
+      "(A) Two",
+      "(B) Three",
+      "(C) More than two",
+      "(D) More than one"
+    ],
+    "answer": "(D) More than one",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Differential Equations\n- Topic: Classification of Differential Equations\n- Subtopic: PDEs vs ODEs — Criterion on Independent Variables\n\n---\n\n### 2. Core Concepts & Definitions\n- **Ordinary Differential Equation (ODE)**: An equation involving derivatives of dependent variable(s) with respect to **strictly one (1)** independent variable.\n- **Partial Differential Equation (PDE)**: An equation involving partial derivatives of an unknown function with respect to **two or more independent variables** (i.e. **more than one** independent variable).\n\n---\n\n### 3. Step-by-Step Analysis\n- A PDE can have 2 independent variables (e.g. 1D wave equation: u_tt = c² u_xx, variables x and t).\n- A PDE can have 3 independent variables (e.g. 2D heat equation: u_t = α(u_xx + u_yy), variables x, y, t).\n- A PDE can have 4 independent variables (e.g. 3D Laplace equation with time: u_t = k ∇²u, variables x, y, z, t).\n- Therefore, restricting the count to \"two\" or \"three\" is mathematically incomplete.\n- The precise, encompassing mathematical definition is **more than one independent variable** (≥ 2).\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) Two**: INCORRECT. Too restrictive; PDEs commonly have 3, 4, or n independent variables.\n- **(B) Three**: INCORRECT. Too restrictive.\n- **(C) More than two**: INCORRECT. Excludes 2-variable PDEs (such as u_x + u_y = 0), which are the most common PDEs.\n- **(D) More than one**: CORRECT. Captures all PDEs having 2, 3, 4, ... independent variables.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Definition Match (2 Seconds)**:\n  - ODE = exactly 1 independent variable.\n  - PDE = more than 1 independent variable.\n  - Mark **(D)** in 2 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (D) More than one.",
+    "module_id": 2,
+    "module_title": "Module 2: First-Order Ordinary Differential Equations"
+  },
+  {
+    "id": 44,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Differential Equations — Order with Fractional Powers",
+    "question": "What is the order of the differential equation [1 + (dy/dx)²]^(2/3) = d²y/dx²?",
+    "options": [
+      "(A) 1",
+      "(B) 2",
+      "(C) 3",
+      "(D) None of the options"
+    ],
+    "answer": "(B) 2",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Differential Equations\n- Topic: Order and Degree of Differential Equations\n- Subtopic: Identification of Order from Fractional Equations\n\n---\n\n### 2. Core Concepts & Definitions\nThe **order** of any differential equation is simply the order of the **highest derivative** appearing anywhere in the equation.\n- Unlike degree, the **order does NOT require clearing fractional exponents or radicals**! Order is inspected directly by looking at the derivative orders present.\n\n---\n\n### 3. Step-by-Step Mathematical Analysis\nGiven equation: [1 + (dy/dx)²]^(2/3) = d²y/dx²\n- Inspect the derivatives present in the equation:\n  - Derivative 1: dy/dx is the **first derivative** (order 1).\n  - Derivative 2: d²y/dx² is the **second derivative** (order 2).\n- The highest order of differentiation present is 2.\n- Therefore, the **Order = 2**.\n- (Note: If asked for degree, one would cube both sides to eliminate the 2/3 exponent: [1 + (dy/dx)²]² = (d²y/dx²)³, giving a degree of 3. But the question asks strictly for **order**, which is 2!).\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) 1**: INCORRECT. 1 is the order of the lower derivative dy/dx.\n- **(B) 2**: CORRECT. Highest derivative is d²y/dx², so order is 2.\n- **(C) 3**: INCORRECT. 3 is the degree (after cubing), not the order!\n- **(D) None of the options**: INCORRECT. Order 2 is present in Option B.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Immediate Inspection (2 Seconds)**:\n  - What is the highest derivative? d²y/dx² (Second derivative).\n  - Order is 2.\n  - Select **(B)** in 2 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (B) 2.",
+    "module_id": 2,
+    "module_title": "Module 2: First-Order Ordinary Differential Equations"
+  },
+  {
+    "id": 45,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Differential Equations — Identifying Linear Second-Order Equations",
+    "question": "Which of the following second-order differential equations is LINEAR?",
+    "options": [
+      "(A) d²y/dx² + x²(dy/dx) - y = 0",
+      "(B) d²y/dx² + x²(dy/dx) - sin(y) = 0",
+      "(C) d²y/dx² + x² y (dy/dx) - y = 0",
+      "(D) d²y/dx² + x²(dy/dx)² - y = 0"
+    ],
+    "answer": "(A) d²y/dx² + x²(dy/dx) - y = 0",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Differential Equations\n- Topic: Linearity Testing of Ordinary Differential Equations\n- Subtopic: Second-Order Linear Differential Equations\n\n---\n\n### 2. Core Concepts & Governing Definition\nA second-order ODE is **linear** if it can be written as:\na₂(x)y″ + a₁(x)y′ + a₀(x)y = g(x)\nRequirements:\n1. The dependent variable y and its derivatives y′, y″ appear only to the first power.\n2. No products of y and its derivatives (e.g. y·y′ or y·y″).\n3. No non-linear functions of y (e.g. sin(y), eʸ, y²).\nCoefficients a₂(x), a₁(x), a₀(x) may be arbitrary functions of x.\n\n---\n\n### 3. Step-by-Step Evaluation of Each Option\n- **Option A: d²y/dx² + x²(dy/dx) - y = 0**\n  - y″ has power 1.\n  - dy/dx has power 1, multiplied by a function of x (x²).\n  - y has power 1, with constant coefficient -1.\n  - No products of y and its derivatives.\n  - No transcendental functions of y.\n  - Matches a₂(x)y″ + a₁(x)y′ + a₀(x)y = 0 with a₂=1, a₁=x², a₀=-1.\n  - **LINEAR!**\n\n- **Option B: d²y/dx² + x²(dy/dx) - sin(y) = 0**\n  - Contains sin(y), a non-linear transcendental function of y.\n  - **NON-LINEAR!**\n\n- **Option C: d²y/dx² + x² y (dy/dx) - y = 0**\n  - Contains the product y · (dy/dx) of the dependent variable and its derivative.\n  - **NON-LINEAR!**\n\n- **Option D: d²y/dx² + x²(dy/dx)² - y = 0**\n  - Contains (dy/dx)², which is raised to power 2 (not 1).\n  - **NON-LINEAR!**\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Strictly satisfies all conditions of linearity.\n- **(B)**: Violates linearity due to sin(y).\n- **(C)**: Violates linearity due to cross-product y·(dy/dx).\n- **(D)**: Violates linearity due to quadratic power (dy/dx)².\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Non-Linearity Spotting (5 Seconds)**:\n  - (B) has sin(y) ==> Disqualify!\n  - (C) has y·y′ ==> Disqualify!\n  - (D) has (y′)² ==> Disqualify!\n  - Only **(A)** is clean. Mark **(A)** in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) d²y/dx² + x²(dy/dx) - y = 0.",
+    "module_id": 3,
+    "module_title": "Module 3: Second & Higher-Order Homogeneous Linear ODEs"
+  },
+  {
+    "id": 46,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Laplace Transforms — Transform of Second Derivative",
+    "question": "The Laplace Transform of the second derivative y″(t) is given by:",
+    "options": [
+      "(A) s² Y(s) - s y(0) - y′(0)",
+      "(B) s² Y(s) - s y(0)",
+      "(C) s² - s - 1",
+      "(D) s² Y(s) - s y′(0)"
+    ],
+    "answer": "(A) s² Y(s) - s y(0) - y′(0)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Advanced Engineering Mathematics\n- Topic: Laplace Transforms\n- Subtopic: Transform of Higher Derivatives & Initial Value Properties\n\n---\n\n### 2. Core Concepts & Governing Formulas\nBy the differentiation theorem of Laplace transforms:\n1. For first derivative:\n   L{y′(t)} = s Y(s) - y(0)\n2. For second derivative:\n   L{y″(t)} = s² Y(s) - s y(0) - y′(0)\n3. For general n-th derivative:\n   L{y⁽ⁿ⁾(t)} = sⁿ Y(s) - sⁿ⁻¹ y(0) - sⁿ⁻² y′(0) - ... - y⁽ⁿ⁻¹⁾(0)\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nUsing the definition of the Laplace transform and integration by parts:\nL{y″(t)} = ∫₀^∞ e^(-st) y″(t) dt\n- Let u = e^(-st) ==> du = -s e^(-st) dt\n- dv = y″(t) dt ==> v = y′(t)\n- Applying integration by parts:\n  ∫ u dv = [u v]₀^∞ - ∫ v du\n  = [e^(-st) y′(t)]₀^∞ - ∫₀^∞ y′(t) (-s e^(-st)) dt\n  = (0 - y′(0)) + s ∫₀^∞ e^(-st) y′(t) dt\n  = -y′(0) + s L{y′(t)}\n- Now substitute L{y′(t)} = s Y(s) - y(0):\n  L{y″(t)} = -y′(0) + s [s Y(s) - y(0)]\n  = s² Y(s) - s y(0) - y′(0)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) s² Y(s) - s y(0) - y′(0)**: CORRECT. The exact analytical formula with both initial conditions accounted for.\n- **(B) s² Y(s) - s y(0)**: INCORRECT. Misses the initial velocity term -y′(0).\n- **(C) s² - s - 1**: INCORRECT. Drops the transform function Y(s).\n- **(D) s² Y(s) - s y′(0)**: INCORRECT. Attached s to y′(0) instead of y(0).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Descending Power Rule (3 Seconds)**:\n  - Start with s² Y(s).\n  - Next term decreases power of s by 1: -s¹ y(0).\n  - Next term decreases power of s to s⁰ = 1: -y′(0).\n  - Full sequence: s² Y(s) - s y(0) - y′(0). Select **(A)**!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) s² Y(s) - s y(0) - y′(0).",
+    "module_id": 5,
+    "module_title": "Module 5: Laplace Transforms & Systems of Linear ODEs"
+  },
+  {
+    "id": 47,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "First-Order Linear ODEs — Integrating Factor with Radical Form",
+    "question": "The integrating factor of the differential equation (1 - x²)dy/dx - xy = 1 is:",
+    "options": [
+      "(A) -x",
+      "(B) -x / (1 - x²)",
+      "(C) √(1 - x²)",
+      "(D) (1/2) ln(1 - x²)"
+    ],
+    "answer": "(C) √(1 - x²)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: First-Order Linear Equations\n- Subtopic: Integrating Factor Calculation with Logarithmic Powers\n\n---\n\n### 2. Core Concepts & Governing Formula\nFor a first-order linear ODE:\ndy/dx + P(x)y = Q(x)\nThe Integrating Factor is:\nμ(x) = e^(∫ P(x) dx)\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: (1 - x²)dy/dx - xy = 1\n- Step 1: Normalize by dividing through by (1 - x²):\n  dy/dx - [x / (1 - x²)] y = 1 / (1 - x²)\n- Step 2: Identify P(x):\n  P(x) = - x / (1 - x²)\n- Step 3: Integrate P(x) with respect to x:\n  ∫ P(x) dx = ∫ [-x / (1 - x²)] dx\n  Let u = 1 - x², then du = -2x dx ==> -x dx = (1/2) du.\n  ∫ [-x / (1 - x²)] dx = (1/2) ∫ (1/u) du = (1/2) ln|u| = (1/2) ln(1 - x²)\n- Step 4: Use logarithmic power rules:\n  (1/2) ln(1 - x²) = ln[(1 - x²)^(1/2)] = ln[√(1 - x²)]\n- Step 5: Compute the integrating factor:\n  μ(x) = e^(ln[√(1 - x²)]) = √(1 - x²)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) -x**: INCORRECT. Only takes the numerator.\n- **(B) -x / (1 - x²)**: INCORRECT. This is P(x), not the integrating factor μ(x) = e^(∫ P dx).\n- **(C) √(1 - x²)**: CORRECT. Accurately derived from e^[(1/2)ln(1 - x²)] = √(1 - x²).\n- **(D) (1/2) ln(1 - x²)**: INCORRECT. Stopped at ∫ P dx without exponentiating.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Integral of -x/(1-x²) (10 Seconds)**:\n  - Derivative of (1 - x²) is -2x.\n  - So ∫ -x/(1-x²) dx = (1/2) ln(1 - x²).\n  - e^((1/2)ln(1 - x²)) = (1 - x²)^(1/2) = √(1 - x²).\n  - Select **(C)** in 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (C) √(1 - x²).",
+    "module_id": 2,
+    "module_title": "Module 2: First-Order Ordinary Differential Equations"
+  },
+  {
+    "id": 48,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Laplace Transforms — Transform of Elementary Cosine Function",
+    "question": "The Laplace Transform of the function f(t) = cos(5t) is:",
+    "options": [
+      "(A) s / (s² + 25)",
+      "(B) s / (s² - 25)",
+      "(C) 1 / (s² + 25)",
+      "(D) 5 / (s² + 25)"
+    ],
+    "answer": "(A) s / (s² + 25)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Advanced Engineering Mathematics\n- Topic: Laplace Transforms\n- Subtopic: Transform of Circular Cosine Functions\n\n---\n\n### 2. Core Concepts & Governing Formula\nThe standard Laplace transform formula for circular cosine is:\nL{cos(at)} = s / (s² + a²)   (for s > 0)\nwhere a is the angular frequency.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven function: f(t) = cos(5t)\n- Step 1: Identify the frequency parameter:\n  a = 5\n- Step 2: Compute a²:\n  a² = 5² = 25\n- Step 3: Substitute into the standard formula:\n  L{cos(5t)} = s / (s² + 5²) = s / (s² + 25)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) s / (s² + 25)**: CORRECT. The exact transform for cos(5t).\n- **(B) s / (s² - 25)**: INCORRECT. This is the transform of the hyperbolic cosine, cosh(5t).\n- **(C) 1 / (s² + 25)**: INCORRECT. Numerator must be s for cosine.\n- **(D) 5 / (s² + 25)**: INCORRECT. This is the transform of the sine function, sin(5t).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Cos = s Rule (2 Seconds)**:\n  - **CO**S starts with 's' sound ==> numerator is **s**.\n  - Circular cosine has a plus sign: s² + 25.\n  - Instantly select **(A)** in 2 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) s / (s² + 25).",
+    "module_id": 5,
+    "module_title": "Module 5: Laplace Transforms & Systems of Linear ODEs"
+  },
+  {
+    "id": 49,
+    "course": "MATH 202",
+    "source": "MATH 202 Exam Revision",
+    "topic": "Inverse Laplace Transforms — First Shifting Property & Simple Pole",
+    "question": "The inverse Laplace Transform of F(s) = 1 / (s - 3) is:",
+    "options": [
+      "(A) e^(3t)",
+      "(B) e^(-3t)",
+      "(C) 3eᵗ",
+      "(D) cos(3t)"
+    ],
+    "answer": "(A) e^(3t)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Advanced Engineering Mathematics\n- Topic: Inverse Laplace Transforms\n- Subtopic: Exponential Kernel & First Shifting Property\n\n---\n\n### 2. Core Concepts & Governing Formula\nThe standard transform of an exponential function e^(at) is:\nL{e^(at)} = 1 / (s - a)   (for s > a)\nTaking the inverse Laplace transform L⁻¹ on both sides yields:\nL⁻¹{ 1 / (s - a) } = e^(at)\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven transform: F(s) = 1 / (s - 3)\n- Step 1: Compare with the canonical form 1 / (s - a):\n  s - a = s - 3 ==> a = 3\n- Step 2: Apply the inverse transform:\n  L⁻¹{ 1 / (s - 3) } = e^(3t)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) e^(3t)**: CORRECT. Direct application of L⁻¹{1/(s - a)} = e^(at) with a = 3.\n- **(B) e^(-3t)**: INCORRECT. Sign error; 1/(s + 3) corresponds to e^(-3t).\n- **(C) 3eᵗ**: INCORRECT. Incorrectly moved the constant 3 to multiply the exponential.\n- **(D) cos(3t)**: INCORRECT. Transform of cos(3t) is s / (s² + 9), a second-degree polynomial denominator.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Sign Inversion Hack (2 Seconds)**:\n  - Denominator is (s - 3) ==> root is s = +3.\n  - Positive root gives positive exponent: e^(+3t).\n  - Select **(A)** in 2 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) e^(3t).",
+    "module_id": 5,
+    "module_title": "Module 5: Laplace Transforms & Systems of Linear ODEs"
+  },
+  {
+    "id": 50,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Second-Order Repeated Roots & Sinusoidal Forcing",
+    "question": "Find the general solution of the second-order non-homogeneous differential equation y″ + 4y′ + 4y = 2 cos(2x):",
+    "options": [
+      "(A) y = (c₁ + c₂x)e^(-2x) + (1/4) sin(2x)",
+      "(B) y = c₁ e^(-2x) + c₂ e^(2x) + (1/4) cos(2x)",
+      "(C) y = (c₁ + c₂x)e^(-2x) + (1/2) cos(2x)",
+      "(D) y = c₁ e^(-2x) + (1/4) sin(2x)"
+    ],
+    "answer": "(A) y = (c₁ + c₂x)e^(-2x) + (1/4) sin(2x)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Second-Order Linear Non-Homogeneous Differential Equations\n- Subtopic: Method of Undetermined Coefficients with Repeated Characteristic Roots\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor the second-order ODE:\na y″ + b y′ + c y = f(x)\n1. Find Complementary Function y_c(x) by solving the auxiliary equation a r² + b r + c = 0.\n   For a repeated real root r = -2, y_c(x) = (c₁ + c₂x)e^(-2x).\n2. Find Particular Integral y_p(x) by Undetermined Coefficients:\n   Since f(x) = 2 cos(2x) and ±2i are NOT roots of the characteristic equation, assume trial form:\n   y_p = A cos(2x) + B sin(2x).\n3. The general solution is y(x) = y_c(x) + y_p(x).\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: y″ + 4y′ + 4y = 2 cos(2x)\n- Step 1: Solve the homogeneous equation:\n  Auxiliary equation: r² + 4r + 4 = 0\n  ==> (r + 2)² = 0 ==> r = -2, -2 (repeated root).\n  Complementary function:\n  y_c(x) = (c₁ + c₂x)e^(-2x)\n\n- Step 2: Determine the particular integral y_p:\n  Trial form: y_p = A cos(2x) + B sin(2x)\n  Compute first and second derivatives:\n  y_p′ = -2A sin(2x) + 2B cos(2x)\n  y_p″ = -4A cos(2x) - 4B sin(2x)\n\n- Step 3: Substitute y_p, y_p′, y_p″ into the differential equation:\n  y″ + 4y′ + 4y = [-4A cos(2x) - 4B sin(2x)] + 4[-2A sin(2x) + 2B cos(2x)] + 4[A cos(2x) + B sin(2x)]\n  Group by cos(2x) and sin(2x):\n  cos(2x) term: -4A + 8B + 4A = 8B\n  sin(2x) term: -4B - 8A + 4B = -8A\n  ==> 8B cos(2x) - 8A sin(2x) = 2 cos(2x)\n\n- Step 4: Equate coefficients of cos(2x) and sin(2x):\n  - Coefficient of cos(2x): 8B = 2 ==> B = 2/8 = 1/4\n  - Coefficient of sin(2x): -8A = 0 ==> A = 0\n  Therefore:\n  y_p(x) = (1/4) sin(2x)\n\n- Step 5: Form the general solution:\n  y(x) = y_c(x) + y_p(x) = (c₁ + c₂x)e^(-2x) + (1/4) sin(2x)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) y = (c₁ + c₂x)e^(-2x) + (1/4) sin(2x)**: CORRECT. The exact analytical solution combining repeated root CF and verified PI.\n- **(B) y = c₁ e^(-2x) + c₂ e^(2x) + (1/4) cos(2x)**: INCORRECT. Fails repeated roots (uses distinct roots ±2) and incorrect trial coefficient phase.\n- **(C) y = (c₁ + c₂x)e^(-2x) + (1/2) cos(2x)**: INCORRECT. Leaves cos(2x) in the particular integral; substitution proves A = 0.\n- **(D) y = c₁ e^(-2x) + (1/4) sin(2x)**: INCORRECT. Missing the second linearly independent homogeneous term c₂x e^(-2x).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Inspection & Derivative Hack (15 Seconds)**:\n  - Auxiliary equation: (r + 2)² = 0 ==> repeated root -2 requires (c₁ + c₂x)e^(-2x).\n  - This immediately eliminates Option B and Option D!\n  - Now check y_p: Since 4y′ will flip sin into cos, a sine term in y_p produces the necessary cos(2x) on the RHS.\n  - Specifically, 4·d/dx[B sin 2x] = 8B cos(2x) = 2 cos(2x) ==> B = 1/4.\n  - Select **(A)** in under 20 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = (c₁ + c₂x)e^(-2x) + (1/4) sin(2x).",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 51,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Resonant Exponential Forcing",
+    "question": "Find the general solution of the second-order non-homogeneous differential equation y″ + 3y′ + 2y = x e^(-x):",
+    "options": [
+      "(A) y = c₁ e^(-x) + c₂ e^(-2x) + [(1/2)x² - x]e^(-x)",
+      "(B) y = c₁ e^(-x) + c₂ e^(-2x) + (Ax + B)e^(-x)",
+      "(C) y = c₁ eˣ + c₂ e^(2x) + [(1/2)x² + x]e^(-x)",
+      "(D) y = (c₁ + c₂x)e^(-x) + x² e^(-x)"
+    ],
+    "answer": "(A) y = c₁ e^(-x) + c₂ e^(-2x) + [(1/2)x² - x]e^(-x)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Second-Order Linear Non-Homogeneous Differential Equations\n- Subtopic: Resonance & Multiplication by x in Undetermined Coefficients\n\n---\n\n### 2. Core Concepts & Governing Principles\nFor L(y) = f(x):\nWhen the forcing function f(x) = Pₘ(x)e^(kx) shares an exponential rate k that coincides with a simple root of the characteristic polynomial (resonance), the trial particular integral must be multiplied by x:\ny_p(x) = x · (Ax + B)e^(kx) = (Ax² + Bx)e^(kx)\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: y″ + 3y′ + 2y = x e^(-x)\n- Step 1: Find the Complementary Function y_c:\n  Auxiliary equation: r² + 3r + 2 = (r + 1)(r + 2) = 0\n  Roots: r₁ = -1, r₂ = -2\n  y_c(x) = c₁ e^(-x) + c₂ e^(-2x)\n\n- Step 2: Formulate the Trial Particular Integral y_p:\n  The right-hand side is x e^(-x).\n  Since r = -1 is already a characteristic root of multiplicity 1, multiply the standard polynomial trial (Ax + B)e^(-x) by x:\n  y_p(x) = (Ax² + Bx)e^(-x)\n\n- Step 3: Use the Exponential Shift Method (let y_p = e^(-x) u(x)):\n  L(e^(-x) u) = e^(-x) [(D - 1)² + 3(D - 1) + 2] u\n  = e^(-x) [D² - 2D + 1 + 3D - 3 + 2] u\n  = e^(-x) [D² + D] u = e^(-x) [u″ + u′]\n  Equating to x e^(-x):\n  u″ + u′ = x\n\n- Step 4: Solve for u(x):\n  Since u″ + u′ = x, try u = Ax² + Bx:\n  u′ = 2Ax + B\n  u″ = 2A\n  u″ + u′ = 2A + 2Ax + B = 2Ax + (2A + B) = x\n  Equate coefficients:\n  - Coefficient of x: 2A = 1 ==> A = 1/2\n  - Constant term: 2A + B = 0 ==> 2(1/2) + B = 0 ==> 1 + B = 0 ==> B = -1\n  Therefore:\n  u(x) = (1/2)x² - x\n  y_p(x) = u(x)e^(-x) = [(1/2)x² - x]e^(-x)\n\n- Step 5: Form the General Solution:\n  y(x) = c₁ e^(-x) + c₂ e^(-2x) + [(1/2)x² - x]e^(-x)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A) y = c₁ e^(-x) + c₂ e^(-2x) + [(1/2)x² - x]e^(-x)**: CORRECT. Accurately handles resonance and coefficient matching.\n- **(B) y = c₁ e^(-x) + c₂ e^(-2x) + (Ax + B)e^(-x)**: INCORRECT. Fails to account for resonance (r = -1 is a root of the auxiliary equation, so (Ax + B)e^(-x) gets absorbed into the complementary function).\n- **(C) y = c₁ eˣ + c₂ e^(2x) + [(1/2)x² + x]e^(-x)**: INCORRECT. Sign errors on characteristic roots (+1, +2 instead of -1, -2).\n- **(D) y = (c₁ + c₂x)e^(-x) + x² e^(-x)**: INCORRECT. Assumes repeated roots when roots are distinct (-1 and -2).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Resonance & Shift Check (15 Seconds)**:\n  - Roots of r² + 3r + 2 = 0 are -1 and -2.\n  - Since e^(-x) is already part of y_c, y_p MUST contain x² e^(-x).\n  - Shift operator gives u″ + u′ = x ==> 2A = 1 ==> A = 1/2.\n  - Look for (1/2 x² - x)e^(-x) ==> Mark **(A)**!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = c₁ e^(-x) + c₂ e^(-2x) + [(1/2)x² - x]e^(-x).",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 52,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Complex Conjugate Roots with Multi-Term Forcing",
+    "question": "Find the general solution of the second-order differential equation y″ - 6y′ + 10y = 20 - e^(2x):",
+    "options": [
+      "(A) y = e^(3x)[c₁ cos(x) + c₂ sin(x)] + 2 - (1/2)e^(2x)",
+      "(B) y = e^(-3x)[c₁ cos(x) + c₂ sin(x)] + 20 - e^(2x)",
+      "(C) y = c₁ e^(3x) + c₂ e^(-3x) + 2 - (1/2)e^(2x)",
+      "(D) y = e^(3x)[c₁ cos(x) + c₂ sin(x)] + 10 - e^(2x)"
+    ],
+    "answer": "(A) y = e^(3x)[c₁ cos(x) + c₂ sin(x)] + 2 - (1/2)e^(2x)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Second-Order Linear Non-Homogeneous Differential Equations\n- Subtopic: Complex Roots & Superposition of Particular Integrals\n\n---\n\n### 2. Core Concepts & Governing Formulas\nBy the Principle of Superposition:\nFor L(y) = f₁(x) + f₂(x), the particular integral is y_p = y_{p1} + y_{p2}, where:\nL(y_{p1}) = f₁(x)  and  L(y_{p2}) = f₂(x)\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: y″ - 6y′ + 10y = 20 - e^(2x)\n- Step 1: Solve the homogeneous equation:\n  Auxiliary equation: r² - 6r + 10 = 0\n  r = [6 ± √(36 - 40)] / 2 = [6 ± √(-4)] / 2 = (6 ± 2i) / 2 = 3 ± i\n  Real part α = 3, imaginary part β = 1.\n  Complementary function:\n  y_c(x) = e^(3x) [c₁ cos(x) + c₂ sin(x)]\n\n- Step 2: Find y_{p1} for forcing term f₁(x) = 20:\n  Since f₁(x) is constant, try y_{p1} = A:\n  y_{p1}′ = 0, y_{p1}″ = 0\n  Substitute: 0 - 6(0) + 10A = 20 ==> 10A = 20 ==> A = 2\n  So y_{p1} = 2.\n\n- Step 3: Find y_{p2} for forcing term f₂(x) = -e^(2x):\n  Try y_{p2} = B e^(2x):\n  y_{p2}′ = 2B e^(2x)\n  y_{p2}″ = 4B e^(2x)\n  Substitute into L(y):\n  4B e^(2x) - 6(2B e^(2x)) + 10(B e^(2x)) = -e^(2x)\n  (4 - 12 + 10)B e^(2x) = -e^(2x)\n  2B e^(2x) = -e^(2x) ==> 2B = -1 ==> B = -1/2\n  So y_{p2} = - (1/2) e^(2x).\n\n- Step 4: Assemble the complete general solution:\n  y(x) = y_c(x) + y_{p1}(x) + y_{p2}(x)\n  y(x) = e^(3x) [c₁ cos(x) + c₂ sin(x)] + 2 - (1/2)e^(2x)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Exact complementary function e^(3x)[c₁ cos x + c₂ sin x] and verified particular integrals 2 and -1/2 e^(2x).\n- **(B)**: INCORRECT. Sign error in exponential damping (e^(-3x) instead of e^(3x)) and unintegrated forcing terms 20 - e^(2x).\n- **(C)**: INCORRECT. Uses real exponential roots instead of harmonic oscillatory terms for complex roots 3 ± i.\n- **(D)**: INCORRECT. Fails to divide 20 by 10 (gives 10 instead of 2) and misses factor 1/2 on e^(2x).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Constant Term & Root Inspection (10 Seconds)**:\n  - Roots: r² - 6r + 10 = 0 ==> r = 3 ± i ==> e^(3x)[c₁ cos x + c₂ sin x].\n  - Constant term: y_{p1} = 20 / 10 = 2.\n  - Option A is the ONLY option with both e^(3x) and constant term +2!\n  - Select **(A)** in 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = e^(3x)[c₁ cos(x) + c₂ sin(x)] + 2 - (1/2)e^(2x).",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 53,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Hyperbolic Forcing & Partial Resonance",
+    "question": "Find the general solution of the second-order differential equation y″ + 6y′ + 8y = cosh(2x):",
+    "options": [
+      "(A) y = c₁ e^(-2x) + c₂ e^(-4x) + (1/4)x e^(-2x) + (1/48)e^(2x)",
+      "(B) y = c₁ e^(-2x) + c₂ e^(-4x) + (1/4)e^(-2x) + (1/48)e^(2x)",
+      "(C) y = c₁ e^(2x) + c₂ e^(4x) + (1/4)x e^(-2x)",
+      "(D) y = (c₁ + c₂x)e^(-2x) + cosh(2x)"
+    ],
+    "answer": "(A) y = c₁ e^(-2x) + c₂ e^(-4x) + (1/4)x e^(-2x) + (1/48)e^(2x)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Second-Order Linear Non-Homogeneous Differential Equations\n- Subtopic: Hyperbolic Function Decomposition and Resonance\n\n---\n\n### 2. Core Concepts & Governing Formulas\n1. Rewrite hyperbolic cosine in exponential form:\n   cosh(2x) = (1/2)e^(2x) + (1/2)e^(-2x)\n2. Solve the auxiliary equation r² + 6r + 8 = 0.\n   If any exponential term e^(kx) shares a root k with the auxiliary equation, resonance occurs and the trial particular integral must be multiplied by x.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: y″ + 6y′ + 8y = cosh(2x)\n- Step 1: Auxiliary equation:\n  r² + 6r + 8 = (r + 2)(r + 4) = 0 ==> r₁ = -2, r₂ = -4\n  Complementary function:\n  y_c(x) = c₁ e^(-2x) + c₂ e^(-4x)\n\n- Step 2: Decompose the forcing function:\n  cosh(2x) = (1/2)e^(2x) + (1/2)e^(-2x)\n\n- Step 3: Find y_{p1} for (1/2)e^(2x) (non-resonant since r = 2 is not a root):\n  Let y_{p1} = A e^(2x).\n  P(2) = 2² + 6(2) + 8 = 4 + 12 + 8 = 24.\n  24A e^(2x) = (1/2)e^(2x) ==> A = (1/2) / 24 = 1/48\n  ==> y_{p1} = (1/48)e^(2x)\n\n- Step 4: Find y_{p2} for (1/2)e^(-2x) (resonant since r = -2 is a simple root):\n  Try y_{p2} = B x e^(-2x).\n  Using the exponential shift rule L(e^(-2x) u) with P(D) = D² + 6D + 8:\n  P(D - 2) = (D - 2)² + 6(D - 2) + 8 = D² - 4D + 4 + 6D - 12 + 8 = D² + 2D\n  (D² + 2D) (Bx) = (d²/dx² + 2 d/dx)(Bx) = 0 + 2B = 2B\n  Equating to 1/2:\n  2B = 1/2 ==> B = 1/4\n  ==> y_{p2} = (1/4)x e^(-2x)\n\n- Step 5: Form the General Solution:\n  y(x) = y_c(x) + y_{p1}(x) + y_{p2}(x)\n  y(x) = c₁ e^(-2x) + c₂ e^(-4x) + (1/4)x e^(-2x) + (1/48)e^(2x)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Accurately decomposes cosh(2x), handles resonance on e^(-2x) with factor x, and derives 1/48 for e^(2x).\n- **(B)**: INCORRECT. Fails to multiply by x on the resonant term e^(-2x), leaving (1/4)e^(-2x) which is absorbed into c₁ e^(-2x).\n- **(C)**: INCORRECT. Wrong signs on characteristic roots (+2, +4 instead of -2, -4) and drops the e^(2x) particular integral.\n- **(D)**: INCORRECT. Assumes repeated roots and leaves cosh(2x) unintegrated.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Resonance Detection (10 Seconds)**:\n  - Roots: -2 and -4.\n  - cosh(2x) contains e^(-2x), which matches root -2!\n  - Therefore, the solution MUST contain an **x e^(-2x)** term!\n  - Option A is the ONLY option with x e^(-2x) and correct negative characteristic exponents!\n  - Select **(A)** in 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = c₁ e^(-2x) + c₂ e^(-4x) + (1/4)x e^(-2x) + (1/48)e^(2x).",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 54,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Third-Order Mixed Trigonometric and Polynomial Forcing",
+    "question": "Find the general solution of the third-order differential equation y‴ - 2y″ + y′ - 2y = 12 sin(2x) - 4x:",
+    "options": [
+      "(A) y = c₁ e^(2x) + c₂ cos(x) + c₃ sin(x) + 2x + 1 + cos(2x) + sin(2x)",
+      "(B) y = c₁ e^(-2x) + c₂ cos(2x) + c₃ sin(2x) + 2x + 1",
+      "(C) y = c₁ e^(2x) + c₂ cos(x) + c₃ sin(x) - 2x - 1",
+      "(D) y = (c₁ + c₂x)e^(2x) + c₃ sin(x) + cos(2x)"
+    ],
+    "answer": "(A) y = c₁ e^(2x) + c₂ cos(x) + c₃ sin(x) + 2x + 1 + cos(2x) + sin(2x)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Third-Order Linear Non-Homogeneous Differential Equations\n- Subtopic: Factorization of Cubic Operators and Superposition of Integrals\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor the cubic differential operator P(D) = D³ - 2D² + D - 2:\n1. Factor: r³ - 2r² + r - 2 = r²(r - 2) + 1(r - 2) = (r - 2)(r² + 1) = 0.\n   Roots: r = 2, ±i.\n2. Forcing function has two distinct components: polynomial (-4x) and sinusoidal (12 sin 2x).\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: y‴ - 2y″ + y′ - 2y = 12 sin(2x) - 4x\n- Step 1: Complementary function y_c:\n  Roots: r₁ = 2, r₂,₃ = ±i\n  y_c(x) = c₁ e^(2x) + c₂ cos(x) + c₃ sin(x)\n\n- Step 2: Particular integral y_{p1} for -4x:\n  Try y_{p1} = Ax + B:\n  y_{p1}′ = A, y_{p1}″ = 0, y_{p1}‴ = 0\n  Substitute: 0 - 2(0) + A - 2(Ax + B) = -4x\n  -2Ax + (A - 2B) = -4x\n  Equate coefficients:\n  -2A = -4 ==> A = 2\n  A - 2B = 0 ==> 2 - 2B = 0 ==> B = 1\n  ==> y_{p1} = 2x + 1\n\n- Step 3: Particular integral y_{p2} for 12 sin(2x):\n  (Note: Roots are ±i, while forcing frequency is 2, so no resonance!).\n  Try y_{p2} = C cos(2x) + D sin(2x):\n  y′ = -2C sin(2x) + 2D cos(2x)\n  y″ = -4C cos(2x) - 4D sin(2x)\n  y‴ = 8C sin(2x) - 8D cos(2x)\n  Substitute into y‴ - 2y″ + y′ - 2y:\n  cos(2x) terms: -8D - 2(-4C) + 2D - 2C = -8D + 8C + 2D - 2C = 6C - 6D\n  sin(2x) terms: 8C - 2(-4D) - 2C - 2D = 8C + 8D - 2C - 2D = 6C + 6D\n  ==> (6C - 6D)cos(2x) + (6C + 6D)sin(2x) = 12 sin(2x)\n  Equating coefficients:\n  6C - 6D = 0 ==> C = D\n  6C + 6D = 12 ==> 6C + 6C = 12 ==> 12C = 12 ==> C = 1, D = 1\n  ==> y_{p2} = cos(2x) + sin(2x)\n\n- Step 4: Total General Solution:\n  y(x) = c₁ e^(2x) + c₂ cos(x) + c₃ sin(x) + 2x + 1 + cos(2x) + sin(2x)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Complete solution with verified CF and both particular integrals.\n- **(B)**: INCORRECT. Sign error on root (uses e^(-2x)) and frequency error on complementary function.\n- **(C)**: INCORRECT. Sign error on polynomial integral (-2x - 1 instead of +2x + 1) and omits sinusoidal PI.\n- **(D)**: INCORRECT. Incomplete and incorrect trial structure.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Polynomial Term Inspection (5 Seconds)**:\n  - For -4x, -2y = -4x ==> y = +2x.\n  - Option A is the only option with both e^(2x), cos(x), sin(x), and +2x + 1!\n  - Select **(A)** in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = c₁ e^(2x) + c₂ cos(x) + c₃ sin(x) + 2x + 1 + cos(2x) + sin(2x).",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 55,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Product of Linear Polynomial and Resonant Exponential",
+    "question": "Find the general solution of the second-order differential equation y″ - 5y′ + 6y = 2x e^(3x):",
+    "options": [
+      "(A) y = c₁ e^(2x) + c₂ e^(3x) + (x² - 2x)e^(3x)",
+      "(B) y = c₁ e^(2x) + c₂ e^(3x) + (2x - 1)e^(3x)",
+      "(C) y = c₁ e^(-2x) + c₂ e^(-3x) + (x² + 2x)e^(3x)",
+      "(D) y = (c₁ + c₂x)e^(3x) + x² e^(3x)"
+    ],
+    "answer": "(A) y = c₁ e^(2x) + c₂ e^(3x) + (x² - 2x)e^(3x)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Second-Order Linear Non-Homogeneous Differential Equations\n- Subtopic: Resonance with Exponential Shift Method\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor a y″ + b y′ + c y = P₁(x)e^(kx):\nIf k is a simple root of the auxiliary polynomial P(r) = 0, multiply the standard trial polynomial by x:\ny_p(x) = x · (Ax + B)e^(kx) = (Ax² + Bx)e^(kx)\nEquivalently, use the exponential shift rule: P(D)[e^(kx) u] = e^(kx) P(D + k) u.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: y″ - 5y′ + 6y = 2x e^(3x)\n- Step 1: Complementary function y_c:\n  Auxiliary equation: r² - 5r + 6 = (r - 2)(r - 3) = 0 ==> r₁ = 2, r₂ = 3\n  y_c(x) = c₁ e^(2x) + c₂ e^(3x)\n\n- Step 2: Exponential Shift for y_p:\n  Let y_p = e^(3x) u(x).\n  The differential operator is P(D) = D² - 5D + 6.\n  Shift by +3:\n  P(D + 3) = (D + 3)² - 5(D + 3) + 6\n  = D² + 6D + 9 - 5D - 15 + 6 = D² + D = u″ + u′\n  Substitute into the ODE:\n  e^(3x) [u″ + u′] = 2x e^(3x) ==> u″ + u′ = 2x\n\n- Step 3: Solve for u(x):\n  Try u(x) = Ax² + Bx:\n  u′ = 2Ax + B\n  u″ = 2A\n  u″ + u′ = 2Ax + (2A + B) = 2x\n  Equate coefficients:\n  - 2A = 2 ==> A = 1\n  - 2A + B = 0 ==> 2(1) + B = 0 ==> B = -2\n  Therefore:\n  u(x) = x² - 2x\n  y_p(x) = (x² - 2x)e^(3x)\n\n- Step 4: General Solution:\n  y(x) = c₁ e^(2x) + c₂ e^(3x) + (x² - 2x)e^(3x)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Accurately accounts for simple resonance (x² - 2x) and correct characteristic roots 2 and 3.\n- **(B)**: INCORRECT. Fails to account for resonance (did not multiply trial by x).\n- **(C)**: INCORRECT. Negative signs on complementary roots (-2, -3 instead of +2, +3).\n- **(D)**: INCORRECT. Assumes repeated roots when roots are distinct.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Shift & Degree Inspection (10 Seconds)**:\n  - r = 3 is a simple root ==> y_p must have degree 2: (Ax² + Bx)e^(3x).\n  - Shift gives u″ + u′ = 2x ==> 2A = 2 ==> A = 1.\n  - Constant term 2A + B = 0 ==> B = -2.\n  - Matches (x² - 2x)e^(3x) ==> Select **(A)** in 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = c₁ e^(2x) + c₂ e^(3x) + (x² - 2x)e^(3x).",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 56,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Distinct Real Roots with Mixed Sine and Cosine Forcing",
+    "question": "Find the general solution of the second-order differential equation y″ - 4y′ + 3y = (1/2)cos(3x) - 3 sin(3x):",
+    "options": [
+      "(A) y = c₁ eˣ + c₂ e^(3x) - (13/60) cos(3x) + (1/15) sin(3x)",
+      "(B) y = c₁ e^(-x) + c₂ e^(-3x) + (13/60) cos(3x) - (1/15) sin(3x)",
+      "(C) y = c₁ eˣ + c₂ e^(3x) + (1/2) cos(3x) - 3 sin(3x)",
+      "(D) y = (c₁ + c₂x)eˣ - (13/60) cos(3x)"
+    ],
+    "answer": "(A) y = c₁ eˣ + c₂ e^(3x) - (13/60) cos(3x) + (1/15) sin(3x)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Second-Order Linear Non-Homogeneous Differential Equations\n- Subtopic: Method of Undetermined Coefficients with Harmonic Forcing\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor a y″ + b y′ + c y = M cos(ωx) + N sin(ωx):\n1. Auxiliary equation: a r² + b r + c = 0.\n2. Trial particular integral: y_p = A cos(ωx) + B sin(ωx) (since ±iω are not roots of the characteristic equation).\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: y″ - 4y′ + 3y = (1/2)cos(3x) - 3 sin(3x)\n- Step 1: Auxiliary equation:\n  r² - 4r + 3 = (r - 1)(r - 3) = 0 ==> r₁ = 1, r₂ = 3\n  Complementary function:\n  y_c(x) = c₁ eˣ + c₂ e^(3x)\n\n- Step 2: Particular integral y_p:\n  Let y_p = A cos(3x) + B sin(3x)\n  y_p′ = -3A sin(3x) + 3B cos(3x)\n  y_p″ = -9A cos(3x) - 9B sin(3x)\n\n- Step 3: Substitute into y″ - 4y′ + 3y:\n  [-9A cos(3x) - 9B sin(3x)] - 4[-3A sin(3x) + 3B cos(3x)] + 3[A cos(3x) + B sin(3x)]\n  Group cos(3x) terms: -9A - 12B + 3A = -6A - 12B\n  Group sin(3x) terms: -9B + 12A + 3B = 12A - 6B\n  ==> (-6A - 12B)cos(3x) + (12A - 6B)sin(3x) = (1/2)cos(3x) - 3 sin(3x)\n\n- Step 4: Solve the 2 × 2 linear system:\n  1) -6A - 12B = 1/2   ==> -12A - 24B = 1\n  2) 12A - 6B = -3\n  Add the two equations:\n  (-12A + 12A) + (-24B - 6B) = 1 + (-3)\n  -30B = -2 ==> B = 2/30 = 1/15\n\n  Substitute B = 1/15 into equation 2:\n  12A - 6(1/15) = -3 ==> 12A - 2/5 = -3\n  12A = -3 + 2/5 = -13/5 ==> A = -13 / (5 · 12) = -13/60\n\n- Step 5: Form the General Solution:\n  y(x) = c₁ eˣ + c₂ e^(3x) - (13/60) cos(3x) + (1/15) sin(3x)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Accurately calculated coefficients A = -13/60 and B = 1/15, with correct CF basis {eˣ, e^(3x)}.\n- **(B)**: INCORRECT. Sign errors on characteristic roots (gives e^(-x) and e^(-3x)) and opposite signs on PI.\n- **(C)**: INCORRECT. Leaves forcing coefficients without solving the algebraic system.\n- **(D)**: INCORRECT. Assumes repeated roots and omits the sine component.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Characteristic Roots & Coefficient Check (10 Seconds)**:\n  - r² - 4r + 3 = 0 ==> roots r = 1, 3 ==> c₁ eˣ + c₂ e^(3x).\n  - Eliminates B and D immediately!\n  - Solving -6A - 12B = 1/2 and 12A - 6B = -3 clearly yields fractional denominators with 60 and 15.\n  - Matches Option **(A)**!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = c₁ eˣ + c₂ e^(3x) - (13/60) cos(3x) + (1/15) sin(3x).",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 57,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Second-Order Repeated Roots with Quadratic Forcing",
+    "question": "Find the general solution of the differential equation y″ + 2y′ + y = 132x² - 338x + 1077:",
+    "options": [
+      "(A) y = (c₁ + c₂x)e^(-x) + 132x² - 866x + 2545",
+      "(B) y = (c₁ + c₂x)eˣ + 132x² - 866x + 2545",
+      "(C) y = c₁ e^(-x) + c₂ e^(-2x) + 132x² - 338x + 1077",
+      "(D) y = (c₁ + c₂x)e^(-x) + 66x² - 169x + 538"
+    ],
+    "answer": "(A) y = (c₁ + c₂x)e^(-x) + 132x² - 866x + 2545",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Second-Order Linear Non-Homogeneous Differential Equations\n- Subtopic: Undetermined Coefficients with Polynomial Forcing Functions\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor a y″ + b y′ + c y = P₂(x) = α x² + β x + γ:\n1. Since 0 is not a characteristic root, assume trial quadratic polynomial:\n   y_p(x) = Ax² + Bx + C\n2. Substitute y_p, y_p′, y_p″ and equate coefficients of like powers of x (x², x¹, x⁰).\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: y″ + 2y′ + y = 132x² - 338x + 1077\n- Step 1: Auxiliary equation:\n  r² + 2r + 1 = (r + 1)² = 0 ==> r = -1, -1 (repeated root)\n  y_c(x) = (c₁ + c₂x)e^(-x)\n\n- Step 2: Differentiate trial form y_p = Ax² + Bx + C:\n  y_p′ = 2Ax + B\n  y_p″ = 2A\n\n- Step 3: Substitute into y″ + 2y′ + y:\n  (2A) + 2(2Ax + B) + (Ax² + Bx + C) = 132x² - 338x + 1077\n  Group powers of x:\n  x² term: A = 132\n  x¹ term: 4A + B = -338\n  x⁰ term: 2A + 2B + C = 1077\n\n- Step 4: Solve for coefficients sequentially:\n  - From x²: A = 132\n  - From x¹: 4(132) + B = -338 ==> 528 + B = -338 ==> B = -338 - 528 = -866\n  - From x⁰: 2(132) + 2(-866) + C = 1077\n    264 - 1732 + C = 1077\n    -1468 + C = 1077 ==> C = 1077 + 1468 = 2545\n  Therefore:\n  y_p(x) = 132x² - 866x + 2545\n\n- Step 5: Form the General Solution:\n  y(x) = (c₁ + c₂x)e^(-x) + 132x² - 866x + 2545\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Exact complementary function and verified polynomial coefficients A = 132, B = -866, C = 2545.\n- **(B)**: INCORRECT. Sign error in characteristic root (+1 instead of -1).\n- **(C)**: INCORRECT. Assumes distinct roots and leaves forcing polynomial unintegrated.\n- **(D)**: INCORRECT. Halves the polynomial coefficients without justification.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Leading & Linear Coefficient Inspection (10 Seconds)**:\n  - Coefficient of y is 1 ==> A must equal 132!\n  - 4A + B = -338 ==> B = -338 - 4(132) = -866.\n  - Option A is the ONLY option with A = 132, B = -866 and e^(-x)!\n  - Select **(A)** in 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = (c₁ + c₂x)e^(-x) + 132x² - 866x + 2545.",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 58,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Complex Conjugate Roots with Quadratic-Exponential Forcing",
+    "question": "Find the general solution of the second-order differential equation y″ + 3y′ + 8y = (x² - 7)e^(5x):",
+    "options": [
+      "(A) y = e^(-3x/2)[c₁ cos((√23/2)x) + c₂ sin((√23/2)x)] + [(1/48)x² - (13/1152)x - (7943/55296)]e^(5x)",
+      "(B) y = e^(3x/2)[c₁ cos((√23/2)x) + c₂ sin((√23/2)x)] + [(1/48)x² - 7]e^(5x)",
+      "(C) y = c₁ e^(-3x) + c₂ e^(-8x) + (1/48)x² e^(5x)",
+      "(D) y = e^(-3x/2)[c₁ cos(√23 x) + c₂ sin(√23 x)] - 7e^(5x)"
+    ],
+    "answer": "(A) y = e^(-3x/2)[c₁ cos((√23/2)x) + c₂ sin((√23/2)x)] + [(1/48)x² - (13/1152)x - (7943/55296)]e^(5x)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Second-Order Linear Non-Homogeneous Differential Equations\n- Subtopic: Exponential Shift on Complex Characteristic Roots\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor a y″ + b y′ + c y = P(x)e^(kx):\n1. Auxiliary equation: r² + 3r + 8 = 0.\n   Discriminant Δ = 9 - 32 = -23 ==> r = -3/2 ± i√23/2.\n2. By the Exponential Shift Method:\n   P(D)[e^(5x) u] = e^(5x) P(D + 5) u = (x² - 7)e^(5x).\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: y″ + 3y′ + 8y = (x² - 7)e^(5x)\n- Step 1: Complementary function y_c:\n  r² + 3r + 8 = 0 ==> r = -3/2 ± (√23/2)i\n  y_c(x) = e^(-3x/2) [c₁ cos((√23/2)x) + c₂ sin((√23/2)x)]\n\n- Step 2: Exponential Shift for y_p:\n  Let y_p = e^(5x) u(x).\n  P(D) = D² + 3D + 8.\n  Shift D -> D + 5:\n  P(D + 5) = (D + 5)² + 3(D + 5) + 8 = D² + 10D + 25 + 3D + 15 + 8\n  = D² + 13D + 48\n  ==> u″ + 13u′ + 48u = x² - 7\n\n- Step 3: Solve for u(x) = Ax² + Bx + C:\n  u′ = 2Ax + B\n  u″ = 2A\n  (2A) + 13(2Ax + B) + 48(Ax² + Bx + C) = x² - 7\n  48Ax² + (26A + 48B)x + (2A + 13B + 48C) = x² - 7\n  Equate coefficients:\n  - 48A = 1 ==> A = 1/48\n  - 26A + 48B = 0 ==> 48B = -26(1/48) = -13/24 ==> B = -13 / (24 · 48) = -13/1152\n  - 2A + 13B + 48C = -7:\n    48C = -7 - 2(1/48) - 13(-13/1152) = -7 - 1/24 + 169/1152\n    48C = (-8064 - 48 + 169) / 1152 = -7943 / 1152\n    ==> C = -7943 / (1152 · 48) = -7943 / 55296\n  Therefore:\n  y_p(x) = [(1/48)x² - (13/1152)x - (7943/55296)] e^(5x)\n\n- Step 4: General Solution:\n  y(x) = e^(-3x/2)[c₁ cos((√23/2)x) + c₂ sin((√23/2)x)] + [(1/48)x² - (13/1152)x - (7943/55296)]e^(5x)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. The exact full solution with verified CF and shift polynomial.\n- **(B)**: INCORRECT. Sign error on real part (+3/2 instead of -3/2) and uncompleted shift.\n- **(C)**: INCORRECT. Fails complex root derivation entirely.\n- **(D)**: INCORRECT. Missing division by 2 in frequency and missing x² term in PI.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Leading Quadratic Coefficient (10 Seconds)**:\n  - Shift operator gives 48u = x² ==> A = 1/48.\n  - Real part of root is -b/2a = -3/2 ==> e^(-3x/2).\n  - Option A is the ONLY choice with e^(-3x/2) and (1/48)x²!\n  - Select **(A)** in 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = e^(-3x/2)[c₁ cos((√23/2)x) + c₂ sin((√23/2)x)] + [(1/48)x² - (13/1152)x - (7943/55296)]e^(5x).",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 59,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Complex Roots with Exponential-Harmonic Forcing",
+    "question": "Find the general solution of the second-order differential equation y″ + y′ + y = (1/2)e^(5x) cos(3x):",
+    "options": [
+      "(A) y = e^(-x/2)[c₁ cos((√3/2)x) + c₂ sin((√3/2)x)] + [(2 cos(3x) + 3 sin(3x)) / 286] e^(5x)",
+      "(B) y = e^(x/2)[c₁ cos((√3/2)x) + c₂ sin((√3/2)x)] + [(2 cos(3x) + 3 sin(3x)) / 286] e^(5x)",
+      "(C) y = e^(-x/2)[c₁ cos(√3 x) + c₂ sin(√3 x)] + [cos(3x) / 143] e^(5x)",
+      "(D) y = c₁ e^(-x) + c₂ eˣ + (1/2) e^(5x) cos(3x)"
+    ],
+    "answer": "(A) y = e^(-x/2)[c₁ cos((√3/2)x) + c₂ sin((√3/2)x)] + [(2 cos(3x) + 3 sin(3x)) / 286] e^(5x)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Second-Order Linear Non-Homogeneous Differential Equations\n- Subtopic: Exponential Shift and Inverse Operator on Sinusoidal Forcing\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor a y″ + b y′ + c y = e^(kx) [M cos(ωx) + N sin(ωx)]:\n1. Auxiliary equation: r² + r + 1 = 0 ==> r = -1/2 ± i√3/2.\n   Complementary function: y_c(x) = e^(-x/2) [c₁ cos((√3/2)x) + c₂ sin((√3/2)x)].\n2. Particular integral by Exponential Shift:\n   y_p = (1 / P(D)) [e^(kx) f(x)] = e^(kx) [1 / P(D + k)] f(x).\n3. Harmonic substitution: In P(D + k), replace D² with -ω².\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: y″ + y′ + y = (1/2)e^(5x) cos(3x)\n- Step 1: Characteristic roots:\n  r² + r + 1 = 0 ==> r = -1/2 ± i√3/2\n  y_c(x) = e^(-x/2)[c₁ cos((√3/2)x) + c₂ sin((√3/2)x)]\n\n- Step 2: Apply the Exponential Shift with k = 5:\n  P(D) = D² + D + 1\n  P(D + 5) = (D + 5)² + (D + 5) + 1 = D² + 10D + 25 + D + 6 = D² + 11D + 31\n  ==> y_p = (1/2) e^(5x) [1 / (D² + 11D + 31)] cos(3x)\n\n- Step 3: Substitute D² -> -3² = -9:\n  D² + 11D + 31 -> -9 + 11D + 31 = 11D + 22 = 11(D + 2)\n  ==> y_p = (1/2) e^(5x) · (1/11) [1 / (D + 2)] cos(3x)\n\n- Step 4: Multiply numerator and denominator by (D - 2):\n  [1 / (D + 2)] cos(3x) = [(D - 2) / (D² - 4)] cos(3x)\n  Replace D² -> -9:\n  Denominator = -9 - 4 = -13\n  Numerator: (D - 2) cos(3x) = -3 sin(3x) - 2 cos(3x)\n  ==> [1 / (D + 2)] cos(3x) = [-3 sin(3x) - 2 cos(3x)] / (-13) = [2 cos(3x) + 3 sin(3x)] / 13\n\n- Step 5: Combine all constant multipliers:\n  y_p = (1/2) e^(5x) · (1/11) · [2 cos(3x) + 3 sin(3x)] / 13\n  Denominator = 2 · 11 · 13 = 286\n  ==> y_p = [(2 cos(3x) + 3 sin(3x)) / 286] e^(5x)\n\n- Step 6: Form the General Solution:\n  y(x) = e^(-x/2)[c₁ cos((√3/2)x) + c₂ sin((√3/2)x)] + [(2 cos(3x) + 3 sin(3x)) / 286] e^(5x)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Exactly derives the complementary function with decay factor e^(-x/2) and frequency √3/2, and matches the verified denominator 286 with numerator 2 cos(3x) + 3 sin(3x).\n- **(B)**: INCORRECT. Sign error in the exponential decay factor of the complementary function (positive x/2 instead of -x/2).\n- **(C)**: INCORRECT. Misses the factor of 1/2 in the argument of the trigonometric functions (uses √3 x instead of (√3/2)x) and omits the sine response term in y_p.\n- **(D)**: INCORRECT. Fabricates real roots {1, -1} for an irreducible quadratic and leaves the particular integral uncomputed.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Denominator Inspection (15 Seconds)**:\n  - Shift operator gives 11(D + 2).\n  - Rationalization produces denominator: 2 · 11 · (-9 - 4) = 2 · 11 · (-13) = -286.\n  - The denominator of y_p MUST be 286!\n  - Only Options A and B have 286 in the denominator.\n  - Roots of r² + r + 1 = 0 have real part -1/2 ==> e^(-x/2).\n  - Option A is the ONLY mathematically consistent option!\n  - Select **(A)** in under 20 seconds.\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = e^(-x/2)[c₁ cos((√3/2)x) + c₂ sin((√3/2)x)] + [(2 cos(3x) + 3 sin(3x)) / 286] e^(5x).",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 60,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Product of Polynomial, Exponential, and Sinusoidal Functions",
+    "question": "Find the general solution of the second-order differential equation y″ + 5y′ + 6y = t e^(2t) cos(3t):",
+    "options": [
+      "(A) y = c₁ e^(-2t) + c₂ e^(-3t) + [e^(2t) / 361250][(4675t + 954) cos(3t) + (11475t - 4497) sin(3t)]",
+      "(B) y = c₁ e^(2t) + c₂ e^(3t) + [e^(2t) / 361250][(4675t + 954) cos(3t) + (11475t - 4497) sin(3t)]",
+      "(C) y = c₁ e^(-2t) + c₂ e^(-3t) + t e^(2t) cos(3t)",
+      "(D) y = (c₁ + c₂t)e^(-2t) + [e^(2t) / 20] t cos(3t)"
+    ],
+    "answer": "(A) y = c₁ e^(-2t) + c₂ e^(-3t) + [e^(2t) / 361250][(4675t + 954) cos(3t) + (11475t - 4497) sin(3t)]",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Second-Order Linear Non-Homogeneous Differential Equations\n- Subtopic: Method of Undetermined Coefficients with Mixed Product Forcing\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor a y″ + b y′ + c y = t e^(kt) cos(ωt):\n1. Auxiliary equation: r² + 5r + 6 = (r + 2)(r + 3) = 0 ==> r = -2, -3.\n   Complementary function: y_c(t) = c₁ e^(-2t) + c₂ e^(-3t).\n2. Trial form for particular integral:\n   y_p(t) = e^(2t) [(At + B) cos(3t) + (Ct + D) sin(3t)].\n3. Substitute y_p into the differential equation and solve the resulting 4 × 4 linear system for {A, B, C, D}.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: y″ + 5y′ + 6y = t e^(2t) cos(3t)\n- Step 1: Auxiliary equation:\n  r² + 5r + 6 = 0 ==> (r + 2)(r + 3) = 0 ==> r₁ = -2, r₂ = -3\n  y_c(t) = c₁ e^(-2t) + c₂ e^(-3t)\n\n- Step 2: Exponential Shift:\n  Let y = e^(2t) u(t).\n  Operator P(D) = D² + 5D + 6.\n  P(D + 2) = (D + 2)² + 5(D + 2) + 6 = D² + 4D + 4 + 5D + 10 + 6 = D² + 9D + 20.\n  Equation reduces to:\n  u″ + 9u′ + 20u = t cos(3t)\n\n- Step 3: Particular Integral for u(t):\n  Trial form: u_p(t) = (At + B) cos(3t) + (Ct + D) sin(3t).\n  Taking derivatives and substituting into u″ + 9u′ + 20u:\n  Equating coefficients of t cos(3t), t sin(3t), cos(3t), sin(3t):\n  - 11A + 27C = 1\n  - -27A + 11C = 0  ==> C = (27/11)A ==> 11A + 27(27/11)A = 1 ==> (121 + 729)/11 A = 1 ==> 850 A = 11\n    ==> A = 11/850, C = 27/850.\n  Solving the constant-level equations for B and D:\n  - 11B + 27D = -(2(3C) + 9A) = -(162/850 + 99/850) = -261/850\n  - -27B + 11D = -(-2(3A) + 9C) = -(-66/850 + 243/850) = -177/850\n  Multiplying through by 850 · 850 = 722500 / 2 = 361250 leads directly to:\n  A = 4675 / 361250\n  B = 954 / 361250\n  C = 11475 / 361250\n  D = -4497 / 361250\n\n- Step 4: Assemble General Solution:\n  y(t) = c₁ e^(-2t) + c₂ e^(-3t) + [e^(2t) / 361250][(4675t + 954) cos(3t) + (11475t - 4497) sin(3t)]\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. The complementary function c₁ e^(-2t) + c₂ e^(-3t) is rigorously established from the characteristic roots r = -2, -3, and the particular integral coefficients match the exact linear system solution.\n- **(B)**: INCORRECT. Sign error in characteristic roots; gives e^(2t) and e^(3t) instead of exponential decay.\n- **(C)**: INCORRECT. Erroneously assumes the forcing function itself is the particular solution without undetermined coefficients.\n- **(D)**: INCORRECT. Assumes repeated roots (c₁ + c₂t) and an arbitrary denominator of 20.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Characteristic Roots Elimination (5 Seconds)**:\n  - r² + 5r + 6 = 0 ==> (r + 2)(r + 3) = 0 ==> roots r = -2, -3.\n  - Complementary function MUST be c₁ e^(-2t) + c₂ e^(-3t).\n  - This immediately eliminates Options B and D!\n  - Between A and C: A linear differential equation forced by t e^(2t) cos(3t) cannot have an identical trial function without solving for coefficients.\n  - Option A is the ONLY complete and correct solution!\n  - Select **(A)** in 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = c₁ e^(-2t) + c₂ e^(-3t) + [e^(2t) / 361250][(4675t + 954) cos(3t) + (11475t - 4497) sin(3t)].",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 61,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Third-Order Differential Equation with Repeated and Zero Roots",
+    "question": "Find the general solution of the third-order differential equation y‴ + 2y″ + y′ = e^(2x) + 3:",
+    "options": [
+      "(A) y = c₁ + c₂ e^(-x) + c₃ x e^(-x) + 3x + (1/18) e^(2x)",
+      "(B) y = c₁ e^(-x) + c₂ x e^(-x) + 3 + (1/18) e^(2x)",
+      "(C) y = c₁ + c₂ eˣ + c₃ x eˣ + 3x + (1/8) e^(2x)",
+      "(D) y = c₁ + c₂ e^(-x) + c₃ e^(-2x) + x² + e^(2x)"
+    ],
+    "answer": "(A) y = c₁ + c₂ e^(-x) + c₃ x e^(-x) + 3x + (1/18) e^(2x)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Higher-Order Linear Constant-Coefficient ODEs\n- Subtopic: Resonant Constant Forcing and Non-Resonant Exponential Forcing\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor a y‴ + b y″ + c y′ + d y = f(x):\n1. Auxiliary equation: r³ + 2r² + r = r(r + 1)² = 0.\n   Roots: r = 0 (multiplicity 1), r = -1 (multiplicity 2).\n   Complementary function: y_c(x) = c₁ + c₂ e^(-x) + c₃ x e^(-x).\n2. Resonance with Constant Term: Since r = 0 is a characteristic root with multiplicity 1, a constant forcing term f₁(x) = 3 requires trial form y_p1 = A x.\n3. Exponential Term: For f₂(x) = e^(2x), r = 2 is not a characteristic root, so y_p2 = B e^(2x) where B = 1 / P(2).\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: y‴ + 2y″ + y′ = e^(2x) + 3\n- Step 1: Solve the Auxiliary Equation:\n  r³ + 2r² + r = 0\n  r(r² + 2r + 1) = r(r + 1)² = 0\n  ==> r₁ = 0, r₂ = -1, r₃ = -1 (repeated root)\n  y_c(x) = c₁ e^(0·x) + (c₂ + c₃ x)e^(-x) = c₁ + c₂ e^(-x) + c₃ x e^(-x)\n\n- Step 2: Particular Integral for Constant Term f₁(x) = 3:\n  Since r = 0 is a simple root, let y_p1 = A x.\n  y_p1′ = A, y_p1″ = 0, y_p1‴ = 0.\n  Substitute into ODE:\n  0 + 2(0) + A = 3 ==> A = 3.\n  ==> y_p1 = 3x.\n\n- Step 3: Particular Integral for Exponential Term f₂(x) = e^(2x):\n  Let y_p2 = B e^(2x).\n  P(D) = D³ + 2D² + D.\n  Evaluate at D = 2:\n  P(2) = 2³ + 2(2²) + 2 = 8 + 8 + 2 = 18.\n  ==> B = 1 / P(2) = 1/18.\n  ==> y_p2 = (1/18) e^(2x).\n\n- Step 4: Assemble General Solution:\n  y(x) = y_c(x) + y_p1 + y_p2\n  y(x) = c₁ + c₂ e^(-x) + c₃ x e^(-x) + 3x + (1/18) e^(2x)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Incorporates the zero root (c₁), the repeated root -1 ((c₂ + c₃x)e^(-x)), the resonant linear term (3x), and the verified exponential component ((1/18)e^(2x)).\n- **(B)**: INCORRECT. Omits the arbitrary constant c₁ arising from the root r = 0, and fails to multiply the constant forcing by x (uses 3 instead of 3x).\n- **(C)**: INCORRECT. Sign error in characteristic roots (+1 instead of -1) and wrong denominator in exponential particular integral (8 instead of 18).\n- **(D)**: INCORRECT. Assumes distinct roots {-1, -2} instead of repeated root -1, and assigns arbitrary polynomial terms.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Two-Step Inspection Hack (10 Seconds)**:\n  1. **Constant resonance check**: y′ = 3 ==> y_p must have 3x! This immediately eliminates Options B and D.\n  2. **Exponential denominator check**: P(2) = 2³ + 2(2²) + 2 = 8 + 8 + 2 = 18. So particular integral has (1/18)e^(2x)!\n  - Eliminates Option C (which has 1/8).\n  - Matches Option **(A)** uniquely!\n  - Done in 10 seconds flat!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = c₁ + c₂ e^(-x) + c₃ x e^(-x) + 3x + (1/18) e^(2x).",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 62,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Second-Order ODE with Squared Trigonometric Forcing",
+    "question": "Find the general solution of the differential equation ẍ + 4ẋ = sin²(2t):",
+    "options": [
+      "(A) x(t) = c₁ + c₂ e^(-4t) + (1/8)t + [(cos(4t) - sin(4t)) / 64]",
+      "(B) x(t) = c₁ e^(-4t) + c₂ e^(4t) + (1/4)t + [(cos(4t) + sin(4t)) / 64]",
+      "(C) x(t) = c₁ + c₂ e^(-4t) + (1/2)t - [sin(4t) / 16]",
+      "(D) x(t) = (c₁ + c₂t)e^(-4t) + (1/8)t + [cos(4t) / 32]"
+    ],
+    "answer": "(A) x(t) = c₁ + c₂ e^(-4t) + (1/8)t + [(cos(4t) - sin(4t)) / 64]",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Second-Order Linear Non-Homogeneous Differential Equations\n- Subtopic: Trigonometric Power-Reduction Identity and Zero-Root Resonance\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor ẍ + 4ẋ = sin²(2t):\n1. Power-reduction identity: sin²(θ) = (1 - cos(2θ)) / 2 ==> sin²(2t) = 1/2 - (1/2)cos(4t).\n2. Auxiliary equation: r² + 4r = r(r + 4) = 0 ==> r = 0, -4.\n   Complementary function: x_c(t) = c₁ + c₂ e^(-4t).\n3. Particular integral split:\n   - For constant 1/2: Since r = 0 is a simple root, trial form is x_p1 = A t.\n   - For -(1/2)cos(4t): Trial form is x_p2 = B cos(4t) + C sin(4t).\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: ẍ + 4ẋ = sin²(2t)\n- Step 1: Auxiliary equation:\n  r² + 4r = 0 ==> r(r + 4) = 0 ==> r₁ = 0, r₂ = -4\n  x_c(t) = c₁ e^(0·t) + c₂ e^(-4t) = c₁ + c₂ e^(-4t)\n\n- Step 2: Transform RHS:\n  sin²(2t) = 1/2 - (1/2)cos(4t)\n\n- Step 3: Compute x_p1 for 1/2:\n  Let x_p1 = A t.\n  ẋ_p1 = A, ẍ_p1 = 0.\n  Substitute: 0 + 4A = 1/2 ==> A = 1/8.\n  ==> x_p1 = (1/8)t.\n\n- Step 4: Compute x_p2 for -(1/2)cos(4t):\n  Using inverse operator:\n  x_p2 = [1 / (D² + 4D)] [-(1/2)cos(4t)]\n  Substitute D² -> -(4)² = -16:\n  = [1 / (-16 + 4D)] [-(1/2)cos(4t)] = [1 / (4D - 16)] [-(1/2)cos(4t)] = -(1/8) [1 / (D - 4)] cos(4t)\n  Multiply numerator and denominator by (D + 4):\n  = -(1/8) [(D + 4) / (D² - 16)] cos(4t)\n  Replace D² -> -16 in denominator:\n  Denominator = -16 - 16 = -32.\n  Numerator = D(cos 4t) + 4 cos(4t) = -4 sin(4t) + 4 cos(4t).\n  ==> x_p2 = -(1/8) · [-4 sin(4t) + 4 cos(4t)] / (-32)\n  = (1/8) · 4 [cos(4t) - sin(4t)] / 32\n  = (1/2) · [cos(4t) - sin(4t)] / 32\n  = [cos(4t) - sin(4t)] / 64\n\n- Step 5: Form the General Solution:\n  x(t) = c₁ + c₂ e^(-4t) + (1/8)t + [cos(4t) - sin(4t)] / 64\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Flawlessly applies the half-angle formula, accounts for the zero-frequency resonance with (1/8)t, and evaluates the inverse operator to get (cos(4t) - sin(4t))/64.\n- **(B)**: INCORRECT. Erroneously asserts roots are ±4 (giving e^(4t)), miscalculates the constant term coefficient as 1/4, and has a sign error on the sine term.\n- **(C)**: INCORRECT. Fails to divide the constant by 4 (giving (1/2)t instead of (1/8)t) and omits the cosine response.\n- **(D)**: INCORRECT. Treats r = -4 as a repeated root and omits the sine response.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Inspection of Linear Term (10 Seconds)**:\n  - sin²(2t) has constant term 1/2.\n  - The ODE is ẍ + 4ẋ = 1/2 - ...\n  - Since there is no x term, 4ẋ = 1/2 ==> ẋ = 1/8 ==> x_p MUST contain +(1/8)t!\n  - This immediately eliminates Options B and C.\n  - Roots of r² + 4r = 0 are distinct (0 and -4), so there cannot be (c₁ + c₂t). Eliminates Option D!\n  - Option **(A)** is established in under 15 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) x(t) = c₁ + c₂ e^(-4t) + (1/8)t + [(cos(4t) - sin(4t)) / 64].",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 63,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Fifth-Order Differential Equation with Resonant Exponential",
+    "question": "Find the general solution of the fifth-order differential equation y⁽⁵⁾ - 4y‴ = 32e^(2x):",
+    "options": [
+      "(A) y = c₁ + c₂ x + c₃ x² + c₄ e^(2x) + c₅ e^(-2x) + x e^(2x)",
+      "(B) y = c₁ + c₂ x + c₃ x² + c₄ e^(2x) + c₅ e^(-2x) + e^(2x)",
+      "(C) y = c₁ e^(2x) + c₂ e^(-2x) + 8x e^(2x)",
+      "(D) y = c₁ + c₂ x + c₃ x² + c₄ e^(2x) + c₅ e^(-2x) + x³ e^(2x)"
+    ],
+    "answer": "(A) y = c₁ + c₂ x + c₃ x² + c₄ e^(2x) + c₅ e^(-2x) + x e^(2x)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Higher-Order Linear Constant-Coefficient ODEs\n- Subtopic: Resonant Simple Exponential Root\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor an n-th order linear differential equation P(D)y = k e^(ax):\n1. Auxiliary polynomial: P(r) = r⁵ - 4r³ = r³(r - 2)(r + 2) = 0.\n   Roots: r = 0 (multiplicity 3), r = 2 (multiplicity 1), r = -2 (multiplicity 1).\n2. Complementary function:\n   y_c(x) = (c₁ + c₂ x + c₃ x²) + c₄ e^(2x) + c₅ e^(-2x).\n3. Resonant Particular Integral Rule: If 'a' is a simple root of P(r) = 0 (i.e. P(a) = 0 but P′(a) ≠ 0):\n   y_p = [k / P′(a)] x e^(ax).\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: y⁽⁵⁾ - 4y‴ = 32e^(2x)\n- Step 1: Factor the Characteristic Polynomial:\n  P(r) = r⁵ - 4r³ = r³(r² - 4) = r³(r - 2)(r + 2) = 0\n  Roots:\n  - r = 0 with multiplicity m = 3 ==> c₁ + c₂ x + c₃ x²\n  - r = 2 with multiplicity m = 1 ==> c₄ e^(2x)\n  - r = -2 with multiplicity m = 1 ==> c₅ e^(-2x)\n  Complementary function:\n  y_c(x) = c₁ + c₂ x + c₃ x² + c₄ e^(2x) + c₅ e^(-2x)\n\n- Step 2: Evaluate Resonance for RHS = 32e^(2x):\n  Here a = 2. Since r = 2 is a root of multiplicity 1, standard trial form e^(2x) fails (annihilated to 0).\n  We multiply by x: y_p = A x e^(2x).\n\n- Step 3: Compute coefficient A using the derivative rule:\n  P′(r) = d/dr (r⁵ - 4r³) = 5r⁴ - 12r²\n  Evaluate at r = 2:\n  P′(2) = 5(2⁴) - 12(2²) = 5(16) - 12(4) = 80 - 48 = 32.\n\n- Step 4: Compute y_p:\n  y_p = [32 / P′(2)] x e^(2x) = (32 / 32) x e^(2x) = x e^(2x).\n\n- Step 5: Form the General Solution:\n  y(x) = c₁ + c₂ x + c₃ x² + c₄ e^(2x) + c₅ e^(-2x) + x e^(2x)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Includes all 5 linearly independent complementary terms (c₁ + c₂x + c₃x² for triple root 0, e^(2x), e^(-2x)) and the resonant particular integral x e^(2x) with coefficient 1.\n- **(B)**: INCORRECT. Fails to account for resonance: e^(2x) is already part of the complementary function (it gives 0 when substituted into the LHS).\n- **(C)**: INCORRECT. Omits the three polynomial terms arising from the triple zero root r = 0.\n- **(D)**: INCORRECT. Multiplies by x³ instead of x, confusing the multiplicity of root 2 (m = 1) with the multiplicity of root 0 (m = 3).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Derivative Evaluation Hack (10 Seconds)**:\n  - Auxiliary: r⁵ - 4r³ = 0. Root r = 2 is simple!\n  - Resonance multiplicity is 1 ==> Particular integral MUST have the form A x e^(2x).\n  - Eliminates Option B (has no x) and Option D (has x³).\n  - P′(r) = 5r⁴ - 12r² ==> P′(2) = 80 - 48 = 32.\n  - Coefficient = 32 / 32 = 1.\n  - Term is exactly +x e^(2x).\n  - Matches Option **(A)** instantly!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = c₁ + c₂ x + c₃ x² + c₄ e^(2x) + c₅ e^(-2x) + x e^(2x).",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 64,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Third-Order ODE with Triple Root Resonance",
+    "question": "Find the general solution of the third-order differential equation r‴ + 6r″ + 12r′ + 8r = 12e^(-2t):",
+    "options": [
+      "(A) r(t) = (c₁ + c₂ t + c₃ t²)e^(-2t) + 2t³ e^(-2t)",
+      "(B) r(t) = (c₁ + c₂ t + c₃ t²)e^(-2t) + 12t³ e^(-2t)",
+      "(C) r(t) = c₁ e^(-2t) + 2t e^(-2t)",
+      "(D) r(t) = (c₁ + c₂ t + c₃ t²)e^(2t) + 2t³ e^(2t)"
+    ],
+    "answer": "(A) r(t) = (c₁ + c₂ t + c₃ t²)e^(-2t) + 2t³ e^(-2t)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Higher-Order Linear Constant-Coefficient ODEs\n- Subtopic: Triple Root Characteristic Resonance and Exponential Shift\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor a third-order differential equation P(D)r = k e^(at):\n1. Auxiliary polynomial: λ³ + 6λ² + 12λ + 8 = (λ + 2)³ = 0.\n   Root: λ = -2 with multiplicity m = 3.\n   Complementary function: r_c(t) = (c₁ + c₂ t + c₃ t²) e^(-2t).\n2. Resonant Particular Integral with multiplicity m:\n   If 'a' is a root of multiplicity m = 3, the trial form is r_p = A t³ e^(at).\n3. Exponential Shift Principle:\n   P(D)[e^(at) u(t)] = e^(at) P(D + a) u(t).\n   Here (D + 2)³ [e^(-2t) u(t)] = e^(-2t) D³ u(t) = 12 e^(-2t) ==> D³ u = 12.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: r‴ + 6r″ + 12r′ + 8r = 12e^(-2t)\n- Step 1: Auxiliary equation:\n  λ³ + 6λ² + 12λ + 8 = 0\n  Notice this is the binomial expansion of (λ + 2)³:\n  (λ + 2)³ = 0 ==> λ = -2, -2, -2 (triple root)\n  Complementary function:\n  r_c(t) = (c₁ + c₂ t + c₃ t²) e^(-2t)\n\n- Step 2: Particular Integral using Exponential Shift:\n  Let r(t) = e^(-2t) u(t).\n  The differential operator is (D + 2)³.\n  Substituting r into the equation:\n  (D + 2)³ [e^(-2t) u(t)] = e^(-2t) D³ u(t) = 12 e^(-2t)\n  Cancel e^(-2t):\n  D³ u(t) = 12, or u‴(t) = 12.\n\n- Step 3: Integrate u‴(t) = 12 three times:\n  - First integral: u″(t) = 12t\n  - Second integral: u′(t) = 6t²\n  - Third integral: u(t) = 2t³\n  Therefore:\n  r_p(t) = 2t³ e^(-2t)\n\n- Step 4: Form the General Solution:\n  r(t) = (c₁ + c₂ t + c₃ t²)e^(-2t) + 2t³ e^(-2t)\n  (Or compactly: r(t) = (c₁ + c₂ t + c₃ t² + 2t³)e^(-2t))\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Accurately identifies the triple root λ = -2, constructs the full 3-term CF basis {(1, t, t²)e^(-2t)}, and integrates u‴ = 12 to yield 2t³ e^(-2t).\n- **(B)**: INCORRECT. Fails to divide by 3! = 6 when integrating u‴ = 12 three times (leaves 12t³ instead of 12/6 t³ = 2t³).\n- **(C)**: INCORRECT. Treats root as simple (only c₁ e^(-2t)) and multiplies by t instead of t³.\n- **(D)**: INCORRECT. Sign error in characteristic roots (+2 instead of -2).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Multiplicity & Factorial Hack (10 Seconds)**:\n  - Auxiliary is (λ + 2)³ = 0 ==> root -2 has multiplicity m = 3.\n  - Particular integral MUST be multiplied by t³ / 3!.\n  - A = 12 / 3! = 12 / 6 = 2!\n  - Therefore, particular integral is +2t³ e^(-2t).\n  - This eliminates Option B (which forgot the 3! = 6 factor).\n  - Select **(A)** immediately!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) r(t) = (c₁ + c₂ t + c₃ t²)e^(-2t) + 2t³ e^(-2t).",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 65,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Non-UC Forcing via Exponential Shift and Direct Integration",
+    "question": "Find the general solution of the third-order differential equation r‴ - 3r″ + 3r′ - r = e^t / t:",
+    "options": [
+      "(A) r(t) = (c₁ + c₂ t + c₃ t²)e^t + (1/2) t² e^t ln t",
+      "(B) r(t) = (c₁ + c₂ t + c₃ t²)e^(-t) + (1/2) t² e^(-t) ln t",
+      "(C) r(t) = c₁ e^t + c₂ e^(2t) + c₃ e^(3t) + t e^t ln t",
+      "(D) r(t) = (c₁ + c₂ t + c₃ t²)e^t + t³ e^t ln t"
+    ],
+    "answer": "(A) r(t) = (c₁ + c₂ t + c₃ t²)e^t + (1/2) t² e^t ln t",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Higher-Order Linear Differential Equations\n- Subtopic: Exponential Shift Reduction for Non-Undetermined-Coefficient Forcing\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor (D - 1)³ r = e^t / t:\n1. Auxiliary equation: λ³ - 3λ² + 3λ - 1 = (λ - 1)³ = 0.\n   Root: λ = 1 with multiplicity 3.\n   Complementary function: r_c(t) = (c₁ + c₂ t + c₃ t²) e^t.\n2. The RHS function f(t) = e^t / t is not of standard Undetermined Coefficients type (contains 1/t).\n3. Exponential Shift Principle:\n   Let r(t) = e^t u(t).\n   (D - 1)³ [e^t u(t)] = e^t D³ u(t) = e^t / t ==> u‴(t) = 1/t.\n   Integrating 1/t three times yields u_p(t).\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: r‴ - 3r″ + 3r′ - r = e^t / t\n- Step 1: Auxiliary equation:\n  λ³ - 3λ² + 3λ - 1 = (λ - 1)³ = 0 ==> λ = 1, 1, 1 (triple root)\n  r_c(t) = (c₁ + c₂ t + c₃ t²) e^t\n\n- Step 2: Apply Exponential Shift:\n  Let r(t) = e^t u(t).\n  The operator is (D - 1)³.\n  (D - 1)³ [e^t u(t)] = e^t D³ u(t) = e^t / t\n  Cancel e^t:\n  u‴(t) = 1/t\n\n- Step 3: Successive Integration of u‴(t) = 1/t:\n  - First integration:\n    u″(t) = ∫ (1/t) dt = ln t\n  - Second integration (integration by parts):\n    u′(t) = ∫ ln t dt = t ln t - t\n  - Third integration:\n    u(t) = ∫ (t ln t - t) dt = ∫ t ln t dt - ∫ t dt\n    Using integration by parts on ∫ t ln t dt:\n    Let w = ln t, dv = t dt ==> dw = (1/t) dt, v = t²/2\n    ∫ t ln t dt = (t²/2) ln t - ∫ (t²/2)(1/t) dt = (t²/2) ln t - (1/4) t²\n    Therefore:\n    u(t) = (t²/2) ln t - (1/4) t² - (1/2) t² = (1/2) t² ln t - (3/4) t²\n\n- Step 4: Absorption into Complementary Function:\n  Notice that the term -(3/4) t² e^t is a constant multiple of t² e^t, which is already contained in the complementary function c₃ t² e^t.\n  Hence, it is absorbed into the arbitrary constant c₃.\n  The essential particular integral is:\n  r_p(t) = (1/2) t² e^t ln t\n\n- Step 5: General Solution:\n  r(t) = (c₁ + c₂ t + c₃ t²)e^t + (1/2) t² e^t ln t\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Recognizes the triple root λ = 1, applies the exponential shift to obtain u‴ = 1/t, integrates three times to get (1/2) t² ln t, and correctly absorbs the polynomial term into CF.\n- **(B)**: INCORRECT. Sign error in characteristic root (-1 instead of +1, giving e^(-t)).\n- **(C)**: INCORRECT. Fails to identify repeated roots (uses distinct roots 1, 2, 3) and misses the factor of t²/2.\n- **(D)**: INCORRECT. Uses power t³ instead of t²/2.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Shift & Triple Integration Hack (15 Seconds)**:\n  - (D - 1)³ r = e^t / t ==> u‴ = 1/t.\n  - Three integrals of 1/t:\n    1st: ln t\n    2nd: t ln t\n    3rd: (t²/2) ln t.\n  - The leading logarithmic term MUST be (1/2) t² e^t ln t!\n  - Only Option **(A)** has (1/2) t² e^t ln t with e^t!\n  - Select **(A)** in under 15 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) r(t) = (c₁ + c₂ t + c₃ t²)e^t + (1/2) t² e^t ln t.",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 66,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Third-Order ODE with Real and Imaginary Roots",
+    "question": "Find the general solution of the third-order differential equation z‴ - 5z″ + 25z′ - 125z = 1000:",
+    "options": [
+      "(A) z(t) = c₁ e^(5t) + c₂ cos(5t) + c₃ sin(5t) - 8",
+      "(B) z(t) = c₁ e^(-5t) + c₂ cos(5t) + c₃ sin(5t) + 8",
+      "(C) z(t) = (c₁ + c₂ t + c₃ t²)e^(5t) - 8",
+      "(D) z(t) = c₁ e^(5t) + c₂ e^(-5t) + c₃ e^(5t) - 8"
+    ],
+    "answer": "(A) z(t) = c₁ e^(5t) + c₂ cos(5t) + c₃ sin(5t) - 8",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Higher-Order Linear Constant-Coefficient ODEs\n- Subtopic: Factorization by Grouping and Constant Particular Solution\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor a third-order differential equation a z‴ + b z″ + c z′ + d z = K:\n1. Auxiliary polynomial: r³ - 5r² + 25r - 125 = 0.\n   Factor by grouping: r²(r - 5) + 25(r - 5) = (r - 5)(r² + 25) = 0.\n   Roots: r₁ = 5, r₂,₃ = ±5i.\n   Complementary function: z_c(t) = c₁ e^(5t) + c₂ cos(5t) + c₃ sin(5t).\n2. Particular Integral for Constant K:\n   Since r = 0 is not a root of the auxiliary equation, try z_p = A (constant).\n   Then z_p′ = z_p″ = z_p‴ = 0.\n   Substitute: d · A = K ==> A = K / d.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: z‴ - 5z″ + 25z′ - 125z = 1000\n- Step 1: Auxiliary Equation:\n  r³ - 5r² + 25r - 125 = 0\n  Group the terms:\n  r²(r - 5) + 25(r - 5) = 0\n  (r - 5)(r² + 25) = 0\n  Roots:\n  - Real root: r - 5 = 0 ==> r = 5\n  - Pure imaginary roots: r² + 25 = 0 ==> r² = -25 ==> r = ±5i\n\n- Step 2: Construct Complementary Function:\n  z_c(t) = c₁ e^(5t) + c₂ cos(5t) + c₃ sin(5t)\n\n- Step 3: Compute Particular Integral z_p:\n  Since the RHS is constant 1000 and 0 is not a characteristic root, assume:\n  z_p = A\n  z_p′ = 0, z_p″ = 0, z_p‴ = 0\n  Substitute into the ODE:\n  0 - 5(0) + 25(0) - 125A = 1000\n  -125A = 1000\n  A = 1000 / (-125) = -8\n  ==> z_p = -8\n\n- Step 4: Form General Solution:\n  z(t) = z_c(t) + z_p = c₁ e^(5t) + c₂ cos(5t) + c₃ sin(5t) - 8\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Flawlessly factors the characteristic cubic into (r - 5)(r² + 25) = 0 yielding roots {5, ±5i}, and calculates A = 1000 / (-125) = -8.\n- **(B)**: INCORRECT. Sign error on the real root (uses -5t instead of 5t) and sign error on the particular constant (+8 instead of -8).\n- **(C)**: INCORRECT. Treats r = 5 as a triple repeated root instead of recognizing the imaginary conjugate pair ±5i.\n- **(D)**: INCORRECT. Fabricates distinct real exponential basis without trigonometric harmonic functions.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Constant Particular Integral Check (5 Seconds)**:\n  - LHS constant coefficient is -125.\n  - RHS is 1000.\n  - Particular integral = 1000 / (-125) = -8!\n  - This immediately eliminates Option B (+8).\n  - Factor r² + 25 = 0 ==> roots are ±5i ==> cos(5t) and sin(5t).\n  - This immediately eliminates Options C and D!\n  - Option **(A)** is confirmed in under 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) z(t) = c₁ e^(5t) + c₂ cos(5t) + c₃ sin(5t) - 8.",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 67,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Third-Order Non-Homogeneous ODE via Reduction of Order",
+    "question": "Find the general solution of the third-order differential equation d³z/dθ³ + 3d²z/dθ² + 2dz/dθ = e^(3θ) / (1 + e^θ):",
+    "options": [
+      "(A) z(θ) = c₁ + c₂ e^(-θ) + c₃ e^(-2θ) + (1/24)e^(2θ) - (1/6)e^θ + (1/2)(1 + e^(-θ))² ln(1 + e^θ)",
+      "(B) z(θ) = c₁ + c₂ e^θ + c₃ e^(2θ) + (1/24)e^(2θ) - (1/6)e^θ",
+      "(C) z(θ) = c₁ e^(-θ) + c₂ e^(-2θ) + ln(1 + e^θ)",
+      "(D) z(θ) = c₁ + c₂ θ + c₃ θ² + (1/24)e^(2θ)"
+    ],
+    "answer": "(A) z(θ) = c₁ + c₂ e^(-θ) + c₃ e^(-2θ) + (1/24)e^(2θ) - (1/6)e^θ + (1/2)(1 + e^(-θ))² ln(1 + e^θ)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Higher-Order Linear Differential Equations\n- Subtopic: Reduction of Order and Variation of Parameters\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor d³z/dθ³ + 3d²z/dθ² + 2dz/dθ = f(θ):\n1. Auxiliary equation: r³ + 3r² + 2r = r(r + 1)(r + 2) = 0.\n   Roots: r = 0, -1, -2.\n   Complementary function: z_c(θ) = c₁ + c₂ e^(-θ) + c₃ e^(-2θ).\n2. Reduction of order: Set w = dz/dθ.\n   The equation becomes: w″ + 3w′ + 2w = e^(3θ) / (1 + e^θ).\n3. Solve for w(θ) using Variation of Parameters, then integrate once: z(θ) = ∫ w(θ) dθ.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: d³z/dθ³ + 3d²z/dθ² + 2dz/dθ = e^(3θ) / (1 + e^θ)\n- Step 1: Auxiliary equation:\n  r(r² + 3r + 2) = r(r + 1)(r + 2) = 0\n  ==> r₁ = 0, r₂ = -1, r₃ = -2\n  z_c(θ) = c₁ + c₂ e^(-θ) + c₃ e^(-2θ)\n\n- Step 2: Reduction of Order:\n  Let w = z′ = dz/dθ.\n  Then w″ + 3w′ + 2w = e^(3θ) / (1 + e^θ).\n  The complementary functions for w are w₁ = e^(-θ) and w₂ = e^(-2θ).\n\n- Step 3: Wronskian of {w₁, w₂}:\n  W(θ) = | e^(-θ)     e^(-2θ)   |\n         | -e^(-θ)   -2e^(-2θ)  | = -2e^(-3θ) - (-e^(-3θ)) = -e^(-3θ).\n\n- Step 4: Variation of Parameters for w_p:\n  w_p = -w₁ ∫ [w₂ f(θ) / W] dθ + w₂ ∫ [w₁ f(θ) / W] dθ\n  - First integral:\n    ∫ [e^(-2θ) · e^(3θ)/(1 + e^θ) / (-e^(-3θ))] dθ = -∫ [e^(4θ) / (1 + e^θ)] dθ\n  - Second integral:\n    ∫ [e^(-θ) · e^(3θ)/(1 + e^θ) / (-e^(-3θ))] dθ = -∫ [e^(5θ) / (1 + e^θ)] dθ\n  Using substitution u = e^θ, du = e^θ dθ:\n  Evaluating these algebraic rational integrals and recombining yields w_p(θ).\n\n- Step 5: Integration to find z_p:\n  Integrating w_p(θ) with respect to θ produces:\n  z_p(θ) = (1/24)e^(2θ) - (1/6)e^θ + (1/2)(1 + e^(-θ))² ln(1 + e^θ)\n\n- Step 6: General Solution:\n  z(θ) = c₁ + c₂ e^(-θ) + c₃ e^(-2θ) + (1/24)e^(2θ) - (1/6)e^θ + (1/2)(1 + e^(-θ))² ln(1 + e^θ)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. The full general solution rigorously matching the complementary function {1, e^(-θ), e^(-2θ)} and the exact non-linear logarithmic integral term.\n- **(B)**: INCORRECT. Sign error in characteristic roots (+θ and +2θ instead of -θ and -2θ) and omits the logarithmic particular integral completely.\n- **(C)**: INCORRECT. Omits the zero root constant c₁ and truncates the particular integral.\n- **(D)**: INCORRECT. Fabricates polynomial repeated roots for r = 0.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Characteristic Roots Elimination (5 Seconds)**:\n  - Auxiliary polynomial: r(r + 1)(r + 2) = 0.\n  - Roots are r = 0, -1, -2.\n  - Complementary function MUST contain c₁ + c₂ e^(-θ) + c₃ e^(-2θ).\n  - This immediately eliminates Option B (has e^θ, e^(2θ)), Option C (missing c₁), and Option D (has c₁ + c₂θ + c₃θ²).\n  - Option **(A)** is the ONLY option with the correct characteristic basis!\n  - Select **(A)** in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) z(θ) = c₁ + c₂ e^(-θ) + c₃ e^(-2θ) + (1/24)e^(2θ) - (1/6)e^θ + (1/2)(1 + e^(-θ))² ln(1 + e^θ).",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 68,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Second-Order Operator with Sinusoidal Forcing",
+    "question": "Find the general solution of the differential equation (D² - D - 2)y = sin x:",
+    "options": [
+      "(A) y = c₁ e^(-x) + c₂ e^(2x) + (1/10) cos x - (3/10) sin x",
+      "(B) y = c₁ eˣ + c₂ e^(-2x) + (1/10) cos x - (3/10) sin x",
+      "(C) y = c₁ e^(-x) + c₂ e^(2x) - (1/10) cos x + (3/10) sin x",
+      "(D) y = (c₁ + c₂x)e^(-x) + (1/10) cos x"
+    ],
+    "answer": "(A) y = c₁ e^(-x) + c₂ e^(2x) + (1/10) cos x - (3/10) sin x",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Second-Order Linear Constant-Coefficient ODEs\n- Subtopic: Inverse Differential Operator Method with Sinusoidal Forcing\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor (D² - D - 2)y = sin(ωx) with ω = 1:\n1. Auxiliary equation: r² - r - 2 = (r - 2)(r + 1) = 0 ==> r = 2, -1.\n   Complementary function: y_c(x) = c₁ e^(-x) + c₂ e^(2x).\n2. Inverse Operator Rule:\n   In P(D) = D² - D - 2, replace D² with -ω² = -1² = -1.\n   P(D) -> -1 - D - 2 = -(D + 3).\n3. Rationalize operator:\n   y_p = [1 / -(D + 3)] sin x = -[(D - 3) / (D² - 9)] sin x.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: (D² - D - 2)y = sin x\n- Step 1: Auxiliary equation:\n  r² - r - 2 = 0\n  (r - 2)(r + 1) = 0 ==> r₁ = -1, r₂ = 2\n  y_c(x) = c₁ e^(-x) + c₂ e^(2x)\n\n- Step 2: Compute Particular Integral y_p using Inverse Operator:\n  y_p = [1 / (D² - D - 2)] sin x\n  Replace D² -> -1² = -1:\n  y_p = [1 / (-1 - D - 2)] sin x\n      = [1 / (-D - 3)] sin x\n      = -[1 / (D + 3)] sin x\n\n- Step 3: Multiply numerator and denominator by conjugate (D - 3):\n  y_p = -[(D - 3) / (D² - 9)] sin x\n  Replace D² -> -1 in the denominator:\n  Denominator = -1 - 9 = -10.\n  y_p = -[(D - 3) sin x] / (-10) = [(D - 3) sin x] / 10\n\n- Step 4: Apply differential operator D to sin x:\n  D(sin x) = d/dx (sin x) = cos x\n  ==> (D - 3) sin x = cos x - 3 sin x\n\n- Step 5: Form y_p:\n  y_p = (cos x - 3 sin x) / 10 = (1/10) cos x - (3/10) sin x\n\n- Step 6: Form General Solution:\n  y(x) = y_c(x) + y_p = c₁ e^(-x) + c₂ e^(2x) + (1/10) cos x - (3/10) sin x\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Real roots r = -1, 2 give c₁ e^(-x) + c₂ e^(2x), and operator evaluation yields precisely +(1/10) cos x - (3/10) sin x.\n- **(B)**: INCORRECT. Sign error in auxiliary roots (uses +1 and -2 instead of -1 and +2).\n- **(C)**: INCORRECT. Sign error in particular integral terms (flips signs to -1/10 cos x + 3/10 sin x).\n- **(D)**: INCORRECT. Erroneously assumes repeated root for r = -1 and omits the sine response term.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Operator Shortcut (15 Seconds)**:\n  - Replace D² -> -1: -D - 3 ==> -(D + 3).\n  - Conjugate multiplication gives: (D - 3) / (-1 - 9) = -(D - 3)/10.\n  - Multiplied by leading minus: (D - 3)/10.\n  - D(sin x) = cos x ==> coefficient of cos x is +1/10.\n  - -3(sin x) ==> coefficient of sin x is -3/10.\n  - Only Option **(A)** has +1/10 cos x - 3/10 sin x with roots -1 and 2!\n  - Select **(A)** in 15 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = c₁ e^(-x) + c₂ e^(2x) + (1/10) cos x - (3/10) sin x.",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 69,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Repeated Characteristic Roots with Hyperbolic Forcing",
+    "question": "Find the general solution of the differential equation (D² + 2D + 1)y = 4 sinh x:",
+    "options": [
+      "(A) y = (c₁ + c₂ x - x²)e^(-x) + (1/2) eˣ",
+      "(B) y = (c₁ + c₂ x)e^(-x) + (1/2) eˣ",
+      "(C) y = c₁ e^(-x) + c₂ eˣ - x² e^(-x)",
+      "(D) y = (c₁ + c₂ x)eˣ + (1/2) e^(-x)"
+    ],
+    "answer": "(A) y = (c₁ + c₂ x - x²)e^(-x) + (1/2) eˣ",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Second-Order Linear Non-Homogeneous Differential Equations\n- Subtopic: Hyperbolic Decomposition and Double Root Resonance\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor (D² + 2D + 1)y = 4 sinh x:\n1. Characteristic polynomial: P(r) = r² + 2r + 1 = (r + 1)² = 0 ==> r = -1 (multiplicity 2).\n   Complementary function: y_c(x) = (c₁ + c₂ x)e^(-x).\n2. Hyperbolic definition: 4 sinh x = 4 · [(eˣ - e^(-x)) / 2] = 2eˣ - 2e^(-x).\n3. Superposition for particular integral:\n   - For 2eˣ: r = 1 is not a characteristic root ==> y_p1 = 2eˣ / P(1).\n   - For -2e^(-x): r = -1 is a repeated root of multiplicity 2 ==> Resonance requires multiplying by x².\n   Using exponential shift: (D + 1)² [e^(-x) u] = e^(-x) D² u = -2e^(-x) ==> u″ = -2 ==> u = -x².\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: (D² + 2D + 1)y = 4 sinh x\n- Step 1: Auxiliary equation:\n  r² + 2r + 1 = (r + 1)² = 0 ==> r = -1, -1 (double root)\n  y_c(x) = (c₁ + c₂ x)e^(-x)\n\n- Step 2: Rewrite the RHS using exponentials:\n  4 sinh x = 4 · (eˣ - e^(-x)) / 2 = 2eˣ - 2e^(-x)\n\n- Step 3: Compute y_p1 for 2eˣ:\n  P(D) = (D + 1)²\n  Evaluate at D = 1:\n  P(1) = (1 + 1)² = 4\n  ==> y_p1 = 2eˣ / 4 = (1/2)eˣ\n\n- Step 4: Compute y_p2 for -2e^(-x):\n  Since r = -1 has multiplicity 2 in P(D) = (D + 1)²:\n  Let y = e^(-x) u(x).\n  (D + 1)² [e^(-x) u] = e^(-x) D² u = -2e^(-x)\n  Cancel e^(-x):\n  D² u = -2, or u″(x) = -2\n  Integrating twice gives:\n  u′(x) = -2x\n  u(x) = -x²\n  ==> y_p2 = -x² e^(-x)\n\n- Step 5: Form the Complete General Solution:\n  y(x) = y_c(x) + y_p1 + y_p2\n  y(x) = (c₁ + c₂ x)e^(-x) + (1/2)eˣ - x² e^(-x)\n  Factoring e^(-x):\n  y(x) = (c₁ + c₂ x - x²)e^(-x) + (1/2)eˣ\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Accurately decomposes sinh x, evaluates the non-resonant term as (1/2)eˣ, and derives the resonant quadratic factor -x² for the repeated root -1.\n- **(B)**: INCORRECT. Fails to include the resonant response to -2e^(-x), completely missing the -x² e^(-x) term.\n- **(C)**: INCORRECT. Drops the repeated root linear term c₂ x e^(-x) and omits the non-resonant (1/2)eˣ component.\n- **(D)**: INCORRECT. Sign error in characteristic roots (+1 instead of -1) and inverts the exponents on the particular integral.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Double Resonance Inspection (10 Seconds)**:\n  - (D + 1)² has a double root at r = -1.\n  - 4 sinh x contains -2e^(-x).\n  - Because -1 is a DOUBLE root, the particular integral MUST contain an x² e^(-x) term!\n  - Integrate u″ = -2 ==> u = -x², so the term is -x² e^(-x).\n  - Option **(A)** is the ONLY option containing -x² e^(-x)!\n  - Instant selection in under 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = (c₁ + c₂ x - x²)e^(-x) + (1/2) eˣ.",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 70,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Complex Conjugate Roots with Exponential Forcing",
+    "question": "Find the general solution of the differential equation (D² - 2D + 5)y = eˣ:",
+    "options": [
+      "(A) y = eˣ(c₁ cos(2x) + c₂ sin(2x)) + (1/4) eˣ",
+      "(B) y = e^(-x)(c₁ cos(2x) + c₂ sin(2x)) + (1/4) eˣ",
+      "(C) y = c₁ cos(2x) + c₂ sin(2x) + eˣ",
+      "(D) y = eˣ(c₁ cos(2x) + c₂ sin(2x)) + (1/5) eˣ"
+    ],
+    "answer": "(A) y = eˣ(c₁ cos(2x) + c₂ sin(2x)) + (1/4) eˣ",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Second-Order Linear Constant-Coefficient ODEs\n- Subtopic: Complex Roots and Inverse Operator on Exponential Input\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor (D² - 2D + 5)y = eˣ:\n1. Auxiliary equation: r² - 2r + 5 = 0.\n   Complete the square: (r - 1)² + 4 = 0 ==> r = 1 ± 2i.\n   Complementary function: y_c(x) = eˣ(c₁ cos(2x) + c₂ sin(2x)).\n2. Particular integral for e^(ax):\n   y_p = e^(ax) / P(a), provided P(a) ≠ 0.\n   Here a = 1, so P(1) = 1² - 2(1) + 5 = 4.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: (D² - 2D + 5)y = eˣ\n- Step 1: Auxiliary Equation:\n  r² - 2r + 5 = 0\n  Using the quadratic formula:\n  r = [2 ± √(4 - 20)] / 2 = [2 ± √(-16)] / 2 = (2 ± 4i) / 2 = 1 ± 2i\n  Complementary function:\n  y_c(x) = eˣ(c₁ cos(2x) + c₂ sin(2x))\n\n- Step 2: Compute Particular Integral y_p:\n  Since a = 1 and P(1) ≠ 0:\n  y_p = [1 / (D² - 2D + 5)] eˣ\n  Replace D with 1:\n  P(1) = 1² - 2(1) + 5 = 1 - 2 + 5 = 4\n  ==> y_p = (1/4) eˣ\n\n- Step 3: Form General Solution:\n  y(x) = y_c(x) + y_p = eˣ(c₁ cos(2x) + c₂ sin(2x)) + (1/4) eˣ\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. The complementary function correctly reflects roots 1 ± 2i with growth factor eˣ, and the particular integral is precisely (1/4)eˣ.\n- **(B)**: INCORRECT. Sign error in the real part of the characteristic roots (uses e^(-x) instead of eˣ).\n- **(C)**: INCORRECT. Drops the exponential growth factor eˣ from the complementary function and miscalculates the particular integral coefficient as 1 instead of 1/4.\n- **(D)**: INCORRECT. Evaluates the operator incorrectly by ignoring the linear term -2D (giving 1/5 instead of 1/4).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Operator Evaluation Hack (5 Seconds)**:\n  - Substitute D = 1 into LHS: 1² - 2(1) + 5 = 4.\n  - Particular integral = eˣ / 4 = (1/4) eˣ!\n  - Real part of root: -(-2)/(2·1) = +1 ==> growth factor is e^(+x).\n  - Option **(A)** is confirmed immediately!\n  - Solved in under 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = eˣ(c₁ cos(2x) + c₂ sin(2x)) + (1/4) eˣ.",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 71,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Second-Order Complex Roots with Negative Exponential Forcing",
+    "question": "Find the general solution of the differential equation (D² - 4D + 5)y = 2e^(-x):",
+    "options": [
+      "(A) y = e^(2x)(c₁ cos x + c₂ sin x) + (1/5) e^(-x)",
+      "(B) y = e^(-2x)(c₁ cos x + c₂ sin x) + (1/5) e^(-x)",
+      "(C) y = e^(2x)(c₁ cos x + c₂ sin x) + 2e^(-x)",
+      "(D) y = (c₁ + c₂ x)e^(2x) + (1/5) e^(-x)"
+    ],
+    "answer": "(A) y = e^(2x)(c₁ cos x + c₂ sin x) + (1/5) e^(-x)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Second-Order Linear Constant-Coefficient ODEs\n- Subtopic: Characteristic Roots with Positive Real Part and Exponential Input\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor (D² - 4D + 5)y = 2e^(-x):\n1. Auxiliary equation: r² - 4r + 5 = (r - 2)² + 1 = 0 ==> r = 2 ± i.\n   Complementary function: y_c(x) = e^(2x)(c₁ cos x + c₂ sin x).\n2. Particular integral for k e^(ax):\n   y_p = k e^(ax) / P(a), where P(D) = D² - 4D + 5.\n   Here a = -1, so P(-1) = (-1)² - 4(-1) + 5 = 1 + 4 + 5 = 10.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: (D² - 4D + 5)y = 2e^(-x)\n- Step 1: Auxiliary Equation:\n  r² - 4r + 5 = 0\n  (r - 2)² + 1 = 0 ==> (r - 2)² = -1 ==> r = 2 ± i\n  Complementary function:\n  y_c(x) = e^(2x)(c₁ cos x + c₂ sin x)\n\n- Step 2: Particular Integral y_p:\n  Substitute D = -1 into the polynomial operator:\n  P(-1) = (-1)² - 4(-1) + 5 = 1 + 4 + 5 = 10\n  Since P(-1) ≠ 0:\n  y_p = 2e^(-x) / P(-1) = 2e^(-x) / 10 = (1/5) e^(-x)\n\n- Step 3: Form the General Solution:\n  y(x) = y_c(x) + y_p = e^(2x)(c₁ cos x + c₂ sin x) + (1/5) e^(-x)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. The roots r = 2 ± i yield e^(2x)(c₁ cos x + c₂ sin x) and P(-1) = 10 gives 2/10 = 1/5.\n- **(B)**: INCORRECT. Sign error in characteristic roots (-2 instead of +2).\n- **(C)**: INCORRECT. Fails to divide by the operator value P(-1) = 10, leaving the original numerator 2.\n- **(D)**: INCORRECT. Treats r = 2 as a repeated real root, omitting the harmonic sinusoidal components.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Evaluation Hack (5 Seconds)**:\n  - Substitute D = -1: (-1)² - 4(-1) + 5 = 1 + 4 + 5 = 10.\n  - y_p = 2/10 e^(-x) = (1/5) e^(-x).\n  - Auxiliary roots: r = 2 ± i ==> e^(2x).\n  - Only Option **(A)** combines e^(2x) and (1/5) e^(-x)!\n  - Instant pick in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = e^(2x)(c₁ cos x + c₂ sin x) + (1/5) e^(-x).",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 72,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Third-Order Homogeneous ODE with Triple Real Root",
+    "question": "Find the general solution of the third-order homogeneous differential equation y‴ - 3y″ + 3y′ - y = 0:",
+    "options": [
+      "(A) y = (c₁ + c₂ x + c₃ x²)eˣ",
+      "(B) y = c₁ eˣ + c₂ e^(2x) + c₃ e^(3x)",
+      "(C) y = (c₁ + c₂ x + c₃ x²)e^(-x)",
+      "(D) y = c₁ cos x + c₂ sin x + c₃ eˣ"
+    ],
+    "answer": "(A) y = (c₁ + c₂ x + c₃ x²)eˣ",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Higher-Order Linear Constant-Coefficient Differential Equations\n- Subtopic: Homogeneous Equations with Repeated Real Roots\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor a third-order homogeneous linear ODE:\n1. Auxiliary equation: r³ - 3r² + 3r - 1 = 0.\n2. Binomial expansion identity: (r - 1)³ = r³ - 3r² + 3r - 1.\n3. Multiplicity Rule: If a real root r = r₀ has multiplicity m = 3, the three linearly independent solutions are:\n   y₁(x) = e^(r₀ x), y₂(x) = x e^(r₀ x), y₃(x) = x² e^(r₀ x).\n   General solution: y(x) = (c₁ + c₂ x + c₃ x²) e^(r₀ x).\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: y‴ - 3y″ + 3y′ - y = 0\n- Step 1: Write down the Auxiliary Equation:\n  r³ - 3r² + 3r - 1 = 0\n\n- Step 2: Factor the cubic polynomial:\n  Notice the binomial coefficients (1, -3, 3, -1) corresponding to Pascal's triangle for (a - b)³:\n  (r - 1)³ = 0\n  Therefore, the roots are:\n  r₁ = 1, r₂ = 1, r₃ = 1 (triple root at r = 1)\n\n- Step 3: Construct the fundamental solution set:\n  Because the root r = 1 is repeated three times, we multiply successive independent solutions by powers of x:\n  y₁(x) = eˣ\n  y₂(x) = x eˣ\n  y₃(x) = x² eˣ\n\n- Step 4: Form the General Solution:\n  y(x) = c₁ y₁ + c₂ y₂ + c₃ y₃\n  y(x) = c₁ eˣ + c₂ x eˣ + c₃ x² eˣ = (c₁ + c₂ x + c₃ x²) eˣ\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Exactly recognizes the binomial cube (r - 1)³ = 0, giving the triple root r = 1 and the complete basis {eˣ, x eˣ, x² eˣ}.\n- **(B)**: INCORRECT. Falsely assumes three distinct roots r = 1, 2, 3 instead of recognizing multiplicity.\n- **(C)**: INCORRECT. Sign error in root (-1 instead of +1, which would correspond to (r + 1)³ = r³ + 3r² + 3r + 1 = 0).\n- **(D)**: INCORRECT. Introduces trigonometric solutions which only arise from imaginary roots (r² + 1 = 0).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Binomial Inspection Hack (3 Seconds)**:\n  - Coefficients: 1, -3, 3, -1 ==> (r - 1)³ = 0!\n  - Triple root r = 1.\n  - Multiplicity 3 requires (c₁ + c₂ x + c₃ x²)eˣ.\n  - Option **(A)** is recognized in 3 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = (c₁ + c₂ x + c₃ x²)eˣ.",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 73,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Parametric Second-Order ODE with Harmonic Excitation",
+    "question": "Find the general solution of the second-order differential equation y″ + 2ky′ + (k² + n²)y = cos(px), where k, n, p are real positive constants:",
+    "options": [
+      "(A) y = e^(-kx)[c₁ cos(nx) + c₂ sin(nx)] + [(k² + n² - p²)cos(px) + 2kp sin(px)] / [(k² + n² - p²)² + 4k²p²]",
+      "(B) y = e^(kx)[c₁ cos(nx) + c₂ sin(nx)] + [(k² + n² - p²)cos(px) + 2kp sin(px)] / [(k² + n² - p²)² + 4k²p²]",
+      "(C) y = e^(-kx)[c₁ cos(nx) + c₂ sin(nx)] + [cos(px) / (k² + n² - p²)]",
+      "(D) y = c₁ e^(-kx) + c₂ e^(-nx) + [2kp sin(px) / ((k² + n² - p²)² + 4k²p²)]"
+    ],
+    "answer": "(A) y = e^(-kx)[c₁ cos(nx) + c₂ sin(nx)] + [(k² + n² - p²)cos(px) + 2kp sin(px)] / [(k² + n² - p²)² + 4k²p²]",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Second-Order Linear Parametric ODEs (Damped Harmonic Oscillator)\n- Subtopic: Complex Characteristic Roots and Steady-State Frequency Response\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor y″ + 2ky′ + (k² + n²)y = cos(px):\n1. Auxiliary equation: r² + 2kr + (k² + n²) = (r + k)² + n² = 0 ==> r = -k ± ni.\n   Complementary function: y_c(x) = e^(-kx)[c₁ cos(nx) + c₂ sin(nx)].\n2. Inverse differential operator for cos(px):\n   P(D) = D² + 2kD + (k² + n²).\n   Replace D² -> -p²:\n   P(D) -> -p² + 2kD + k² + n² = 2kD + (k² + n² - p²).\n   Let M = k² + n² - p².\n   Then y_p = [1 / (2kD + M)] cos(px) = [(M - 2kD) / (M² - 4k² D²)] cos(px).\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: y″ + 2ky′ + (k² + n²)y = cos(px)\n- Step 1: Characteristic Roots:\n  r² + 2kr + (k² + n²) = 0\n  (r + k)² + n² = 0 ==> (r + k)² = -n² ==> r = -k ± ni\n  Complementary function:\n  y_c(x) = e^(-kx) [c₁ cos(nx) + c₂ sin(nx)]\n\n- Step 2: Inverse Operator Formulation for y_p:\n  y_p = [1 / (D² + 2kD + k² + n²)] cos(px)\n  Substitute D² -> -p²:\n  = [1 / (2kD + (k² + n² - p²))] cos(px)\n  Define M = k² + n² - p²:\n  = [1 / (M + 2kD)] cos(px)\n\n- Step 3: Multiply numerator and denominator by conjugate (M - 2kD):\n  = [(M - 2kD) / (M² - 4k² D²)] cos(px)\n  Substitute D² -> -p² into denominator:\n  Denominator = M² - 4k²(-p²) = M² + 4k²p² = (k² + n² - p²)² + 4k²p²\n\n- Step 4: Evaluate numerator on cos(px):\n  (M - 2kD) cos(px) = M cos(px) - 2k · d/dx(cos px)\n  = M cos(px) - 2k(-p sin px)\n  = M cos(px) + 2kp sin(px)\n  = (k² + n² - p²) cos(px) + 2kp sin(px)\n\n- Step 5: Form General Solution:\n  y(x) = e^(-kx)[c₁ cos(nx) + c₂ sin(nx)] + [(k² + n² - p²)cos(px) + 2kp sin(px)] / [(k² + n² - p²)² + 4k²p²]\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Real part -k gives damping factor e^(-kx), imaginary part n gives natural frequency basis, and inverse operator evaluation produces the exact amplitude and phase shift.\n- **(B)**: INCORRECT. Sign error in damping factor (e^(+kx) instead of e^(-kx), which represents unphysical exponentially unbounded growth).\n- **(C)**: INCORRECT. Ignores damping in the particular integral (sets k = 0 in denominator and numerator).\n- **(D)**: INCORRECT. Discards the cosine component of the particular integral and treats roots as real exponentials.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Damping Factor & Operator Hack (10 Seconds)**:\n  - (r + k)² + n² = 0 ==> real part is -k ==> e^(-kx). Eliminates Option B!\n  - D(cos px) = -p sin px, so -2kD(cos px) = +2kp sin px.\n  - The particular integral MUST contain BOTH cos(px) and sin(px) terms!\n  - Eliminates Option C (missing sin) and Option D (missing cos).\n  - Option **(A)** is the ONLY candidate that retains the complete harmonic response!\n  - Select **(A)** in 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = e^(-kx)[c₁ cos(nx) + c₂ sin(nx)] + [(k² + n² - p²)cos(px) + 2kp sin(px)] / [(k² + n² - p²)² + 4k²p²].",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 74,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 10",
+    "topic": "Higher-Order Linear ODEs — Third-Order Non-Elementary Forcing via Variation of Parameters",
+    "question": "Find the general solution of the third-order differential equation y‴ - 3y″ + 3y′ - y = tan x:",
+    "options": [
+      "(A) y = (c₁ + c₂ x + c₃ x²)eˣ + (1/2) eˣ ∫ (x - s)² e^(-s) tan s ds",
+      "(B) y = (c₁ + c₂ x + c₃ x²)e^(-x) + (1/2) e^(-x) ∫ (x - s)² eˢ tan s ds",
+      "(C) y = (c₁ + c₂ x + c₃ x²)eˣ + eˣ sec x",
+      "(D) y = c₁ eˣ + c₂ x eˣ + c₃ x² eˣ + tan x"
+    ],
+    "answer": "(A) y = (c₁ + c₂ x + c₃ x²)eˣ + (1/2) eˣ ∫ (x - s)² e^(-s) tan s ds",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Higher-Order Linear Differential Equations\n- Subtopic: Variation of Parameters / Cauchy's Integral Formula for Non-Elementary Forcing\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor (D - 1)³ y = tan x:\n1. Auxiliary equation: (r - 1)³ = 0 ==> r = 1 (multiplicity 3).\n   Complementary function: y_c(x) = (c₁ + c₂ x + c₃ x²) eˣ.\n2. The function tan x is not an Undetermined Coefficients type and e^(-x) tan x has no elementary closed-form antiderivative.\n3. Exponential Shift Principle:\n   Let y = eˣ u(x) ==> (D - 1)³ [eˣ u] = eˣ D³ u = tan x ==> u‴(x) = e^(-x) tan x.\n4. Cauchy's Formula for Repeated Integration:\n   Integrating f(t) n times yields: (1 / (n - 1)!) ∫ (x - s)^(n - 1) f(s) ds.\n   Here n = 3 ==> u_p(x) = (1 / 2!) ∫ (x - s)² e^(-s) tan s ds.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: y‴ - 3y″ + 3y′ - y = tan x\n- Step 1: Auxiliary Equation:\n  r³ - 3r² + 3r - 1 = (r - 1)³ = 0 ==> r = 1, 1, 1\n  y_c(x) = (c₁ + c₂ x + c₃ x²) eˣ\n\n- Step 2: Apply Exponential Shift:\n  Substitute y(x) = eˣ u(x).\n  By the shift formula:\n  (D - 1)³ [eˣ u(x)] = eˣ D³ u(x) = tan x\n  Multiply by e^(-x):\n  D³ u(x) = e^(-x) tan x, or u‴(x) = e^(-x) tan x\n\n- Step 3: Integrate using Cauchy's Formula for Repeated Integration:\n  To find a particular integral of u‴(x) = g(x) where g(x) = e^(-x) tan x:\n  u_p(x) = ∫₀ˣ ∫₀ˢ¹ ∫₀ˢ² g(s) ds ds₂ ds₁ = (1 / 2!) ∫₀ˣ (x - s)² g(s) ds\n  = (1/2) ∫ (x - s)² e^(-s) tan s ds\n\n- Step 4: Multiply back by eˣ to obtain y_p(x):\n  y_p(x) = eˣ u_p(x) = (1/2) eˣ ∫ (x - s)² e^(-s) tan s ds\n\n- Step 5: Form General Solution:\n  y(x) = (c₁ + c₂ x + c₃ x²) eˣ + (1/2) eˣ ∫ (x - s)² e^(-s) tan s ds\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. The triple root r = 1 produces (c₁ + c₂ x + c₃ x²)eˣ, and Cauchy's repeated integration formula yields the exact convolution integral with kernel (x - s)² / 2!.\n- **(B)**: INCORRECT. Sign error in characteristic roots (-1 instead of +1, giving e^(-x)).\n- **(C)**: INCORRECT. Fabricates an algebraic trial function (eˣ sec x) which does not satisfy the differential equation.\n- **(D)**: INCORRECT. Naively appends tan x as the particular integral without integrating.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Integral Kernel Inspection (10 Seconds)**:\n  - (D - 1)³ y = tan x has triple root r = 1 ==> eˣ. Eliminates Option B!\n  - Order is 3, so repeated integration formula requires kernel (x - s)^(3 - 1) / (3 - 1)! = (x - s)² / 2! = (1/2)(x - s)².\n  - Only Option **(A)** contains (1/2) eˣ ∫ (x - s)² e^(-s) tan s ds!\n  - Select **(A)** in 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = (c₁ + c₂ x + c₃ x²)eˣ + (1/2) eˣ ∫ (x - s)² e^(-s) tan s ds.",
+    "module_id": 4,
+    "module_title": "Module 4: Non-Homogeneous Higher-Order Linear ODEs"
+  },
+  {
+    "id": 75,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 11",
+    "topic": "Applications of Second-Order ODEs — Damped Harmonic Oscillator and Time to Rest",
+    "question": "A particle moves according to the differential equation ẍ + ẋ + x = 0, starting from the origin x(0) = 0 with an initial velocity of 60 cm/s. Determine the position equation x(t) and the first time t > 0 at which the particle comes to rest:",
+    "options": [
+      "(A) x(t) = 40√3 e^(-t/2) sin((√3/2)t) cm, and comes to rest at t = 2π / (3√3) ≈ 1.209 s",
+      "(B) x(t) = 60 e^(-t/2) sin((√3/2)t) cm, and comes to rest at t = π / √3 ≈ 1.814 s",
+      "(C) x(t) = 40√3 e^(t/2) cos((√3/2)t) cm, and comes to rest at t = 2π/3 ≈ 2.094 s",
+      "(D) x(t) = 20√3 e^(-t/2) sin(√3 t) cm, and comes to rest at t = π/3 ≈ 1.047 s"
+    ],
+    "answer": "(A) x(t) = 40√3 e^(-t/2) sin((√3/2)t) cm, and comes to rest at t = 2π / (3√3) ≈ 1.209 s",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Applied Ordinary Differential Equations\n- Topic: Second-Order Linear Differential Equations with Constant Coefficients\n- Subtopic: Underdamped Mechanical Oscillations and Velocity Extrema\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor ẍ + ẋ + x = 0:\n1. Auxiliary equation: r² + r + 1 = 0 ==> r = -1/2 ± i√3/2.\n2. Underdamped general solution: x(t) = e^(-t/2) [A cos(ωt) + B sin(ωt)], where ω = √3/2.\n3. Initial conditions: x(0) = 0 ==> A = 0; ẋ(0) = v₀ ==> B ω = v₀ ==> B = v₀ / ω.\n4. Particle comes to rest when velocity vanishes: ẋ(t) = 0.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven IVP: ẍ + ẋ + x = 0, with x(0) = 0 cm, ẋ(0) = 60 cm/s\n- Step 1: Auxiliary equation:\n  r² + r + 1 = 0 ==> r = [-1 ± √(1 - 4)] / 2 = -1/2 ± i(√3/2)\n  General solution:\n  x(t) = e^(-t/2) [A cos((√3/2)t) + B sin((√3/2)t)]\n\n- Step 2: Apply initial condition x(0) = 0:\n  x(0) = e⁰ [A · 1 + B · 0] = A = 0\n  ==> x(t) = B e^(-t/2) sin((√3/2)t)\n\n- Step 3: Apply initial condition ẋ(0) = 60:\n  Differentiate x(t) using product rule:\n  ẋ(t) = B [(-1/2) e^(-t/2) sin((√3/2)t) + (√3/2) e^(-t/2) cos((√3/2)t)]\n  At t = 0:\n  ẋ(0) = B [0 + (√3/2) · 1] = (√3/2) B = 60\n  ==> B = 60 · (2 / √3) = 120 / √3 = 40√3 cm\n  Therefore:\n  x(t) = 40√3 e^(-t/2) sin((√3/2)t)\n\n- Step 4: Find the first time t > 0 when the particle comes to rest:\n  The particle comes to rest when velocity ẋ(t) = 0:\n  40√3 e^(-t/2) [-(1/2) sin((√3/2)t) + (√3/2) cos((√3/2)t)] = 0\n  Since 40√3 e^(-t/2) ≠ 0:\n  (√3/2) cos((√3/2)t) = (1/2) sin((√3/2)t)\n  Divide by cos((√3/2)t):\n  tan((√3/2)t) = (√3/2) / (1/2) = √3\n\n- Step 5: Solve for t:\n  The smallest positive angle where tan θ = √3 is θ = π/3:\n  (√3/2)t = π/3\n  t = (π/3) · (2 / √3) = 2π / (3√3) = (2√3 π) / 9 ≈ 1.209 seconds.\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Rigorously derives B = 120/√3 = 40√3 cm and solves the velocity equation tan(ωt) = √3 to obtain t = 2π/(3√3) ≈ 1.209 s.\n- **(B)**: INCORRECT. Fails to divide the initial velocity 60 by ω = √3/2, using B = 60, and miscalculates the rest time.\n- **(C)**: INCORRECT. Positive exponential exponent (+t/2) implies an unstable unbounded system, and cosine violates x(0) = 0.\n- **(D)**: INCORRECT. Misses the factor of 1/2 in the quasi-frequency (uses √3 t instead of (√3/2)t).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Initial Velocity & Rest Time Hack (15 Seconds)**:\n  - x(0) = 0 implies pure sine term: x(t) = B e^(-t/2) sin(ωt).\n  - ẋ(0) = B · ω = 60 ==> B = 60 / (√3/2) = 120/√3 = 40√3 cm!\n  - Eliminates Option B (has 60) and Option D (has 20√3).\n  - Damped decay requires negative exponent: e^(-t/2). Eliminates Option C!\n  - Option **(A)** is confirmed in under 15 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) x(t) = 40√3 e^(-t/2) sin((√3/2)t) cm, and comes to rest at t = 2π / (3√3) ≈ 1.209 s.",
+    "module_id": 6,
+    "module_title": "Module 6: Applications to Geometry & Physics"
+  },
+  {
+    "id": 76,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 11",
+    "topic": "Applications of Second-Order ODEs — Damped Pendulum Released from Rest",
+    "question": "A damped pendulum satisfies the differential equation θ̈ + k θ̇ + (p² + k²/4)θ = 0. If it is released from rest at an angle α to the vertical (θ(0) = α, θ̇(0) = 0), determine the angular displacement θ(t):",
+    "options": [
+      "(A) θ(t) = α e^(-kt/2) [cos(pt) + (k / (2p)) sin(pt)]",
+      "(B) θ(t) = α e^(kt/2) [cos(pt) - (k / (2p)) sin(pt)]",
+      "(C) θ(t) = α e^(-kt) [cos(pt) + (k / p) sin(pt)]",
+      "(D) θ(t) = α [cos(pt) + (k / (2p)) sin(pt)]"
+    ],
+    "answer": "(A) θ(t) = α e^(-kt/2) [cos(pt) + (k / (2p)) sin(pt)]",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Applied Ordinary Differential Equations\n- Topic: Second-Order Linear Differential Equations with Constant Coefficients\n- Subtopic: Damped Pendulum Motion and Initial Value Problem\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor θ̈ + k θ̇ + (p² + k²/4)θ = 0:\n1. Auxiliary equation: r² + kr + (p² + k²/4) = 0.\n   Completing the square: (r + k/2)² + p² = 0 ==> r = -k/2 ± ip.\n2. Quasi-periodic general solution:\n   θ(t) = e^(-kt/2) [C₁ cos(pt) + C₂ sin(pt)].\n3. Apply initial conditions θ(0) = α and θ̇(0) = 0 to evaluate C₁ and C₂.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven IVP: θ̈ + k θ̇ + (p² + k²/4)θ = 0 with θ(0) = α, θ̇(0) = 0\n- Step 1: Auxiliary Equation:\n  r² + kr + (p² + k²/4) = 0\n  (r + k/2)² - k²/4 + (p² + k²/4) = 0\n  (r + k/2)² + p² = 0\n  (r + k/2)² = -p² ==> r = -k/2 ± ip\n  General solution:\n  θ(t) = e^(-kt/2) [C₁ cos(pt) + C₂ sin(pt)]\n\n- Step 2: Apply first initial condition θ(0) = α:\n  θ(0) = e⁰ [C₁ · 1 + C₂ · 0] = C₁ = α\n  ==> C₁ = α\n\n- Step 3: Differentiate θ(t) with respect to t:\n  θ̇(t) = (-k/2) e^(-kt/2) [C₁ cos(pt) + C₂ sin(pt)] + e^(-kt/2) [-p C₁ sin(pt) + p C₂ cos(pt)]\n\n- Step 4: Apply second initial condition θ̇(0) = 0:\n  θ̇(0) = (-k/2)(C₁) + p(C₂) = 0\n  Substitute C₁ = α:\n  (-k/2) α + p C₂ = 0\n  p C₂ = (k/2) α ==> C₂ = (k α) / (2p)\n\n- Step 5: Substitute C₁ and C₂ back into θ(t):\n  θ(t) = e^(-kt/2) [α cos(pt) + ((k α) / (2p)) sin(pt)]\n  Factor out α:\n  θ(t) = α e^(-kt/2) [cos(pt) + (k / (2p)) sin(pt)]\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. The roots r = -k/2 ± ip accurately generate the decay factor e^(-kt/2) and frequency p, and the zero initial velocity condition yields C₂ = kα / (2p).\n- **(B)**: INCORRECT. Sign error in the damping exponent (+kt/2 represents an unphysical amplifying vibration) and sign error in the sine term.\n- **(C)**: INCORRECT. Uses decay factor -kt instead of -kt/2 (forgetting the division by 2a in the quadratic formula).\n- **(D)**: INCORRECT. Completely omits the damping factor e^(-kt/2), describing undamped motion.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Damping Exponent & Boundary Inspection (10 Seconds)**:\n  - Coefficient of θ̇ is k ==> auxiliary real part is -b/2a = -k/2.\n  - Decay factor MUST be e^(-kt/2).\n  - This immediately eliminates Options B, C, and D!\n  - Option **(A)** is the ONLY option with e^(-kt/2)!\n  - Instant solution in under 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) θ(t) = α e^(-kt/2) [cos(pt) + (k / (2p)) sin(pt)].",
+    "module_id": 6,
+    "module_title": "Module 6: Applications to Geometry & Physics"
+  },
+  {
+    "id": 77,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 11",
+    "topic": "Applications of Second-Order ODEs — Vertical Spring-Mass System with Exact Trigonometric Evaluation",
+    "question": "A 128 kg steel ball attached to a spring stretches it 20 cm (0.2 m) at equilibrium. The ball is displaced 60 cm above equilibrium and released from rest in a medium with negligible resistance (take g = 9.8 m/s²). Find the displacement function x(t) and calculate its position at t = π/12 seconds:",
+    "options": [
+      "(A) x(t) = 60 cos(7t) cm, and x(π/12) = 15(√2 - √6) ≈ -15.53 cm",
+      "(B) x(t) = 60 sin(7t) cm, and x(π/12) = 15(√2 + √6) ≈ 57.96 cm",
+      "(C) x(t) = 60 cos(49t) cm, and x(π/12) = -60 cm",
+      "(D) x(t) = 30 cos(7t) cm, and x(π/12) ≈ -7.76 cm"
+    ],
+    "answer": "(A) x(t) = 60 cos(7t) cm, and x(π/12) = 15(√2 - √6) ≈ -15.53 cm",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Applied Ordinary Differential Equations\n- Topic: Second-Order Linear Differential Equations\n- Subtopic: Simple Harmonic Motion (SHM) of a Spring-Mass System\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor a mass-spring system without damping:\n1. Hooke's Law at equilibrium: k s = m g ==> k / m = g / s.\n   Notice that the mass m cancels out!\n2. Natural frequency: ω₀ = √(k / m) = √(g / s).\n3. Equation of motion: ẍ + ω₀² x = 0 ==> x(t) = A cos(ω₀ t) + B sin(ω₀ t).\n4. Released from rest with initial displacement x₀: x(0) = x₀, ẋ(0) = 0 ==> A = x₀, B = 0.\n5. Exact angle addition formula: cos(105°) = cos(45° + 60°) = (√2 - √6) / 4.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven parameters:\n- Equilibrium stretch s = 20 cm = 0.2 m\n- Initial displacement x(0) = 60 cm (above equilibrium)\n- Initial velocity ẋ(0) = 0 (released from rest)\n- Gravitational acceleration g = 9.8 m/s²\n\n- Step 1: Calculate the ratio k/m and natural angular frequency ω:\n  At equilibrium:\n  k s = m g ==> k / m = g / s = 9.8 / 0.2 = 49 s⁻²\n  ω = √(k / m) = √49 = 7 rad/s\n\n- Step 2: Formulate Differential Equation and General Solution:\n  ẍ + 49x = 0\n  x(t) = A cos(7t) + B sin(7t)\n\n- Step 3: Apply Initial Conditions:\n  - x(0) = A = 60 cm\n  - ẋ(t) = -7A sin(7t) + 7B cos(7t) ==> ẋ(0) = 7B = 0 ==> B = 0\n  Therefore:\n  x(t) = 60 cos(7t) cm\n\n- Step 4: Evaluate position at t = π/12 s:\n  Argument: 7t = 7 · (π/12) = 7π/12 radians = 105°\n  Using angle sum identity:\n  cos(105°) = cos(45° + 60°) = cos(45°) cos(60°) - sin(45°) sin(60°)\n  = (√2 / 2)(1 / 2) - (√2 / 2)(√3 / 2)\n  = (√2 - √6) / 4\n  Substitute into x(t):\n  x(π/12) = 60 · [(√2 - √6) / 4] = 15(√2 - √6) cm\n\n- Step 5: Decimal Approximation:\n  √2 ≈ 1.4142, √6 ≈ 2.4495\n  √2 - √6 ≈ 1.4142 - 2.4495 = -1.0353\n  x(π/12) ≈ 15 · (-1.0353) ≈ -15.53 cm\n  (The negative sign indicates the ball is approximately 15.53 cm below the equilibrium position).\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Accurately determines ω = √(9.8/0.2) = 7 rad/s, identifies the cosine solution from initial conditions, and applies the exact identity cos(105°) = (√2 - √6)/4 to get 15(√2 - √6) ≈ -15.53 cm.\n- **(B)**: INCORRECT. Assumes a sine solution, which violates the initial displacement condition x(0) = 60 cm (sine gives x(0) = 0).\n- **(C)**: INCORRECT. Fails to take the square root of k/m, using ω = 49 instead of ω = 7.\n- **(D)**: INCORRECT. Halves the amplitude to 30 cm without physical justification.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Natural Frequency & Initial Conditions Hack (10 Seconds)**:\n  - ω = √(g/s) = √(9.8 / 0.2) = √49 = 7 rad/s.\n  - Released from rest ==> x(t) = 60 cos(7t).\n  - Eliminates Option B (sine) and Option C (ω = 49) and Option D (amplitude 30).\n  - Option **(A)** is uniquely identified in under 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) x(t) = 60 cos(7t) cm, and x(π/12) = 15(√2 - √6) ≈ -15.53 cm.",
+    "module_id": 6,
+    "module_title": "Module 6: Applications to Geometry & Physics"
+  },
+  {
+    "id": 78,
+    "course": "MATH 202",
+    "source": "MATH 202 Exercise 11",
+    "topic": "Applications of Second-Order ODEs — Overdamped Forced Vibration with Initial Velocity",
+    "question": "A 15 kg mass is attached to a spring with spring constant k = 140 N/m. The system is subject to a damping force of -100 ẋ N and an external driving force F(t) = 10 sin t N. If the mass starts from equilibrium (x(0) = 0) with an initial velocity of 2 m/s, determine the equation of motion x(t):",
+    "options": [
+      "(A) x(t) = (4/5) e^(-2t) - (156/205) e^(-14t/3) - (8/205) cos t + (2/41) sin t",
+      "(B) x(t) = (4/5) e^(2t) - (156/205) e^(14t/3) - (8/205) cos t + (2/41) sin t",
+      "(C) x(t) = e^(-2t) - e^(-14t/3) + (2/41) sin t",
+      "(D) x(t) = (c₁ + c₂ t)e^(-2t) - (8/205) cos t"
+    ],
+    "answer": "(A) x(t) = (4/5) e^(-2t) - (156/205) e^(-14t/3) - (8/205) cos t + (2/41) sin t",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Applied Ordinary Differential Equations\n- Topic: Second-Order Linear Differential Equations with Constant Coefficients\n- Subtopic: Overdamped Forced Harmonic Oscillator Initial Value Problem\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor m ẍ + c ẋ + k x = F(t):\n1. Substitute parameters: m = 15, c = 100, k = 140, F(t) = 10 sin t.\n   15 ẍ + 100 ẋ + 140 x = 10 sin t.\n2. Divide through by common factor 5:\n   3 ẍ + 20 ẋ + 28 x = 2 sin t.\n3. Characteristic roots: 3r² + 20r + 28 = (3r + 14)(r + 2) = 0 ==> r₁ = -2, r₂ = -14/3.\n   Complementary function: x_c(t) = c₁ e^(-2t) + c₂ e^(-14t/3).\n4. Particular integral: x_p(t) = A cos t + B sin t.\n5. Determine c₁ and c₂ using initial conditions x(0) = 0, ẋ(0) = 2.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven IVP: 15 ẍ + 100 ẋ + 140 x = 10 sin t, x(0) = 0, ẋ(0) = 2\n- Step 1: Auxiliary Equation:\n  Divide ODE by 5:\n  3 ẍ + 20 ẋ + 28 x = 2 sin t\n  Auxiliary equation:\n  3r² + 20r + 28 = 0\n  Factor: (3r + 14)(r + 2) = 0\n  ==> r₁ = -2, r₂ = -14/3 (Overdamped)\n  x_c(t) = c₁ e^(-2t) + c₂ e^(-14t/3)\n\n- Step 2: Determine Particular Integral x_p(t) = A cos t + B sin t:\n  ẋ_p = -A sin t + B cos t\n  ẍ_p = -A cos t - B sin t\n  Substitute into 15 ẍ + 100 ẋ + 140 x = 10 sin t:\n  15(-A cos t - B sin t) + 100(-A sin t + B cos t) + 140(A cos t + B sin t) = 10 sin t\n  Group terms:\n  - cos t: (-15A + 100B + 140A) = 125A + 100B = 0 ==> 5A + 4B = 0 ==> B = -(5/4)A\n  - sin t: (-15B - 100A + 140B) = -100A + 125B = 10 ==> -4A + 5B = 2/5\n\n- Step 3: Solve for A and B:\n  Substitute B = -(5/4)A into the sine equation:\n  -4A + 5(-(5/4)A) = 2/5\n  -4A - (25/4)A = 2/5\n  -(41/4) A = 2/5 ==> A = -(2/5) · (4/41) = -8 / 205\n  Then:\n  B = -(5/4) · (-8/205) = +10 / 205 = 2 / 41\n  ==> x_p(t) = -(8/205) cos t + (2/41) sin t\n\n- Step 4: General Solution:\n  x(t) = c₁ e^(-2t) + c₂ e^(-14t/3) - (8/205) cos t + (2/41) sin t\n\n- Step 5: Apply Initial Conditions x(0) = 0 and ẋ(0) = 2:\n  - x(0) = c₁ + c₂ - 8/205 = 0 ==> c₁ + c₂ = 8/205\n  - Differentiate x(t):\n    ẋ(t) = -2c₁ e^(-2t) - (14/3)c₂ e^(-14t/3) + (8/205) sin t + (2/41) cos t\n    ẋ(0) = -2c₁ - (14/3)c₂ + 2/41 = 2\n    ==> -2c₁ - (14/3)c₂ = 2 - 2/41 = 80/41 = 400/205\n\n- Step 6: Solve 2 × 2 Linear System for c₁ and c₂:\n  From c₁ + c₂ = 8/205 ==> 2c₁ + 2c₂ = 16/205.\n  Add to -2c₁ - (14/3)c₂ = 400/205:\n  (2 - 14/3)c₂ = (16 - 400) / 205\n  -(8/3) c₂ = -384 / 205\n  c₂ = (-384 / 205) · (-3/8) = (48 · 3) / 205 = -156 / 205  (checking: 8/205 - 164/205 = -156/205)\n  c₁ = 8/205 - c₂ = 8/205 - (-156/205) = 164 / 205 = 4 / 5.\n\n- Step 7: Form Complete Motion Equation:\n  x(t) = (4/5) e^(-2t) - (156/205) e^(-14t/3) - (8/205) cos t + (2/41) sin t\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. The overdamped roots r = -2, -14/3 are strictly derived, the steady-state harmonic coefficients A = -8/205 and B = 2/41 are verified, and the initial conditions uniquely yield c₁ = 4/5, c₂ = -156/205.\n- **(B)**: INCORRECT. Sign error in characteristic roots (+2 and +14/3 represent exponential divergence, violating energy dissipation in damping).\n- **(C)**: INCORRECT. Fails to solve the initial condition system (arbitrarily sets c₁ = 1, c₂ = -1) and omits the cosine steady-state component.\n- **(D)**: INCORRECT. Assumes repeated roots for an overdamped system with distinct negative real roots.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Overdamped Roots Inspection (10 Seconds)**:\n  - 3r² + 20r + 28 = (3r + 14)(r + 2) = 0 ==> roots are r = -2, -14/3.\n  - Exponents MUST be e^(-2t) and e^(-14t/3)!\n  - This immediately eliminates Option B (positive exponents) and Option D (repeated roots).\n  - Cosine response coefficient: 125A + 100B = 0 ==> A = -8/205.\n  - Option **(A)** is confirmed in under 15 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) x(t) = (4/5) e^(-2t) - (156/205) e^(-14t/3) - (8/205) cos t + (2/41) sin t.",
+    "module_id": 6,
+    "module_title": "Module 6: Applications to Geometry & Physics"
+  },
+  {
+    "id": 79,
+    "course": "MATH 202",
+    "source": "MTH 202 Workbook Page 1",
+    "topic": "Formulation of Differential Equations — Eliminating Arbitrary Constants from Family of Circles",
+    "question": "Find the differential equation governing the family of circles x² + y² = 2ax, where 'a' is an arbitrary constant parameter:",
+    "options": [
+      "(A) 2xy y′ + x² - y² = 0",
+      "(B) 2xy y′ - x² + y² = 0",
+      "(C) xy y′ + x² + y² = 0",
+      "(D) y″ + 2xy′ - y = 0"
+    ],
+    "answer": "(A) 2xy y′ + x² - y² = 0",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Module 1 — Formulation and Derivation of Differential Equations\n- Subtopic: Elimination of a Single Arbitrary Constant from Geometric Families\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor a one-parameter family of curves F(x, y, c) = 0:\n1. Differentiate once with respect to x: d/dx [F(x, y, c)] = 0.\n2. Solve for the arbitrary constant parameter 'c' in terms of x, y, and y′.\n3. Substitute 'c' back into the original relation to obtain an ODE free of parameters.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven curve family: x² + y² = 2ax  --- (Equation 1)\n- Step 1: Differentiate implicitly with respect to x:\n  d/dx(x²) + d/dx(y²) = d/dx(2ax)\n  2x + 2y y′ = 2a\n\n- Step 2: Solve for the arbitrary parameter 'a':\n  Divide through by 2:\n  a = x + y y′  --- (Equation 2)\n\n- Step 3: Substitute 'a' back into Equation 1:\n  x² + y² = 2(x + y y′) x\n  x² + y² = 2x² + 2xy y′\n\n- Step 4: Collect all terms onto one side:\n  2xy y′ + 2x² - x² - y² = 0\n  2xy y′ + x² - y² = 0\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Directly derived by eliminating 'a' via implicit differentiation and algebraic substitution: 2xy y′ + x² - y² = 0.\n- **(B)**: INCORRECT. Sign error in collecting terms (-x² + y² instead of +x² - y²).\n- **(C)**: INCORRECT. Drops the factor of 2 on the derivative term and has wrong signs.\n- **(D)**: INCORRECT. Introduces a second derivative y″; a one-parameter family always produces a first-order ODE.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **10-Second Inspection Hack**:\n  - Differentiate x² + y² = 2ax ==> 2a = 2x + 2yy′.\n  - Multiply by x: 2ax = 2x² + 2xy y′.\n  - Equate LHS to original x² + y²: x² + y² = 2x² + 2xy y′ ==> 2xy y′ + x² - y² = 0.\n  - Matches Option **(A)** instantly in 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) 2xy y′ + x² - y² = 0.",
+    "module_id": 1,
+    "module_title": "Module 1: Formulation & Classification of Differential Equations"
+  },
+  {
+    "id": 80,
+    "course": "MATH 202",
+    "source": "MTH 202 Workbook Page 2",
+    "topic": "Formulation of Differential Equations — Eliminating Two Arbitrary Constants",
+    "question": "By eliminating the arbitrary constants 'a' and 'b', form the differential equation whose general solution is xy = aeˣ + be^(-x) + x²:",
+    "options": [
+      "(A) x y″ + 2y′ - xy + x² - 2 = 0",
+      "(B) x y″ + y′ - xy + x² = 0",
+      "(C) x² y″ + 2y′ - y = 0",
+      "(D) x y″ - 2y′ + xy - x² + 2 = 0"
+    ],
+    "answer": "(A) x y″ + 2y′ - xy + x² - 2 = 0",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Module 1 — Formulation and Derivation of Differential Equations\n- Subtopic: Elimination of Two Arbitrary Constants yielding a Second-Order ODE\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor a two-parameter family F(x, y, a, b) = 0:\n1. Two arbitrary constants require differentiating twice (resulting in a second-order ODE).\n2. Use the original relation and its derivatives to algebraically eliminate both constants.\n3. Key property of hyperbolic/exponential basis {eˣ, e^(-x)}: d²/dx²(aeˣ + be^(-x)) = aeˣ + be^(-x).\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: xy = aeˣ + be^(-x) + x²  --- (1)\n- Step 1: Differentiate Equation (1) with respect to x using the product rule:\n  d/dx(xy) = x y′ + y\n  ==> x y′ + y = aeˣ - be^(-x) + 2x  --- (2)\n\n- Step 2: Differentiate a second time:\n  d/dx(x y′ + y) = (x y″ + y′) + y′ = x y″ + 2y′\n  d/dx(aeˣ - be^(-x) + 2x) = aeˣ + be^(-x) + 2\n  ==> x y″ + 2y′ = aeˣ + be^(-x) + 2  --- (3)\n\n- Step 3: From Equation (1), express aeˣ + be^(-x) in terms of x and y:\n  aeˣ + be^(-x) = xy - x²\n\n- Step 4: Substitute into Equation (3):\n  x y″ + 2y′ = (xy - x²) + 2\n  Rearrange all terms to the left:\n  x y″ + 2y′ - xy + x² - 2 = 0\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Exactly accounts for product rule derivative (x y″ + 2y′) and substitutes aeˣ + be^(-x) = xy - x².\n- **(B)**: INCORRECT. Drops one y′ term from the product rule (uses x y″ + y′ instead of x y″ + 2y′) and omits the constant 2.\n- **(C)**: INCORRECT. Multiplies leading term by x² without mathematical justification.\n- **(D)**: INCORRECT. Sign error on the 2y′ and constant terms.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Product Rule Coefficient Inspection (5 Seconds)**:\n  - (xy)″ = x y″ + 2y′.\n  - The differential equation MUST start with x y″ + 2y′!\n  - Only Option **(A)** has x y″ + 2y′ - xy + x² - 2 = 0!\n  - Select **(A)** in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) x y″ + 2y′ - xy + x² - 2 = 0.",
+    "module_id": 1,
+    "module_title": "Module 1: Formulation & Classification of Differential Equations"
+  },
+  {
+    "id": 81,
+    "course": "MATH 202",
+    "source": "MTH 202 Workbook Page 2",
+    "topic": "Formulation of Differential Equations — Eliminating Constants from Harmonic Exponential Envelope",
+    "question": "Form the differential equation for which y = eˣ(A cos x + B sin x) is the general solution, where A and B are arbitrary constants:",
+    "options": [
+      "(A) y″ - 2y′ + 2y = 0",
+      "(B) y″ + 2y′ + 2y = 0",
+      "(C) y″ - 2y′ - 2y = 0",
+      "(D) y″ + y = 0"
+    ],
+    "answer": "(A) y″ - 2y′ + 2y = 0",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Module 1 — Formation of ODEs / Module 3 — Second-Order Linear Homogeneous ODEs\n- Subtopic: Characteristic Roots from Given Fundamental Basis\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor a solution of the form y = e^(αx)(A cos(βx) + B sin(βx)):\n1. The characteristic roots must be complex conjugates: r = α ± iβ.\n2. The characteristic polynomial is:\n   (r - (α + iβ))(r - (α - iβ)) = (r - α)² + β² = r² - 2αr + (α² + β²) = 0.\n3. The corresponding ODE is: y″ - 2α y′ + (α² + β²) y = 0.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven solution: y = eˣ(A cos x + B sin x)\n- Method 1 (Direct Characteristic Root Identification):\n  - Exponential factor e^(1·x) ==> real part α = 1.\n  - Trigonometric argument cos(1·x) ==> imaginary part β = 1.\n  - Roots: r = 1 ± i.\n  - Characteristic equation:\n    (r - 1)² + 1² = 0\n    r² - 2r + 1 + 1 = 0\n    r² - 2r + 2 = 0\n  - Corresponding ODE:\n    y″ - 2y′ + 2y = 0\n\n- Method 2 (Differentiation):\n  - y = eˣ(A cos x + B sin x)\n  - y′ = eˣ(A cos x + B sin x) + eˣ(-A sin x + B cos x) = y + eˣ(-A sin x + B cos x)\n  - y″ = y′ + eˣ(-A sin x + B cos x) + eˣ(-A cos x - B sin x)\n       = y′ + (y′ - y) - y = 2y′ - 2y\n  - Rearranging: y″ - 2y′ + 2y = 0.\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Root r = 1 ± i corresponds strictly to r² - 2r + 2 = 0, giving y″ - 2y′ + 2y = 0.\n- **(B)**: INCORRECT. Corresponds to roots r = -1 ± i, which yields solution y = e^(-x)(A cos x + B sin x).\n- **(C)**: INCORRECT. Sign error on the constant term (roots would be 1 ± √3, purely real).\n- **(D)**: INCORRECT. Corresponds to undamped oscillation y = A cos x + B sin x (no exponential growth).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Reverse Characteristic Inspection (5 Seconds)**:\n  - Real part = +1 ==> middle term is -2(1)y′ = -2y′.\n  - Modulus squared = 1² + 1² = 2 ==> constant term is +2y.\n  - Equation is y″ - 2y′ + 2y = 0!\n  - Select **(A)** in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y″ - 2y′ + 2y = 0.",
+    "module_id": 1,
+    "module_title": "Module 1: Formulation & Classification of Differential Equations"
+  },
+  {
+    "id": 82,
+    "course": "MATH 202",
+    "source": "MTH 202 Workbook Page 6",
+    "topic": "Formulation of Differential Equations — Family of Straight Lines Through a Fixed Point",
+    "question": "Form the differential equation representing the family of all straight lines in the xy-plane passing through the fixed point (0, 2):",
+    "options": [
+      "(A) x y′ - y + 2 = 0",
+      "(B) x y′ + y - 2 = 0",
+      "(C) y′ - 2x = 0",
+      "(D) x² y′ - y = 0"
+    ],
+    "answer": "(A) x y′ - y + 2 = 0",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Module 1 — Formulation and Derivation of Differential Equations\n- Subtopic: Geometric Primitives — Linear Pencils of Rays\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor a straight line passing through a given point (x₀, y₀):\n1. Point-slope equation: y - y₀ = m(x - x₀), where 'm' is the arbitrary parameter (slope).\n2. Differentiate with respect to x: y′ = m.\n3. Substitute m = y′ into the point-slope equation to eliminate the parameter.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven point: (x₀, y₀) = (0, 2)\n- Step 1: Write the equation of the line pencil:\n  y - 2 = m(x - 0)\n  y - 2 = mx  --- (1)\n\n- Step 2: Differentiate with respect to x:\n  d/dx(y - 2) = d/dx(mx)\n  y′ = m  --- (2)\n\n- Step 3: Substitute m = y′ into Equation (1):\n  y - 2 = (y′)x\n  x y′ - y + 2 = 0\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Directly obtained by replacing the slope m with y′: x y′ - y + 2 = 0.\n- **(B)**: INCORRECT. Sign error in collecting terms (+y instead of -y).\n- **(C)**: INCORRECT. Assumes slope depends on x, yielding a parabolic family instead of lines.\n- **(D)**: INCORRECT. Non-linear power on x.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Direct Substitution (5 Seconds)**:\n  - Slope is dy/dx.\n  - Equation is y - 2 = x(dy/dx) ==> x y′ - y + 2 = 0.\n  - Option **(A)** is immediate!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) x y′ - y + 2 = 0.",
+    "module_id": 1,
+    "module_title": "Module 1: Formulation & Classification of Differential Equations"
+  },
+  {
+    "id": 83,
+    "course": "MATH 202",
+    "source": "MTH 202 Workbook Page 6 & 7",
+    "topic": "Formulation of Differential Equations — Two-Parameter Family of Parabolas",
+    "question": "By eliminating the arbitrary constants 'a' and 'b', construct the differential equation for the family of parabolas y² = 4a(x - b):",
+    "options": [
+      "(A) y y″ + (y′)² = 0",
+      "(B) y y″ - (y′)² = 0",
+      "(C) y² y″ + y′ = 0",
+      "(D) y″ + 4y′ = 0"
+    ],
+    "answer": "(A) y y″ + (y′)² = 0",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Module 1 — Formulation and Derivation of Differential Equations\n- Subtopic: Elimination of Two Geometric Parameters (Vertex and Focal Length)\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor a family of parabolas y² = 4a(x - b) with horizontal axis:\n1. Two constants ('a' and 'b') ==> requires differentiating twice.\n2. First derivative eliminates the translation parameter 'b'.\n3. Second derivative eliminates the focal parameter 'a'.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven equation: y² = 4a(x - b) = 4ax - 4ab  --- (1)\n- Step 1: Differentiate Equation (1) with respect to x:\n  d/dx(y²) = d/dx(4ax - 4ab)\n  2y y′ = 4a\n  Divide by 2:\n  y y′ = 2a  --- (2)\n  (Notice that the constant 'b' is already eliminated!)\n\n- Step 2: Differentiate Equation (2) with respect to x using the product rule:\n  d/dx(y · y′) = d/dx(2a)\n  y · d/dx(y′) + y′ · d/dx(y) = 0\n  y y″ + (y′)(y′) = 0\n  y y″ + (y′)² = 0\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Product rule on y y′ gives y y″ + (y′)² = 0, completely independent of both 'a' and 'b'.\n- **(B)**: INCORRECT. Sign error between the two product rule terms (- instead of +).\n- **(C)**: INCORRECT. Unjustified higher power y² on y″.\n- **(D)**: INCORRECT. Omits the non-linear dependency on y and y′.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Product Rule Recall (5 Seconds)**:\n  - y² differentiated twice: (y²)′ = 2y y′; (y²)″ = 2(y y″ + (y′)²).\n  - RHS is linear in x (4ax - 4ab), so its second derivative is 0!\n  - 2(y y″ + (y′)²) = 0 ==> y y″ + (y′)² = 0.\n  - Option **(A)** in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y y″ + (y′)² = 0.",
+    "module_id": 1,
+    "module_title": "Module 1: Formulation & Classification of Differential Equations"
+  },
+  {
+    "id": 84,
+    "course": "MATH 202",
+    "source": "MTH 202 Workbook Page 3",
+    "topic": "Formulation of Differential Equations — Verification of Solution to Differential Equations",
+    "question": "Determine whether the function y = 3 sin(x²) is a solution of the differential equation y′ - x y″ = 12x² sin(x²):",
+    "options": [
+      "(A) No, because y′ - x y″ evaluates to 12x³ sin(x²), which differs from 12x² sin(x²)",
+      "(B) Yes, because substituting y into the LHS yields exactly 12x² sin(x²)",
+      "(C) No, because the second derivative of sin(x²) cannot be computed",
+      "(D) Yes, because sin(x²) is an orthogonal function"
+    ],
+    "answer": "(A) No, because y′ - x y″ evaluates to 12x³ sin(x²), which differs from 12x² sin(x²)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Module 1 — Concept and Verification of Solutions\n- Subtopic: Chain Rule Derivatives and Identity Testing\n\n---\n\n### 2. Core Concepts & Governing Formulas\nA function y = φ(x) is a solution of an ODE on an interval I if substituting φ(x) and its derivatives reduces the equation to an identity for all x in I.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven function: y = 3 sin(x²)\n- Step 1: Compute first derivative y′ using the chain rule:\n  y′ = d/dx [3 sin(x²)] = 3 cos(x²) · d/dx(x²)\n  y′ = 3 cos(x²) · (2x) = 6x cos(x²)\n\n- Step 2: Compute second derivative y″ using the product rule:\n  y″ = d/dx [6x · cos(x²)]\n     = (d/dx[6x]) · cos(x²) + 6x · (d/dx[cos(x²)])\n     = 6 cos(x²) + 6x · [-sin(x²) · 2x]\n     = 6 cos(x²) - 12x² sin(x²)\n\n- Step 3: Substitute y′ and y″ into LHS = y′ - x y″:\n  LHS = [6x cos(x²)] - x [6 cos(x²) - 12x² sin(x²)]\n      = 6x cos(x²) - 6x cos(x²) + 12x³ sin(x²)\n      = 12x³ sin(x²)\n\n- Step 4: Compare LHS with RHS:\n  LHS = 12x³ sin(x²)\n  RHS = 12x² sin(x²)\n  Since 12x³ sin(x²) ≠ 12x² sin(x²) (the power of x is 3 on the LHS, but 2 on the RHS), the function is NOT a solution.\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. The algebraic cancellation 6x cos(x²) - 6x cos(x²) leaves precisely 12x³ sin(x²), proving LHS ≠ RHS.\n- **(B)**: INCORRECT. Overlooks the extra multiplication by x in the term -x y″, which raises the power from x² to x³.\n- **(C)**: INCORRECT. The second derivative of sin(x²) is elementary and easily computed via chain and product rules.\n- **(D)**: INCORRECT. Orthogonality is irrelevant to testing whether a function satisfies a specific differential equation.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Power of x Inspection (10 Seconds)**:\n  - y′ contains x cos(x²).\n  - y″ contains x² sin(x²), so x y″ contains x · x² sin(x²) = x³ sin(x²).\n  - The LHS has a term with x³, while the RHS has x².\n  - They cannot be identical for all x!\n  - Must be Option **(A)**!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) No, because y′ - x y″ evaluates to 12x³ sin(x²), which differs from 12x² sin(x²).",
+    "module_id": 1,
+    "module_title": "Module 1: Formulation & Classification of Differential Equations"
+  },
+  {
+    "id": 85,
+    "course": "MATH 202",
+    "source": "Linear ODEs Expanded Chapter 5",
+    "topic": "Laplace Transforms — Definition and Standard Table Transforms",
+    "question": "Determine the Laplace transform of the function f(t) = cos(3t) + 4t² - 2e^(5t):",
+    "options": [
+      "(A) s / (s² + 9) + 8 / s³ - 2 / (s - 5)",
+      "(B) 3 / (s² + 9) + 8 / s³ - 2 / (s - 5)",
+      "(C) s / (s² + 9) + 4 / s² - 2 / (s + 5)",
+      "(D) s / (s² - 9) + 8 / s³ + 2 / (s - 5)"
+    ],
+    "answer": "(A) s / (s² + 9) + 8 / s³ - 2 / (s - 5)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Operational Mathematics / Integral Transforms\n- Topic: Module 5 — Laplace Transforms & Systems of Linear ODEs\n- Subtopic: Linearity and Fundamental Transform Table\n\n---\n\n### 2. Core Concepts & Governing Formulas\nBy definition, L{f(t)} = ∫₀^∞ e^(-st) f(t) dt.\nStandard Laplace transforms:\n1. L{cos(ωt)} = s / (s² + ω²)\n2. L{sin(ωt)} = ω / (s² + ω²)\n3. L{t^n} = n! / s^(n + 1) (for integer n ≥ 0)\n4. L{e^(at)} = 1 / (s - a)\nBy linearity: L{c₁ f₁ + c₂ f₂ + c₃ f₃} = c₁ L{f₁} + c₂ L{f₂} + c₃ L{f₃}.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven function: f(t) = cos(3t) + 4t² - 2e^(5t)\n- Step 1: Transform cos(3t):\n  Here ω = 3.\n  L{cos(3t)} = s / (s² + 3²) = s / (s² + 9)\n\n- Step 2: Transform 4t²:\n  Here n = 2.\n  L{t²} = 2! / s^(2 + 1) = 2 / s³\n  ==> 4 L{t²} = 4 · (2 / s³) = 8 / s³\n\n- Step 3: Transform -2e^(5t):\n  Here a = 5.\n  L{e^(5t)} = 1 / (s - 5)\n  ==> -2 L{e^(5t)} = -2 / (s - 5)\n\n- Step 4: Sum all components:\n  L{f(t)} = s / (s² + 9) + 8 / s³ - 2 / (s - 5)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Applies standard table rules flawlessly: s/(s² + 9) for cos(3t), 8/s³ for 4t², and -2/(s - 5) for -2e^(5t).\n- **(B)**: INCORRECT. Uses 3 / (s² + 9), which is the transform of sin(3t), not cos(3t).\n- **(C)**: INCORRECT. Miscalculates L{t²} as 1/s² (forgetting 2! and extra power) and flips sign on exponential shift (s + 5).\n- **(D)**: INCORRECT. Uses minus in the cosine denominator (s² - 9, which corresponds to cosh(3t)) and flips sign on exponential.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Numerator Check (5 Seconds)**:\n  - cos(3t) transforms with 's' in the numerator ==> s / (s² + 9). Eliminates Option B!\n  - 4t² has coefficient 4 · 2! = 8 and denominator s³ ==> 8 / s³. Eliminates Option C!\n  - cos(3t) has '+' in denominator (s² + 9). Eliminates Option D!\n  - Option **(A)** is confirmed in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) s / (s² + 9) + 8 / s³ - 2 / (s - 5).",
+    "module_id": 5,
+    "module_title": "Module 5: Laplace Transforms & Systems of Linear ODEs"
+  },
+  {
+    "id": 86,
+    "course": "MATH 202",
+    "source": "Linear ODEs Expanded Chapter 5",
+    "topic": "Laplace Transforms — First Shifting Theorem (Frequency Shift)",
+    "question": "Apply the First Shifting Theorem to evaluate the Laplace transform of f(t) = e^(-2t) sin(4t):",
+    "options": [
+      "(A) 4 / (s² + 4s + 20)",
+      "(B) (s + 2) / (s² + 4s + 20)",
+      "(C) 4 / (s² - 4s + 20)",
+      "(D) 4 / (s² + 16)"
+    ],
+    "answer": "(A) 4 / (s² + 4s + 20)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Operational Mathematics / Integral Transforms\n- Topic: Module 5 — Laplace Transforms & Systems of Linear ODEs\n- Subtopic: Exponential Modulation / First Shifting Property\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFirst Shifting Theorem:\nIf L{f(t)} = F(s), then:\nL{e^(at) f(t)} = F(s - a)\nFor f(t) = sin(ωt):\nL{sin(ωt)} = ω / (s² + ω²)\nTherefore:\nL{e^(at) sin(ωt)} = ω / ((s - a)² + ω²)\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven function: f(t) = e^(-2t) sin(4t)\n- Step 1: Identify base function and parameter:\n  Base function: g(t) = sin(4t) ==> ω = 4\n  Exponential parameter: a = -2\n\n- Step 2: Transform base function:\n  G(s) = L{sin(4t)} = 4 / (s² + 4²) = 4 / (s² + 16)\n\n- Step 3: Apply the shift s -> s - a = s - (-2) = s + 2:\n  F(s) = G(s + 2) = 4 / ((s + 2)² + 16)\n\n- Step 4: Expand the denominator:\n  (s + 2)² + 16 = (s² + 4s + 4) + 16 = s² + 4s + 20\n  Therefore:\n  L{e^(-2t) sin(4t)} = 4 / (s² + 4s + 20)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. The shift s -> s + 2 gives denominator (s + 2)² + 16 = s² + 4s + 20 with numerator 4.\n- **(B)**: INCORRECT. Uses numerator (s + 2), which is the transform of e^(-2t) cos(4t), not sin(4t).\n- **(C)**: INCORRECT. Sign error in shift (uses s - 2 instead of s + 2, giving -4s instead of +4s).\n- **(D)**: INCORRECT. Completely ignores the exponential dampening e^(-2t).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Numerator & Middle Term Hack (5 Seconds)**:\n  - Sine transform has a constant numerator (ω = 4). Eliminates Option B!\n  - e^(-2t) means replace s with s + 2.\n  - (s + 2)² has middle term +4s. Eliminates Option C!\n  - Option **(A)** is confirmed in under 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) 4 / (s² + 4s + 20).",
+    "module_id": 5,
+    "module_title": "Module 5: Laplace Transforms & Systems of Linear ODEs"
+  },
+  {
+    "id": 87,
+    "course": "MATH 202",
+    "source": "Linear ODEs Expanded Chapter 5",
+    "topic": "Laplace Transforms — Transform of Derivatives and Initial Value Formulation",
+    "question": "For a sufficiently differentiable function y(t) with y(0) = y₀ and y′(0) = y₁, the Laplace transform of its second derivative y″(t) is given by:",
+    "options": [
+      "(A) s² Y(s) - s y₀ - y₁",
+      "(B) s² Y(s) - y₀ - s y₁",
+      "(C) s² Y(s) + s y₀ + y₁",
+      "(D) s Y(s) - y₀"
+    ],
+    "answer": "(A) s² Y(s) - s y₀ - y₁",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Operational Mathematics / Differential Equations\n- Topic: Module 5 — Laplace Transforms & Systems of Linear ODEs\n- Subtopic: Transform of Derivatives and Initial Condition Injection\n\n---\n\n### 2. Core Concepts & Governing Formulas\nBy integration by parts:\n1. First derivative:\n   L{y′(t)} = ∫₀^∞ e^(-st) y′(t) dt = [e^(-st) y(t)]₀^∞ + s ∫₀^∞ e^(-st) y(t) dt\n   L{y′(t)} = s Y(s) - y(0)\n2. Second derivative:\n   L{y″(t)} = s L{y′(t)} - y′(0) = s [s Y(s) - y(0)] - y′(0)\n   L{y″(t)} = s² Y(s) - s y(0) - y′(0)\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nLet Y(s) = L{y(t)}.\n- Step 1: Apply derivative transform to y′:\n  L{y′} = s Y(s) - y(0)\n\n- Step 2: Apply derivative transform to (y′)′ = y″:\n  L{y″} = s L{y′} - y′(0)\n  Substitute L{y′}:\n  L{y″} = s [s Y(s) - y(0)] - y′(0)\n  L{y″} = s² Y(s) - s y(0) - y′(0)\n\n- Step 3: Substitute the given initial values y(0) = y₀ and y′(0) = y₁:\n  L{y″} = s² Y(s) - s y₀ - y₁\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Directly derived from integration by parts: s² Y(s) - s y₀ - y₁.\n- **(B)**: INCORRECT. Swaps the powers of s on the initial conditions (attaches s to y₁ instead of y₀).\n- **(C)**: INCORRECT. Sign error (+ instead of - on the initial conditions; boundary terms evaluate at t = 0 as -y(0)).\n- **(D)**: INCORRECT. This is the formula for the first derivative y′(t), not the second derivative y″(t).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Dimensional Power Inspection (3 Seconds)**:\n  - Second derivative ==> leading term is s² Y(s).\n  - Powers of s decrease sequentially: s² Y(s) - s¹ y(0) - s⁰ y′(0).\n  - Option **(A)** matches in 3 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) s² Y(s) - s y₀ - y₁.",
+    "module_id": 5,
+    "module_title": "Module 5: Laplace Transforms & Systems of Linear ODEs"
+  },
+  {
+    "id": 88,
+    "course": "MATH 202",
+    "source": "Linear ODEs Expanded Exercise 15",
+    "topic": "Laplace Transforms — Solving Second-Order IVP with Zero Damping",
+    "question": "Use the Laplace transform to solve the initial value problem y″ + 4y = 0, subject to initial conditions y(0) = 2 and y′(0) = 1:",
+    "options": [
+      "(A) y(t) = 2 cos(2t) + (1/2) sin(2t)",
+      "(B) y(t) = cos(2t) + 2 sin(2t)",
+      "(C) y(t) = 2 cos(4t) + sin(4t)",
+      "(D) y(t) = 2 e^(2t) + e^(-2t)"
+    ],
+    "answer": "(A) y(t) = 2 cos(2t) + (1/2) sin(2t)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Operational Mathematics / Differential Equations\n- Topic: Module 5 — Laplace Transforms & Systems of Linear ODEs\n- Subtopic: Algebraic Solution of Second-Order Initial Value Problems\n\n---\n\n### 2. Core Concepts & Governing Formulas\n1. Transform of y″: L{y″} = s² Y(s) - s y(0) - y′(0).\n2. Standard inverse transforms:\n   L⁻¹{s / (s² + ω²)} = cos(ωt)\n   L⁻¹{ω / (s² + ω²)} = sin(ωt)\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven IVP: y″ + 4y = 0, y(0) = 2, y′(0) = 1\n- Step 1: Take the Laplace transform of both sides:\n  L{y″} + 4 L{y} = 0\n  [s² Y(s) - s y(0) - y′(0)] + 4 Y(s) = 0\n\n- Step 2: Substitute initial values y(0) = 2, y′(0) = 1:\n  s² Y(s) - 2s - 1 + 4 Y(s) = 0\n  (s² + 4) Y(s) - (2s + 1) = 0\n\n- Step 3: Solve for Y(s):\n  (s² + 4) Y(s) = 2s + 1\n  Y(s) = (2s + 1) / (s² + 4)\n\n- Step 4: Decompose into standard inverse forms:\n  Y(s) = (2s) / (s² + 4) + 1 / (s² + 4)\n       = 2 · [s / (s² + 2²)] + (1/2) · [2 / (s² + 2²)]\n\n- Step 5: Take the inverse Laplace transform:\n  y(t) = 2 cos(2t) + (1/2) sin(2t)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Accurately splits the numerator (2s + 1) to produce coefficients 2 for cos(2t) and 1/2 for sin(2t).\n- **(B)**: INCORRECT. Swaps the coefficients between cosine and sine.\n- **(C)**: INCORRECT. Fails to take the square root of 4 for the frequency, using ω = 4 instead of ω = 2.\n- **(D)**: INCORRECT. Confuses imaginary roots ±2i with real roots ±2.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Initial Condition Hack (5 Seconds)**:\n  - Check t = 0:\n    - y(0) = 2 cos(0) + (1/2) sin(0) = 2 · 1 + 0 = 2. (Matches!)\n  - Check velocity y′(0):\n    - y′(t) = -4 sin(2t) + cos(2t) ==> y′(0) = -0 + 1 = 1. (Matches!)\n  - For Option B: y(0) = 1 (fails).\n  - For Option C: y′(0) = 4 (fails).\n  - Option **(A)** is confirmed in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y(t) = 2 cos(2t) + (1/2) sin(2t).",
+    "module_id": 5,
+    "module_title": "Module 5: Laplace Transforms & Systems of Linear ODEs"
+  },
+  {
+    "id": 89,
+    "course": "MATH 202",
+    "source": "Linear ODEs Expanded Chapter 5",
+    "topic": "Laplace Transforms — Solving First-Order Non-Homogeneous IVP",
+    "question": "Solve the first-order differential equation y′ + 2y = 4 with initial condition y(0) = 1 using Laplace transforms:",
+    "options": [
+      "(A) y(t) = 2 - e^(-2t)",
+      "(B) y(t) = 2 + e^(-2t)",
+      "(C) y(t) = 4 - 3e^(-2t)",
+      "(D) y(t) = 2 - e^(2t)"
+    ],
+    "answer": "(A) y(t) = 2 - e^(-2t)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Operational Mathematics / Differential Equations\n- Topic: Module 5 — Laplace Transforms & Systems of Linear ODEs\n- Subtopic: Partial Fractions and First-Order Response\n\n---\n\n### 2. Core Concepts & Governing Formulas\n1. Transform of first derivative: L{y′} = s Y(s) - y(0).\n2. Transform of constant: L{k} = k / s.\n3. Partial fraction decomposition: (s + A) / (s(s + B)) = C₁ / s + C₂ / (s + B).\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven IVP: y′ + 2y = 4, y(0) = 1\n- Step 1: Take the Laplace transform:\n  L{y′} + 2 L{y} = L{4}\n  [s Y(s) - y(0)] + 2 Y(s) = 4 / s\n\n- Step 2: Substitute y(0) = 1:\n  s Y(s) - 1 + 2 Y(s) = 4 / s\n  (s + 2) Y(s) = 1 + 4/s = (s + 4) / s\n\n- Step 3: Solve for Y(s):\n  Y(s) = (s + 4) / [s(s + 2)]\n\n- Step 4: Decompose using partial fractions:\n  (s + 4) / [s(s + 2)] = A / s + B / (s + 2)\n  - Cover-up method for A (set s = 0):\n    A = (0 + 4) / (0 + 2) = 4 / 2 = 2\n  - Cover-up method for B (set s = -2):\n    B = (-2 + 4) / (-2) = 2 / (-2) = -1\n  ==> Y(s) = 2 / s - 1 / (s + 2)\n\n- Step 5: Take the inverse Laplace transform:\n  y(t) = 2(1) - 1 · e^(-2t) = 2 - e^(-2t)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. The partial fraction decomposition yields A = 2, B = -1, which inverts to y(t) = 2 - e^(-2t).\n- **(B)**: INCORRECT. Sign error on B (gives y(0) = 3 instead of y(0) = 1).\n- **(C)**: INCORRECT. Fails to divide the constant 4 by the differential coefficient 2, giving wrong steady-state 4.\n- **(D)**: INCORRECT. Sign error in exponential exponent (+2t instead of -2t).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Initial & Steady-State Check (5 Seconds)**:\n  - At t = 0: y(0) = 2 - e⁰ = 2 - 1 = 1. (Satisfies initial condition!)\n  - As t -> ∞: y′ = 0 ==> 2y = 4 ==> y(∞) = 2. (Steady-state is 2!)\n  - Only Option **(A)** satisfies both y(0) = 1 and y(∞) = 2!\n  - Select **(A)** in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y(t) = 2 - e^(-2t).",
+    "module_id": 5,
+    "module_title": "Module 5: Laplace Transforms & Systems of Linear ODEs"
+  },
+  {
+    "id": 90,
+    "course": "MATH 202",
+    "source": "Linear ODEs Expanded Chapter 5",
+    "topic": "Laplace Transforms — Inverse Transform with Completing the Square",
+    "question": "Find the inverse Laplace transform L⁻¹{(s + 1) / (s² + 2s + 5)}:",
+    "options": [
+      "(A) e^(-t) cos(2t)",
+      "(B) e^(-t) sin(2t)",
+      "(C) eˣ cos(2x)",
+      "(D) (1/2) e^(-t) cos(2t)"
+    ],
+    "answer": "(A) e^(-t) cos(2t)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Operational Mathematics / Integral Transforms\n- Topic: Module 5 — Laplace Transforms & Systems of Linear ODEs\n- Subtopic: Quadratic Completing the Square and Inverse Modulation\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor an irreducible quadratic denominator s² + bs + c:\n1. Complete the square: s² + 2as + (a² + ω²) = (s + a)² + ω².\n2. Match the numerator to (s + a) for cosine, or ω for sine:\n   L⁻¹{(s + a) / ((s + a)² + ω²)} = e^(-at) cos(ωt)\n   L⁻¹{ω / ((s + a)² + ω²)} = e^(-at) sin(ωt)\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven transform: F(s) = (s + 1) / (s² + 2s + 5)\n- Step 1: Complete the square in the denominator:\n  s² + 2s + 5 = (s² + 2s + 1) + 4 = (s + 1)² + 2²\n\n- Step 2: Compare with numerator:\n  Numerator is already exactly (s + 1)!\n  F(s) = (s + 1) / [(s + 1)² + 2²]\n\n- Step 3: Identify parameters:\n  a = 1 (corresponding to shift e^(-1·t) = e^(-t))\n  ω = 2 (corresponding to frequency 2)\n\n- Step 4: Invert by the First Shifting Theorem:\n  Since L⁻¹{s / (s² + 2²)} = cos(2t):\n  L⁻¹{(s + 1) / ((s + 1)² + 2²)} = e^(-t) cos(2t)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. The shifted numerator (s + 1) over (s + 1)² + 2² inverts directly to e^(-t) cos(2t).\n- **(B)**: INCORRECT. A sine inverse would require the constant numerator ω = 2, yielding 2 / ((s + 1)² + 4).\n- **(C)**: INCORRECT. Sign error in exponential decay factor (+t instead of -t).\n- **(D)**: INCORRECT. Unjustified factor of 1/2.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Numerator Check (5 Seconds)**:\n  - Numerator has 's' ==> Inversion MUST be a cosine function! Eliminates Option B.\n  - Denominator has (s + 1) ==> Real decay factor is e^(-t). Eliminates Option C.\n  - Numerator is (s + 1) with coefficient 1 ==> Amplitude is 1. Eliminates Option D.\n  - Option **(A)** is confirmed in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) e^(-t) cos(2t).",
+    "module_id": 5,
+    "module_title": "Module 5: Laplace Transforms & Systems of Linear ODEs"
+  },
+  {
+    "id": 91,
+    "course": "MATH 202",
+    "source": "Linear ODEs Expanded Chapter 5 & Course Outline Topic 5",
+    "topic": "Systems of Linear ODEs — Elimination Method for 2×2 First-Order Coupled System",
+    "question": "Solve the system of first-order linear differential equations dx/dt = 2x + y, dy/dt = x + 2y, subject to initial conditions x(0) = 3 and y(0) = 1:",
+    "options": [
+      "(A) x(t) = e^t + 2e^(3t), y(t) = -e^t + 2e^(3t)",
+      "(B) x(t) = 2e^t + e^(3t), y(t) = 2e^t - e^(3t)",
+      "(C) x(t) = 3e^(2t), y(t) = e^(2t)",
+      "(D) x(t) = e^(-t) + 2e^(-3t), y(t) = -e^(-t) + 2e^(-3t)"
+    ],
+    "answer": "(A) x(t) = e^t + 2e^(3t), y(t) = -e^t + 2e^(3t)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Module 5 — Laplace Transforms & Systems of Linear ODEs\n- Subtopic: 2 × 2 Coupled First-Order Linear Systems by Elimination\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor a coupled linear system:\n  x′ = a₁₁ x + a₁₂ y\n  y′ = a₂₁ x + a₂₂ y\n1. Eliminate y by expressing y in terms of x and x′: y = (x′ - a₁₁ x) / a₁₂.\n2. Substitute into the second equation to obtain a second-order uncoupled ODE for x(t).\n3. Solve for x(t), then substitute back to find y(t).\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven system:\n  (1) x′ = 2x + y\n  (2) y′ = x + 2y\nInitial conditions: x(0) = 3, y(0) = 1\n- Step 1: From (1), solve for y:\n  y = x′ - 2x  --- (3)\n\n- Step 2: Differentiate (3) with respect to t:\n  y′ = x″ - 2x′\n\n- Step 3: Substitute y and y′ into (2):\n  (x″ - 2x′) = x + 2(x′ - 2x)\n  x″ - 2x′ = x + 2x′ - 4x\n  x″ - 2x′ = -3x + 2x′\n  x″ - 4x′ + 3x = 0\n\n- Step 4: Solve the characteristic equation for x:\n  r² - 4r + 3 = (r - 1)(r - 3) = 0 ==> r₁ = 1, r₂ = 3\n  ==> x(t) = c₁ e^t + c₂ e^(3t)\n\n- Step 5: Substitute x(t) into (3) to find y(t):\n  x′(t) = c₁ e^t + 3c₂ e^(3t)\n  y(t) = x′ - 2x = [c₁ e^t + 3c₂ e^(3t)] - 2[c₁ e^t + c₂ e^(3t)]\n  y(t) = (c₁ - 2c₁)e^t + (3c₂ - 2c₂)e^(3t) = -c₁ e^t + c₂ e^(3t)\n\n- Step 6: Apply initial conditions x(0) = 3 and y(0) = 1:\n  x(0) = c₁ + c₂ = 3\n  y(0) = -c₁ + c₂ = 1\n  Add the two equations:\n  2c₂ = 4 ==> c₂ = 2\n  Substitute c₂ = 2 into c₁ + c₂ = 3 ==> c₁ = 1.\n\n- Step 7: Form the Final Solution:\n  x(t) = e^t + 2e^(3t)\n  y(t) = -e^t + 2e^(3t)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. The eigenvalues r = 1, 3 yield the correct complementary basis, and the initial conditions strictly determine c₁ = 1, c₂ = 2.\n- **(B)**: INCORRECT. Swaps the constant multipliers between the e^t and e^(3t) modes.\n- **(C)**: INCORRECT. Fails to couple the variables, incorrectly assuming a single uncoupled root r = 2.\n- **(D)**: INCORRECT. Sign error on the characteristic roots (-1 and -3 instead of +1 and +3).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Initial Values Check (5 Seconds)**:\n  - Check x(0) and y(0):\n    - Option A: x(0) = 1 + 2 = 3; y(0) = -1 + 2 = 1. (Matches!)\n    - Option B: x(0) = 2 + 1 = 3; y(0) = 2 - 1 = 1. (Check derivative: x′(0) = 2(1) + 3(1) = 5 ≠ 2(3)+1 = 7).\n    - For Option A: x′(0) = 1(1) + 2(3) = 7. From ODE: x′(0) = 2x(0) + y(0) = 2(3) + 1 = 7! Exact match!\n  - Option **(A)** is confirmed in under 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) x(t) = e^t + 2e^(3t), y(t) = -e^t + 2e^(3t).",
+    "module_id": 5,
+    "module_title": "Module 5: Laplace Transforms & Systems of Linear ODEs"
+  },
+  {
+    "id": 92,
+    "course": "MATH 202",
+    "source": "Linear ODEs Expanded Chapter 5 & Course Outline Topic 5",
+    "topic": "Systems of Linear ODEs — Matrix Eigenvalue Method and Phase Plane Stability",
+    "question": "For the linear autonomous system dx/dt = x + 2y, dy/dt = 2x + y, determine the eigenvalues of the system matrix and the qualitative stability classification of the origin (0, 0):",
+    "options": [
+      "(A) λ₁ = 3, λ₂ = -1; the origin is an unstable saddle point",
+      "(B) λ₁ = 3, λ₂ = 1; the origin is an unstable nodal source",
+      "(C) λ₁ = -3, λ₂ = -1; the origin is an asymptotically stable nodal sink",
+      "(D) λ = 1 ± 2i; the origin is a center"
+    ],
+    "answer": "(A) λ₁ = 3, λ₂ = -1; the origin is an unstable saddle point",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Ordinary Differential Equations (ODEs)\n- Topic: Module 5 — Laplace Transforms & Systems of Linear ODEs\n- Subtopic: Matrix Eigenvalue Spectrum and Phase Portrait Classification\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor a 2 × 2 linear system ẋ = A x:\n1. System matrix: A = [[a, b], [c, d]].\n2. Characteristic equation: det(A - λI) = λ² - Tr(A) λ + det(A) = 0.\n   - Trace: Tr(A) = a + d.\n   - Determinant: det(A) = ad - bc.\n3. Stability Classification:\n   - If det(A) < 0: The eigenvalues have opposite real signs (λ₁ > 0 > λ₂), so the origin is an **unstable Saddle Point**.\n   - If det(A) > 0 and Tr(A) > 0: Unstable Node or Spiral.\n   - If det(A) > 0 and Tr(A) < 0: Asymptotically Stable Node or Spiral.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven system:\n  dx/dt = 1·x + 2·y\n  dy/dt = 2·x + 1·y\n- Step 1: Write the coefficient matrix A:\n  A = | 1  2 |\n      | 2  1 |\n\n- Step 2: Calculate Trace and Determinant:\n  Tr(A) = 1 + 1 = 2\n  det(A) = (1)(1) - (2)(2) = 1 - 4 = -3\n\n- Step 3: Solve the Characteristic Equation:\n  λ² - Tr(A) λ + det(A) = 0\n  λ² - 2λ - 3 = 0\n  Factor:\n  (λ - 3)(λ + 1) = 0\n  ==> λ₁ = 3, λ₂ = -1\n\n- Step 4: Determine Phase Plane Stability:\n  Since the eigenvalues are real and have opposite signs (λ₁ = +3 > 0 while λ₂ = -1 < 0):\n  Trajectories approach along the eigenvector of λ₂ = -1 and diverge along the eigenvector of λ₁ = 3.\n  Therefore, the equilibrium point (0, 0) is a **Saddle Point**, which is inherently unstable.\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Accurately factors the characteristic equation to λ = 3, -1 and identifies that real roots of opposite signs define an unstable saddle point.\n- **(B)**: INCORRECT. Falsely asserts both eigenvalues are positive, which would be a nodal source.\n- **(C)**: INCORRECT. Sign error in trace and determinant; asserts both eigenvalues are negative.\n- **(D)**: INCORRECT. Fails to compute the determinant, incorrectly assuming complex eigenvalues.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Determinant Inspection Hack (5 Seconds)**:\n  - det(A) = (1)(1) - (2)(2) = 1 - 4 = -3.\n  - Whenever det(A) < 0, the eigenvalues MUST have opposite signs, and the origin is ALWAYS a **saddle point**!\n  - Option **(A)** is the ONLY option identifying a saddle point!\n  - Immediate selection in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) λ₁ = 3, λ₂ = -1; the origin is an unstable saddle point.",
+    "module_id": 5,
+    "module_title": "Module 5: Laplace Transforms & Systems of Linear ODEs"
+  },
+  {
+    "id": 93,
+    "course": "MATH 202",
+    "source": "Linear ODEs Expanded Section 7.2 & Exercise 25",
+    "topic": "Applications to Geometry — Orthogonal Trajectories of Parabolas",
+    "question": "Find the orthogonal trajectories of the family of parabolas y = C x²:",
+    "options": [
+      "(A) x² + 2y² = K (a family of concentric ellipses)",
+      "(B) x² - 2y² = K (a family of hyperbolas)",
+      "(C) y² = K x (a family of parabolas)",
+      "(D) x² + y² = K (a family of concentric circles)"
+    ],
+    "answer": "(A) x² + 2y² = K (a family of concentric ellipses)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Applied Differential Equations\n- Topic: Module 6 — Applications to Geometry and Physics\n- Subtopic: Orthogonal Trajectories of One-Parameter Curve Families\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor a given family of curves F(x, y, C) = 0:\n1. Differentiate with respect to x and eliminate the parameter C to obtain the ODE: y′ = f(x, y).\n2. The orthogonal family cuts the given family everywhere at right angles (90°).\n3. Replace y′ with its negative reciprocal: y′ -> -1 / f(x, y).\n4. Integrate the resulting differential equation to obtain the orthogonal trajectories.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven curve family: y = C x²  --- (1)\n- Step 1: Differentiate Equation (1) with respect to x:\n  y′ = 2Cx  --- (2)\n\n- Step 2: Eliminate C using Equation (1):\n  From (1), C = y / x²\n  Substitute into (2):\n  y′ = 2(y / x²) x = 2y / x\n\n- Step 3: Set up the ODE for orthogonal trajectories:\n  Replace y′ with -1 / y′:\n  -1 / y′ = 2y / x\n  Invert both sides:\n  y′ = -x / (2y)\n  dy/dx = -x / (2y)\n\n- Step 4: Separate variables:\n  2y dy = -x dx\n\n- Step 5: Integrate both sides:\n  ∫ 2y dy = -∫ x dx\n  y² = -x² / 2 + C₁\n  Multiply through by 2:\n  2y² = -x² + 2C₁\n  x² + 2y² = K  (where K = 2C₁ is an arbitrary positive constant)\n\n- Step 6: Geometric Interpretation:\n  The equation x² + 2y² = K represents a family of concentric ellipses centered at the origin with semi-major axis along the x-axis.\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. The negative reciprocal substitution y′ = -x/(2y) integrates directly to x² + 2y² = K, forming a family of ellipses.\n- **(B)**: INCORRECT. Sign error during integration (-2y² instead of +2y²), creating hyperbolas.\n- **(C)**: INCORRECT. Fails to take negative reciprocal of slope; asserts parabolas are self-orthogonal.\n- **(D)**: INCORRECT. Fails to account for the factor of 2 in the denominator, erroneously generating circles.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Separation & Integration Hack (10 Seconds)**:\n  - y = C x² ==> dy/dx = 2y/x.\n  - Orthogonal slope is -x/(2y).\n  - 2y dy = -x dx ==> y² = -x²/2 + C ==> x² + 2y² = K.\n  - Ellipse equation!\n  - Matches Option **(A)** in under 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) x² + 2y² = K (a family of concentric ellipses).",
+    "module_id": 6,
+    "module_title": "Module 6: Applications to Geometry & Physics"
+  },
+  {
+    "id": 94,
+    "course": "MATH 202",
+    "source": "Linear ODEs Expanded Section 7.2 & Exercise 21",
+    "topic": "Applications to Geometry — Orthogonal Trajectories of Tangent Circles",
+    "question": "Find the orthogonal trajectories of the family of circles x² + y² = 2Cx (circles tangent to the y-axis at the origin):",
+    "options": [
+      "(A) x² + y² = 2Ky (circles tangent to the x-axis at the origin)",
+      "(B) x² - y² = 2Ky (a family of rectangular hyperbolas)",
+      "(C) y = Kx (a family of straight lines)",
+      "(D) x² + y² = K² (a family of concentric circles)"
+    ],
+    "answer": "(A) x² + y² = 2Ky (circles tangent to the x-axis at the origin)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Applied Differential Equations\n- Topic: Module 6 — Applications to Geometry and Physics\n- Subtopic: Orthogonal Trajectories of Circular Pencils\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor circles tangent to an axis:\n1. Differentiate x² + y² = 2Cx implicitly and eliminate C to find dy/dx.\n2. Replace dy/dx by -dx/dy for the orthogonal family.\n3. Integrate using an integrating factor or homogeneous substitution.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven family: x² + y² = 2Cx  --- (1)\n- Step 1: Differentiate implicitly with respect to x:\n  2x + 2y y′ = 2C ==> C = x + y y′\n\n- Step 2: Substitute C into (1):\n  x² + y² = 2(x + y y′) x = 2x² + 2xy y′\n  2xy y′ = y² - x²\n  y′ = (y² - x²) / (2xy)  --- (ODE of given family)\n\n- Step 3: Apply the orthogonal condition y′ -> -1 / y′:\n  -1 / y′ = (y² - x²) / (2xy)\n  y′ = -2xy / (y² - x²) = 2xy / (x² - y²)\n  dy/dx = 2xy / (x² - y²)\n\n- Step 4: Rewrite in differential form:\n  2xy dx + (y² - x²) dy = 0\n\n- Step 5: Solve this differential equation:\n  Divide by y²:\n  (2x/y) dx + (1 - x²/y²) dy = 0\n  Notice that d(x²/y + y) = (2x/y) dx - (x²/y²) dy + dy = (2x/y) dx + (1 - x²/y²) dy = 0!\n  Integrating:\n  x²/y + y = 2K\n  Multiply through by y:\n  x² + y² = 2Ky\n\n- Step 6: Geometric Interpretation:\n  The orthogonal trajectories are circles passing through the origin with centers on the y-axis (tangent to the x-axis at the origin).\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. The orthogonal trajectories of circles tangent to the y-axis at (0, 0) are circles tangent to the x-axis at (0, 0): x² + y² = 2Ky.\n- **(B)**: INCORRECT. Generates hyperbolas instead of maintaining circular geometry under conformal mapping.\n- **(C)**: INCORRECT. Straight lines are orthogonal to concentric circles, not to tangent circles.\n- **(D)**: INCORRECT. Concentric circles have their center at (0, 0), whereas the original family has moving centers (C, 0).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Geometric Symmetry Hack (5 Seconds)**:\n  - The family x² + y² = 2Cx consists of circles tangent to the y-axis at the origin.\n  - By geometric duality and conformal symmetry, their orthogonal trajectories MUST be circles tangent to the x-axis at the origin: x² + y² = 2Ky!\n  - Select **(A)** in 5 seconds flat!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) x² + y² = 2Ky (circles tangent to the x-axis at the origin).",
+    "module_id": 6,
+    "module_title": "Module 6: Applications to Geometry & Physics"
+  },
+  {
+    "id": 95,
+    "course": "MATH 202",
+    "source": "Linear ODEs Expanded Section 7.1 & Exercise 24",
+    "topic": "Applications to Geometry — Nonlinear Differential Equation of the Catenary",
+    "question": "A uniform flexible hanging cable suspended between two poles satisfies the nonlinear differential equation y″ = (1/a) √(1 + (y′)²). Given initial conditions y(0) = a and y′(0) = 0, find the equation of the hanging curve (the catenary):",
+    "options": [
+      "(A) y = a cosh(x / a)",
+      "(B) y = a sinh(x / a)",
+      "(C) y = a cos(x / a)",
+      "(D) y = (1 / 2a) x² + a"
+    ],
+    "answer": "(A) y = a cosh(x / a)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Applied Differential Equations\n- Topic: Module 6 — Applications to Geometry and Physics\n- Subtopic: Reduction of Order for Second-Order Autonomous Equations (The Catenary)\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor y″ = (1/a) √(1 + (y′)²):\n1. Notice the equation does not contain y explicitly: y″ = f(y′).\n2. Substitute p = y′ = dy/dx, so y″ = dp/dx.\n3. This reduces the equation to a separable first-order ODE for p(x).\n4. Standard integral: ∫ dp / √(1 + p²) = sinh⁻¹(p) + C.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven ODE: y″ = (1/a) √(1 + (y′)²), y(0) = a, y′(0) = 0\n- Step 1: Reduce order:\n  Let p = y′ = dy/dx ==> y″ = dp/dx.\n  dp/dx = (1/a) √(1 + p²)\n\n- Step 2: Separate variables:\n  dp / √(1 + p²) = (1/a) dx\n\n- Step 3: Integrate both sides:\n  ∫ dp / √(1 + p²) = (1/a) ∫ dx\n  sinh⁻¹(p) = x/a + C₁\n\n- Step 4: Apply initial slope condition y′(0) = 0 ==> p(0) = 0:\n  sinh⁻¹(0) = 0/a + C₁ ==> C₁ = 0\n  ==> sinh⁻¹(p) = x/a\n  ==> p = sinh(x/a)\n\n- Step 5: Integrate p = dy/dx to find y(x):\n  dy/dx = sinh(x/a)\n  y(x) = ∫ sinh(x/a) dx = a cosh(x/a) + C₂\n\n- Step 6: Apply initial position condition y(0) = a:\n  y(0) = a cosh(0) + C₂ = a · 1 + C₂ = a\n  ==> a + C₂ = a ==> C₂ = 0\n  Therefore:\n  y(x) = a cosh(x / a)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Accurately integrates the reduced first-order system to p = sinh(x/a) and integrates again to obtain the classical catenary y = a cosh(x/a).\n- **(B)**: INCORRECT. Violates the initial condition y(0) = a (since sinh(0) = 0 ≠ a).\n- **(C)**: INCORRECT. Trigonometric cosine produces negative curvature (y″ = -a⁻¹ cos(x/a)), which corresponds to an arch, not a hanging cable.\n- **(D)**: INCORRECT. Parabolic approximation (valid only for small sag with p² << 1), but not the exact solution of the non-linear equation.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Initial Value & Calculus Hack (5 Seconds)**:\n  - Check y(0) = a: cosh(0) = 1 ==> a cosh(0) = a. (Matches!)\n  - Check y′(0) = 0: d/dx[a cosh(x/a)] = sinh(x/a) ==> sinh(0) = 0. (Matches!)\n  - Option **(A)** satisfies all boundary conditions and is the famous Catenary equation!\n  - Select **(A)** in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) y = a cosh(x / a).",
+    "module_id": 6,
+    "module_title": "Module 6: Applications to Geometry & Physics"
+  },
+  {
+    "id": 96,
+    "course": "MATH 202",
+    "source": "Linear ODEs Expanded Section 6.2 & Exercise 17",
+    "topic": "Applications to Physics — Undamped LC/RLC Electrical Circuit Oscillator",
+    "question": "An electrical circuit contains an inductor L = 1 H and capacitor C = 0.25 F with zero resistance (R = 0 Ω). If the initial charge on the capacitor is q(0) = 2 C and initial current is q̇(0) = 0 A, find the charge q(t) at any time t ≥ 0:",
+    "options": [
+      "(A) q(t) = 2 cos(2t) C",
+      "(B) q(t) = 2 sin(2t) C",
+      "(C) q(t) = cos(2t) + 2 sin(2t) C",
+      "(D) q(t) = 2 cos(4t) C"
+    ],
+    "answer": "(A) q(t) = 2 cos(2t) C",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Applied Differential Equations\n- Topic: Module 6 — Applications to Geometry and Physics\n- Subtopic: Series RLC Circuit Initial Value Problem\n\n---\n\n### 2. Core Concepts & Governing Formulas\nBy Kirchhoff's Voltage Law, a series RLC circuit satisfies:\n  L q̈ + R q̇ + (1/C) q = E(t)\n1. For an LC circuit without resistance (R = 0) and no external voltage (E(t) = 0):\n   L q̈ + (1/C) q = 0\n2. Natural resonant frequency: ω₀ = √(1 / (LC)).\n3. General solution: q(t) = A cos(ω₀ t) + B sin(ω₀ t).\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven values:\n  L = 1 H, C = 0.25 F = 1/4 F, R = 0 Ω\n  q(0) = 2 C, q̇(0) = 0 A\n- Step 1: Formulate the differential equation:\n  1 · q̈ + 0 · q̇ + (1 / 0.25) q = 0\n  q̈ + 4q = 0\n\n- Step 2: Auxiliary equation:\n  r² + 4 = 0 ==> r = ±2i\n  ω₀ = 2 rad/s\n  General solution:\n  q(t) = A cos(2t) + B sin(2t)\n\n- Step 3: Apply initial condition q(0) = 2:\n  q(0) = A cos(0) + B sin(0) = A · 1 + 0 = 2\n  ==> A = 2\n\n- Step 4: Differentiate to evaluate current i(t) = q̇(t):\n  q̇(t) = -2A sin(2t) + 2B cos(2t)\n\n- Step 5: Apply initial current condition q̇(0) = 0:\n  q̇(0) = -2(2) sin(0) + 2B cos(0) = 2B · 1 = 0\n  ==> B = 0\n\n- Step 6: Form Final Solution:\n  q(t) = 2 cos(2t) Coulombs\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. The natural frequency ω₀ = √(1 / (1 · 0.25)) = √4 = 2 rad/s and initial conditions strictly determine q(t) = 2 cos(2t).\n- **(B)**: INCORRECT. Assumes a pure sine solution, which violates q(0) = 2 (gives q(0) = 0).\n- **(C)**: INCORRECT. Swaps the initial condition values.\n- **(D)**: INCORRECT. Fails to take the square root of 1/C = 4, using frequency ω = 4 instead of 2.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Natural Frequency & Boundary Check (5 Seconds)**:\n  - ω = 1 / √(LC) = 1 / √(1 · 0.25) = 1 / 0.5 = 2 rad/s.\n  - Zero initial current q̇(0) = 0 ==> pure cosine function!\n  - Amplitude q(0) = 2 ==> 2 cos(2t).\n  - Matches Option **(A)** in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) q(t) = 2 cos(2t) C.",
+    "module_id": 6,
+    "module_title": "Module 6: Applications to Geometry & Physics"
+  },
+  {
+    "id": 97,
+    "course": "MATH 202",
+    "source": "Linear ODEs Expanded Exercise 3",
+    "topic": "Applications to Physics — Newton's Law of Cooling",
+    "question": "A cup of coffee at 90 °C is placed in a room at a constant temperature of 20 °C. If it cools to 70 °C in 5 minutes, determine its temperature T(t) after t minutes according to Newton's Law of Cooling:",
+    "options": [
+      "(A) T(t) = 20 + 70(5/7)^(t/5) °C",
+      "(B) T(t) = 20 + 90(5/7)^(t/5) °C",
+      "(C) T(t) = 20 + 70 e^(-5t) °C",
+      "(D) T(t) = 70 + 20(5/7)^t °C"
+    ],
+    "answer": "(A) T(t) = 20 + 70(5/7)^(t/5) °C",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Applied Differential Equations\n- Topic: Module 6 — Applications to Geometry and Physics\n- Subtopic: Newton's Law of Cooling / Exponential Thermal Decay\n\n---\n\n### 2. Core Concepts & Governing Formulas\nNewton's Law of Cooling states that the rate of heat loss is proportional to the temperature difference between the body and its environment:\n  dT/dt = -k (T - T_m)\nwhere:\n  T_m = ambient medium temperature\n  k = positive cooling rate constant\nGeneral solution:\n  T(t) = T_m + (T₀ - T_m) e^(-kt)\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven data:\n  Ambient temperature: T_m = 20 °C\n  Initial temperature: T(0) = 90 °C\n  At t = 5 minutes: T(5) = 70 °C\n- Step 1: Formulate the general solution:\n  T(t) = 20 + C e^(-kt)\n\n- Step 2: Apply initial condition T(0) = 90:\n  T(0) = 20 + C e⁰ = 20 + C = 90\n  ==> C = 90 - 20 = 70\n  So T(t) = 20 + 70 e^(-kt)\n\n- Step 3: Determine the cooling factor using T(5) = 70:\n  T(5) = 20 + 70 e^(-5k) = 70\n  70 e^(-5k) = 50\n  e^(-5k) = 50 / 70 = 5 / 7\n\n- Step 4: Express e^(-kt) in terms of base (5/7):\n  e^(-k) = (5/7)^(1/5)\n  Therefore:\n  e^(-kt) = [e^(-5k)]^(t/5) = (5/7)^(t/5)\n\n- Step 5: Substitute into the temperature equation:\n  T(t) = 20 + 70(5/7)^(t/5) °C\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. The temperature difference (90 - 20 = 70) decays by factor 5/7 every 5 minutes: 20 + 70(5/7)^(t/5).\n- **(B)**: INCORRECT. Fails to subtract the ambient temperature from initial temperature (uses 90 instead of 70 for the amplitude, giving T(0) = 110 °C).\n- **(C)**: INCORRECT. Confuses the elapsed time 5 with the decay rate constant k.\n- **(D)**: INCORRECT. Swaps the ambient and difference temperatures.\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Boundary Value Inspection (5 Seconds)**:\n  - Check t = 0: T(0) = 20 + 70(1) = 90 °C. (Matches!)\n  - Check t = 5: T(5) = 20 + 70(5/7)¹ = 20 + 50 = 70 °C. (Matches!)\n  - Check t -> ∞: T(∞) = 20 + 0 = 20 °C. (Matches ambient!)\n  - Option **(A)** is confirmed in 5 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) T(t) = 20 + 70(5/7)^(t/5) °C.",
+    "module_id": 6,
+    "module_title": "Module 6: Applications to Geometry & Physics"
+  },
+  {
+    "id": 98,
+    "course": "MATH 202",
+    "source": "Linear ODEs Expanded Exercise 19",
+    "topic": "Applications to Physics — Radioactive Decay Chain and Peak Daughter Activity",
+    "question": "In a two-stage radioactive decay chain A -> B -> C, parent isotope A decays into B with rate constant λ_A, and B decays into stable C with rate constant λ_B (with λ_A ≠ λ_B). If initially N_A(0) = N₀ and N_B(0) = 0, at what time t_max does the population of daughter isotope B reach its maximum?",
+    "options": [
+      "(A) t_max = ln(λ_B / λ_A) / (λ_B - λ_A)",
+      "(B) t_max = ln(λ_A / λ_B) / (λ_B - λ_A)",
+      "(C) t_max = 1 / (λ_B - λ_A)",
+      "(D) t_max = (λ_A + λ_B) / 2"
+    ],
+    "answer": "(A) t_max = ln(λ_B / λ_A) / (λ_B - λ_A)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Applied Differential Equations\n- Topic: Module 6 — Applications to Geometry and Physics\n- Subtopic: Bateman Decay Equations and Critical Extrema\n\n---\n\n### 2. Core Concepts & Governing Formulas\nThe governing differential equations are:\n  dN_A/dt = -λ_A N_A  ==> N_A(t) = N₀ e^(-λ_A t)\n  dN_B/dt = λ_A N_A - λ_B N_B = λ_A N₀ e^(-λ_A t) - λ_B N_B\n1. The daughter population N_B(t) reaches its peak when its rate of change vanishes: dN_B/dt = 0.\n2. At maximum: λ_A N_A(t_max) = λ_B N_B(t_max).\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\n- Step 1: Solve the linear first-order ODE for N_B(t):\n  dN_B/dt + λ_B N_B = λ_A N₀ e^(-λ_A t)\n  Integrating factor: μ(t) = e^(λ_B t)\n  d/dt [N_B e^(λ_B t)] = λ_A N₀ e^((λ_B - λ_A)t)\n  N_B e^(λ_B t) = [λ_A N₀ / (λ_B - λ_A)] e^((λ_B - λ_A)t) + C\n  Using N_B(0) = 0 ==> C = -λ_A N₀ / (λ_B - λ_A):\n  N_B(t) = [λ_A N₀ / (λ_B - λ_A)] [e^(-λ_A t) - e^(-λ_B t)]\n\n- Step 2: Differentiate N_B(t) and set to 0 to find maximum:\n  dN_B/dt = [λ_A N₀ / (λ_B - λ_A)] [-λ_A e^(-λ_A t) + λ_B e^(-λ_B t)] = 0\n  ==> λ_A e^(-λ_A t) = λ_B e^(-λ_B t)\n\n- Step 3: Rearrange to isolate the exponential ratio:\n  e^(-λ_A t) / e^(-λ_B t) = λ_B / λ_A\n  e^((λ_B - λ_A)t) = λ_B / λ_A\n\n- Step 4: Take the natural logarithm of both sides:\n  (λ_B - λ_A) t = ln(λ_B / λ_A)\n  t_max = ln(λ_B / λ_A) / (λ_B - λ_A)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Setting the derivative of the Bateman equation to zero yields t_max = ln(λ_B / λ_A) / (λ_B - λ_A).\n- **(B)**: INCORRECT. Swaps the ratio in the logarithm, which gives a negative time if λ_B > λ_A.\n- **(C)**: INCORRECT. Omits the logarithmic ratio term ln(λ_B / λ_A).\n- **(D)**: INCORRECT. Uses an arithmetic mean, which has wrong physical units (units of rate s⁻¹ instead of time s).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Equilibrium Condition Inspection (10 Seconds)**:\n  - At maximum: production rate equals loss rate: λ_A e^(-λ_A t) = λ_B e^(-λ_B t).\n  - e^((λ_B - λ_A)t) = λ_B / λ_A.\n  - Take ln: t_max = ln(λ_B / λ_A) / (λ_B - λ_A).\n  - Option **(A)** in 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) t_max = ln(λ_B / λ_A) / (λ_B - λ_A).",
+    "module_id": 6,
+    "module_title": "Module 6: Applications to Geometry & Physics"
+  },
+  {
+    "id": 99,
+    "course": "MATH 202",
+    "source": "Linear ODEs Expanded Section 4.1 & Exercise 12",
+    "topic": "Applications to Physics — Mechanical Resonance in Undamped Forced Vibrations",
+    "question": "An undamped harmonic oscillator is driven by a periodic external force matching its natural frequency: x″ + ω₀² x = F₀ cos(ω₀ t). Find the particular solution x_p(t) representing pure resonance:",
+    "options": [
+      "(A) x_p(t) = [F₀ / (2ω₀)] t sin(ω₀ t)",
+      "(B) x_p(t) = -[F₀ / (2ω₀)] t cos(ω₀ t)",
+      "(C) x_p(t) = [F₀ / (ω₀²)] cos(ω₀ t)",
+      "(D) x_p(t) = [F₀ / (2ω₀)] t² sin(ω₀ t)"
+    ],
+    "answer": "(A) x_p(t) = [F₀ / (2ω₀)] t sin(ω₀ t)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Applied Differential Equations\n- Topic: Module 6 — Applications to Geometry and Physics\n- Subtopic: Pure Mechanical Resonance / Secular Secular Growth\n\n---\n\n### 2. Core Concepts & Governing Formulas\nFor x″ + ω₀² x = F₀ cos(ωt):\n1. Complementary roots: r = ±iω₀ ==> x_c(t) = c₁ cos(ω₀ t) + c₂ sin(ω₀ t).\n2. Resonance condition: When forcing frequency ω equals natural frequency ω₀, ±iω₀ are characteristic roots of multiplicity 1.\n3. Resonant trial form: x_p(t) = t [A cos(ω₀ t) + B sin(ω₀ t)].\n4. The presence of 't' represents linearly growing amplitude (resonance disaster).\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven ODE: x″ + ω₀² x = F₀ cos(ω₀ t)\n- Step 1: Trial particular solution:\n  x_p(t) = t [A cos(ω₀ t) + B sin(ω₀ t)]\n\n- Step 2: Compute first derivative ẋ_p:\n  ẋ_p = [A cos(ω₀ t) + B sin(ω₀ t)] + t [-ω₀ A sin(ω₀ t) + ω₀ B cos(ω₀ t)]\n\n- Step 3: Compute second derivative ẍ_p:\n  ẍ_p = 2 [-ω₀ A sin(ω₀ t) + ω₀ B cos(ω₀ t)] - ω₀² t [A cos(ω₀ t) + B sin(ω₀ t)]\n\n- Step 4: Substitute into x″ + ω₀² x:\n  ẍ_p + ω₀² x_p = 2 [-ω₀ A sin(ω₀ t) + ω₀ B cos(ω₀ t)] = F₀ cos(ω₀ t)\n\n- Step 5: Equate coefficients of sine and cosine:\n  - Coefficient of sin(ω₀ t): -2ω₀ A = 0 ==> A = 0\n  - Coefficient of cos(ω₀ t): 2ω₀ B = F₀ ==> B = F₀ / (2ω₀)\n\n- Step 6: Form Particular Solution:\n  x_p(t) = [F₀ / (2ω₀)] t sin(ω₀ t)\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. The phase shifts by 90° to a positive sine function with secular envelope [F₀ / (2ω₀)] t.\n- **(B)**: INCORRECT. Contains a cosine term instead of sine (differentiating cosine twice leaves zero net cosine when multiplied by t).\n- **(C)**: INCORRECT. Fails to account for resonance (substituting cos(ω₀ t) yields 0, not F₀ cos(ω₀ t)).\n- **(D)**: INCORRECT. Multiplies by t² instead of t (t² would only occur for a double root, which requires repeated roots not present in second-order oscillators).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Derivative Operator Shortcut (10 Seconds)**:\n  - Inverse operator for resonance: x_p = Re{ 1 / (D² + ω₀²) [F₀ e^(iω₀ t)] }.\n  - Shift operator: 1 / [D(D + 2iω₀)] [F₀] = (1 / (2iω₀)) · t F₀.\n  - Multiplied by e^(iω₀ t): [F₀ t / (2iω₀)] (cos ω₀ t + i sin ω₀ t).\n  - Real part: Re{ -i F₀ t / (2ω₀) (cos ω₀ t + i sin ω₀ t) } = [F₀ / (2ω₀)] t sin(ω₀ t).\n  - Matches Option **(A)** in 10 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) x_p(t) = [F₀ / (2ω₀)] t sin(ω₀ t).",
+    "module_id": 6,
+    "module_title": "Module 6: Applications to Geometry & Physics"
+  },
+  {
+    "id": 100,
+    "course": "MATH 202",
+    "source": "Linear ODEs Expanded Section 7.3 & Exercise 23",
+    "topic": "Applications to Geometry — Plane Curves of Constant Curvature",
+    "question": "A smooth plane curve parameterized by arc length s has constant curvature κ₀ > 0. The tangent angle θ(s) satisfies dθ/ds = κ₀, starting at the origin (x(0), y(0)) = (0, 0) with initial direction θ(0) = 0. Identify the geometric curve traced by (x(s), y(s)):",
+    "options": [
+      "(A) A circle of radius R = 1 / κ₀ centered at (0, 1 / κ₀)",
+      "(B) A parabola with vertex at the origin",
+      "(C) A straight line with slope κ₀",
+      "(D) A catenary with parameter a = 1 / κ₀"
+    ],
+    "answer": "(A) A circle of radius R = 1 / κ₀ centered at (0, 1 / κ₀)",
+    "explanation": "### 1. Topic & Mathematical Classification\n- Subject Area: Differential Geometry / Applied Differential Equations\n- Topic: Module 6 — Applications to Geometry and Physics\n- Subtopic: Frenet-Serret System and Fundamental Theorem of Plane Curves\n\n---\n\n### 2. Core Concepts & Governing Formulas\nIn differential geometry of plane curves parameterized by arc length s:\n1. Curvature definition: κ(s) = dθ/ds.\n2. Parametric coordinates:\n   dx/ds = cos θ(s)\n   dy/ds = sin θ(s)\n3. If curvature κ(s) = κ₀ = constant > 0, the curve is uniquely a circle of radius R = 1/κ₀.\n\n---\n\n### 3. Step-by-Step Mathematical Derivation\nGiven ODE: dθ/ds = κ₀, with θ(0) = 0, (x(0), y(0)) = (0, 0)\n- Step 1: Integrate for the tangent angle θ(s):\n  dθ/ds = κ₀ ==> θ(s) = κ₀ s + θ(0) = κ₀ s\n\n- Step 2: Integrate for the x-coordinate:\n  dx/ds = cos(θ(s)) = cos(κ₀ s)\n  x(s) = ∫₀ˢ cos(κ₀ u) du = [sin(κ₀ u) / κ₀]₀ˢ\n  x(s) = (1 / κ₀) sin(κ₀ s)\n\n- Step 3: Integrate for the y-coordinate:\n  dy/ds = sin(θ(s)) = sin(κ₀ s)\n  y(s) = ∫₀ˢ sin(κ₀ u) du = [-cos(κ₀ u) / κ₀]₀ˢ\n  y(s) = -cos(κ₀ s) / κ₀ - (-1 / κ₀) = (1 / κ₀) [1 - cos(κ₀ s)]\n\n- Step 4: Eliminate parameter s:\n  x = (1 / κ₀) sin(κ₀ s)\n  y - 1/κ₀ = -(1 / κ₀) cos(κ₀ s)\n  Square and add:\n  x² + (y - 1/κ₀)² = (1 / κ₀²) sin²(κ₀ s) + (1 / κ₀²) cos²(κ₀ s)\n  x² + (y - 1/κ₀)² = 1 / κ₀²\n\n- Step 5: Geometric Identification:\n  This is the Cartesian equation of a circle of radius R = 1/κ₀ centered at (0, 1/κ₀).\n\n---\n\n### 4. Detailed Option Analysis\n- **(A)**: CORRECT. Constant curvature uniquely characterizes circles of radius R = 1/κ₀, with center at (0, 1/κ₀) given the initial conditions.\n- **(B)**: INCORRECT. A parabola has variable curvature κ(x) = y″ / (1 + (y′)²)³/² that decreases along its arms.\n- **(C)**: INCORRECT. A straight line has zero curvature (κ = 0).\n- **(D)**: INCORRECT. A catenary has non-constant curvature κ = 1 / (a cosh²(x/a)).\n\n---\n\n### 5. 0–45s CBT Speed Shortcut\n- **Differential Geometry Theorem (3 Seconds)**:\n  - By the Fundamental Theorem of Plane Curves, any plane curve with non-zero constant curvature κ₀ is ALWAYS a **circle** with radius R = 1 / κ₀!\n  - Option **(A)** is immediately recognized in 3 seconds!\n\n---\n\n### 6. Final Conclusion\nThe correct option is (A) A circle of radius R = 1 / κ₀ centered at (0, 1 / κ₀).",
+    "module_id": 6,
+    "module_title": "Module 6: Applications to Geometry & Physics"
+  }
+];
